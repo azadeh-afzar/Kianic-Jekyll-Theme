@@ -29,6 +29,27 @@ body {
   font-family: $base-font;
   color: $overlay-color;
   background: $white;
+  &.dark {
+    background: $light-black;
+    color: darken($white, 15);
+    a {
+      color: lighten($white, 27.8431);
+    }
+  }
+}
+
+.dark.transit,
+.light.transit {
+  transition: all 0.5s;
+}
+
+footer {
+  font-size: 15px;
+  > a {
+    color: rgba($color: $blue, $alpha: 1.5);
+    outline: none;
+    text-decoration: none
+  }
 }
 
 a {
@@ -225,6 +246,9 @@ dt {
   padding: 0.5em;
   background-color: darken($white, 5%);
   font-weight: bold;
+  &.dark {
+    background-color: lighten($black, 15%);
+  }
 }
 
 dd {
@@ -246,6 +270,9 @@ table {
 thead {
   background-color: darken($white, 5%);
   border-bottom: 1px solid darken($white, 7%);
+  &.dark {
+    background-color: lighten($black, 15%);
+  }
 }
 
 tr,
@@ -282,20 +309,23 @@ td:last-child {
 
 // code
 pre {
-    overflow-x: auto; // add scrollbars to wide code blocks
+    overflow-x: auto; // add scroll bars to wide code blocks
     padding: 1rem;
     line-height: 1.5;
     margin: 0;
-  }
+}
 
-  p > code,
-  a > code,
-  li > code,
-  figcaption > code,
-  td > code {
+p > code,
+a > code,
+li > code,
+figcaption > code,
+td > code {
     padding: 0.1rem 0.2rem;
     font-size: 0.9em;
     border-radius: 2px;
-    background-color: darken($white, 5%);
+    background-color: darken($white, 15%);
     font-family: $base-font;
-  }
+    &.dark {
+      background-color: lighten($black, 5%);
+    }
+}

@@ -3,19 +3,33 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html>
+<html lang="{{ page.lang }}">
 {% include head.html %}
 <body id="homepage">
-
+  {% include gtm-body.html %}
   <div class="block-left">
-    <div class="content">
-      <div class="main-info">
-        <a href="{{ site.url }}" class="logo"><img src="{{ site.url }}/images/{{ site.logo }}"></a>
+    <div class="content {{ page.direction-format }}">
+      <div class="main-info {{ page.direction-format }}">
+        {% if site.language-options.lang-number > 1 %}
+          <a href="{% if site.language-options.lang-number == 2 %}
+            {% for item in site.language-options.lang-id %}
+              {% if item.title != page.lang %}
+                {% assign title = item.title %}
+              {% endif %}
+            {% endfor %}
+            {{ site.url }}/{{ title | replace: site.language-options.lang-default, '' }}
+          {% else %}
+            {{ site.url }}/{{ page.lang }}/change-language
+          {% endif %}" title="{{ site.data.languages[page.lang].change-language-title-text }}" class="languages-menu-icon home"><i class="fa fa-fw  fa-2x fa-inverse fa-language" aria-hidden="true"></i></a>
+          <span class="languages-link {{ page.direction-format }}">{{ site.data.languages[page.lang].change-language-span-text }}</span>
+        {% endif %}
+        {% include block-left-icons.html %}
+        <a href="{{ page.url }}" class="logo"><img type="image/png" src="{{ site.url }}/{{ site.logo-images.logo-main }}" alt="Site Logo"></a>
         <h1>
-          {{ site.title }}
+          {{ page.title }}
         </h1>
         <h2>
-          {{ site.description }}
+          {{ page.description }}
         </h2>
         {% include social-links.html %}
       </div>
@@ -23,21 +37,22 @@ layout: compress
     <canvas></canvas>
   </div>
 
+  
   <div class="block-right">
-    <a href="{{ site.url }}/posts" title="posts" class="posts-menu-icon"></a>
-    <span class="posts-link">POSTS</span>
-    <a title="project" class="projects-menu-icon">
-      <span></span>
-    </a>
-    <span class="projects-link">PROJECTS</span>
-    <div class="content">
-      <div class="about-info">
+    <a title="{{ site.data.languages[page.lang].mode-title-text }}" class="mode-menu-icon home {{ page.direction-format }}"><i id="sun-moon" class="fa fa-fw fa-2x fa-moon" aria-hidden="true"></i></a>
+    <span class="mode-link {{ page.direction-format }}">{{ site.data.languages[page.lang].mode-span-text }}</span>
+    <a href="{{ site.url }}/{{ page.lang }}/posts" title="{{ site.data.languages[page.lang].posts-title-text }}" class="posts-menu-icon {{ page.direction-format }}"><i class="fa fa-fw fa-2x fa-file-alt" aria-hidden="true"></i></a>
+    <span class="posts-link {{ page.direction-format }}">{{ site.data.languages[page.lang].posts-span-text }}</span>
+    <a title="{{ site.data.languages[page.lang].projects-title-text }}" class="projects-menu-icon {{ page.direction-format }}"><i class="fa fa-fw fa-2x fa-cogs" aria-hidden="true"></i></a>
+    <span class="projects-link {{ page.direction-format }}">{{ site.data.languages[page.lang].projects-span-text }}</span>
+    <div class="content {{ page.direction-format }}">
+      <div class="about-info {{ page.direction-format }}">
         {{ content }}
+        {% include footer.html %}
       </div>
     </div>
   </div>
   {% include overlay.html %}
   {% include scripts.html %}
-  <script src="{{ site.url }}/assets/js/canvas.js"></script>
 </body>
 </html>

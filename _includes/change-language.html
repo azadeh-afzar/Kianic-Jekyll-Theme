@@ -1,0 +1,34 @@
+{% if page.lang-ref != nil %}
+    {% assign has-lang-ref = true %}
+{% endif %}
+
+{% case page.layout %}
+    {% when 'post' %}
+        {% assign posts = site.posts | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+    {% when 'page' %}
+        {% assign posts = site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+    {% else %}
+{% endcase %}
+
+{% for target_post in posts %}
+    {% if target_post.url != page.url and target_post.lang != page.lang %}
+        {% assign has_other_lang = true %}
+    {% endif %}
+{% endfor %}
+
+{% if has_other_lang == true and has-lang-ref == true %}
+<br>
+    <ul id="change-lang" class="change-language {{ page.direction-format }}">
+        <br>
+        <em>
+            {{ site.data.languages[page.lang].read-in-other-language }}
+        </em>
+        <ul>
+        {% for target_post in posts %}
+            {% if target_post.url != page.url and target_post.lang != page.lang %}
+                <li><a href="{{ site.base-url }}{{ target_post.url }}" title="{{ site.data.languages[page.lang].read-in-text }} {{ site.data.languages[target_post.lang].label[page.lang] }}">{{ site.data.languages[target_post.lang].icon }} {{ site.data.languages[target_post.lang].label[page.lang] }}</a></li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+    </ul>
+{% endif %}

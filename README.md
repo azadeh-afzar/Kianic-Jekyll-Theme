@@ -1,20 +1,19 @@
-# Halve  [![Donate](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.me/taylantatli/0usd)  
-  
-## `Sorry guys but there will be no update until I buy a new laptop.`
+# About Kianic Theme
 
-This theme is Jekyll port of [vangeltzo.com](http://vangeltzo.com/) (by [Vangelis Tzortzis](https://github.com/srekoble)).
+This theme is a fork of excellent [**Halve Jekyll Theme**](https://taylantatli.github.io/Halve) (by [**Taylan Tatli**](https://github.com/TaylanTatli)).
 
-To learn how to install and use this theme check out the [installation guide](https://taylantatli.github.io/Halve/halve-theme/) for more information.
+To learn how to install and use this theme check out the [**installation guide**]({{ site.url }}/en/kianic-theme) for more information.
 
-If you have a question, find a bug, or just want to say hi, please open an [issue on GitHub](https://github.com/TaylanTatli/Halve/issues/new).
+If you have a question, find a bug, or want to sugggest a new feature, please open an [**issue on GitHub**](https://github.com/MahdiBaghbani/Kianic/issues/new).
 
 ## Preview   
-![screenshot of Halve](/images/halve-home-image.png)
+![screenshot of Halve](/images/kianic-home-image.png)
 
-See a [live version of Halve](http://taylantatli.github.io/Halve) hosted on GitHub.
+See a [live version of Halve](http://MahdiBaghbani.github.io/Kianic) hosted on GitHub.
 
 # Credits
 - Original Work: [Vangelis Tzortzis](https://github.com/srekoble)  
+- Halve Theme : [Halve Jekyll Theme](https://taylantatli.github.io/Halve)
 - Sample Posts and some code examples: [Michael Rose](https://github.com/mmistakes/)
 - Images: [Unsplash](https://unsplash.com/) and [Lorem Pixel](http://lorempixel.com)
 

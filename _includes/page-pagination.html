@@ -1,14 +1,14 @@
 {% if page.previous or page.next %}
 <nav class="pagination">
-  {% if page.previous %}
-  <a href="{{ site.url }}{{ page.previous.url }}" class="pagination_pager" title="{{ page.previous.title | markdownify | strip_html }}">previous</a>
+  {% if page.previous and page.previous.lang == page.lang %}
+    <a href="{{ site.url }}{{ page.previous.url }}" class="pagination_pager {{ page.direction-format }}" title="{{ page.previous.title | markdownify | strip_html }}">{{ site.data.languages[page.lang].previous }}</a>
   {% else %}
-  <a href="#" class="pagination_pager disabled">previous</a>
+    <a href="#" class="pagination_pager {{ page.direction-format }} disabled">{{ site.data.languages[page.lang].previous }}</a>
   {% endif %}
-  {% if page.next %}
-  <a href="{{ site.url }}{{ page.next.url }}" class="pagination_pager" title="{{ page.next.title | markdownify | strip_html }}">next</a>
+  {% if page.next and page.next.lang == page.lang %}
+    <a href="{{ site.url }}{{ page.next.url }}" class="pagination_pager {{ page.direction-format }}" title="{{ page.next.title | markdownify | strip_html }}">{{ site.data.languages[page.lang].next }}</a>
   {% else %}
-  <a href="#" class="pagination_pager disabled">next</a>
+    <a href="#" class="pagination_pager {{ page.direction-format }} disabled">{{ site.data.languages[page.lang].next }}</a>
   {% endif %}
 </nav>
 {% endif %}

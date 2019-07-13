@@ -1,43 +1,98 @@
-# Site
-title: Halve
-description: Stylish, Two-Column Jekyll Theme
-url: https://taylantatli.github.io/Halve
-logo: halve.png                                       # Site logo
-locale: en_US
+# --- General Options ---
+
+# Name of website
+title: Kianic Jekyll Theme
+description: "Multi language, dual theme, stylish, two-column Jekyll theme for your blog."
+author: Mahdi Baghbani
+
+# website domain URL
+url: https://MahdiBaghbani.github.io/Kianic
+
+# website logos
+# use https://iconifier.net to create all favicon icons and apple touch png
+logo-images:
+  logo-main: images/logo.png
+  favicon-png: images/favicon.png
+  favicon: images/favicon.ico
+  apple-touch-icon: images/apple-touch-icon.png
+  apple-touch-icon-57x57: images/apple-touch-icon-57x57.png
+  apple-touch-icon-72x72: images/apple-touch-icon-72x72.png
+  apple-touch-icon-76x76: images/apple-touch-icon-76x76.png
+  apple-touch-icon-114x114: images/apple-touch-icon-114x114.png
+  apple-touch-icon-120x120: images/apple-touch-icon-120x120.png
+  apple-touch-icon-144x144: images/apple-touch-icon-144x144.png
+  apple-touch-icon-152x152: images/apple-touch-icon-152x152.png
+  apple-touch-icon-180x180: images/apple-touch-icon-180x180.png
+  en:
+    logo-main: images/logo-small-en.png
+  fa:
+    logo-main: images/logo-small-fa.png
+
+# Copyright info
+copyright-license-name: "Creative Commons License BY-NC-SA 4.0"
+copyright-license-logo: "images/cc-by-nc-sa.png"
+copyright-license-link: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+
 
 # Left Block Images
 background:
-  homepage: images/home.png                           # this image will be shown on homepage's left block
-  post-list: images/unsplash-image-10.jpg             # this image will be shown on post list page
-  default-post: images/unsplash-gallery-image-3.jpg   # this image will be shown when post's front matter doesn't specify any image
+  # this image will be shown on homepage's left block
+  homepage: images/img-home-background.jpg                
+  # this image will be shown on post list page
+  post-list: images/img-posts-background.jpg              
+  # this image will be shown when post's front matter doesn't specify any image
+  default-post: images/img-default-post-picture.png
 
-# Jekyll
-permalink:          /:title/
+# --- Jekyll settings ---
+
+# link generation style
+permalink:          /:categories/:title/              
+
+# markdown compiler
 markdown:           kramdown
 highlighter:        rouge
+
+# kramdown settings
 kramdown:
   auto_ids:         true
   footnote_nr:      1
   entity_output:    as_char
   toc_levels:       1..6
   enable_coderay:   false
-sass:
+
+# specify css path and style
+sass:                                                  
   sass_dir:         assets/_sass
   style:            compressed
 
-# Google Analytics
-#google-analytics: UA-XXXXX-Y
+# Custom pages
+special-pages:
+  resume:        false
+  support-me:    true
+  about-me:      true
+  legal:         true
 
-# Social Links
-#email:             email
-#google.plus:        username
-twitter:            username
-#facebook:           username
-github:             username
-stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
+# --- Social ---
+
+# Social ID's
+facebook:           MahdiBaghbanii
+# instagram:          username
+twitter:            Baghbani1
+# linkedin:           username
+github:             MahdiBaghbani
+goodreads:          40576484
+# stackoverflow:      username
+# steam:              username
+# fide:               username
+# lichess:            username
+# chess:              username
+# keybase:            username
+# reddit:             username
+# quora:              username
+# hackernews:         username
+telegram:           MahdiBaghbanii
+email:              MahdiBaghbani@protonmail.com
 #xing:              username
-#instagram:          username
 #lastfm:            username
 #tumblr:            username
 #pinterest:         username
@@ -49,17 +104,77 @@ stackoverflow:     123456/username   from a "http://stackoverflow.com/users/1234
 #weibo:             username
 #flickr:            username
 #codepen:           username
-#keybase:           username
 #xmpp:              username@server.com
 #hackernews:        username
-behance:           username
+#behance:           username
 
-# Gems
-gems:
+# select default share links for posts/pages
+# you can manually turn this off in each post/page setting
+share:
+  facebook: true
+  twitter: true
+  linkedin: true
+
+# --- Web Trackers ---
+  
+# Google Analytics
+# using gtag is advised!
+# google-analytics: UA-xxxxx-x
+
+# Google Global Site Tag
+# google-gtag: UA-xxxxx-x
+
+# Google Tag Manager
+# this tag manager job is to track social outbound links
+# and contact links such as: mailto:, tel:
+# google-gtm: GTM-xxxxxxx
+
+# Heap Analytics
+# heap-analytics: xxxxxxxx
+
+# --- Multi language support ---
+
+# number of languages to be supported
+language-options:
+  lang-number: 2
+  lang-default: en
+  lang-id:
+    - title: en
+    - title: fa
+
+defaults:
+  -
+    scope:
+      # sub-folder
+      path: en
+    values:
+      # language name, sub-domain and direction (ltr, rtl)
+      lang: en
+      base-url: "/en/"
+      direction-format: ltr
+      author: Mahdi baghbani
+  -
+    scope:
+      # sub-folder
+      path: fa
+    values:
+      # language name, sub-domain and direction (ltr, rtl)
+      lang: fa
+      base-url: "/fa/"
+      direction-format: rtl
+      author: مهدی باغبانی
+
+# --- Setup Configurations ---
+
+# Ruby Gems
+plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
 
-# Exclude list
+# Include list
 include: [_pages]
-exclude: [README.md, Gemfile, Gemfile.lock, _site, src, vendor, CNAME, LICENSE, Rakefile, .sass-cache, .DS_Store]
+
+# Exclude list
+exclude: [README.md, Gemfile, Gemfile.lock, _site, src, vendor, .gitignore
+          CNAME, LICENSE, Rakefile, .sass-cache, .DS_Store, site meta]
