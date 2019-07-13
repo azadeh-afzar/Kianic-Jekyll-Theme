@@ -11,4 +11,4 @@ This theme is a fork of excellent [**Halve Jekyll Theme**](https://taylantatli.g
 
 To learn how to install and use this theme check out the [**installation guide**]({{ site.url }}/en/kianic-theme) for more information.
 
-If you have a question, find a bug, or want to sugggest a new feature, please open an [**issue on GitHub**](https://github.com/MahdiBaghbani/Kianic/issues/new){:target="_blank"}.
+If you have a question, find a bug, or want to suggest a new feature, please open an [**issue on GitHub**](https://github.com/MahdiBaghbani/Kianic/issues/new){:target="_blank"}.
