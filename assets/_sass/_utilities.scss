@@ -31,7 +31,7 @@
   margin-bottom: 0.5em;
   font-size: 0.8em;
   font-weight: 400;
-  background-color: darken($white, 7%);
+  background-color: darken($white, 30%);
   color: lighten($black, 20%);
   text-align: center;
   white-space: nowrap;
@@ -55,12 +55,26 @@
       background-color: darken($aqua, 5%);
       border-color: darken($aqua, 5%);
     }
+    &.dark {
+      background-color: darken($aqua, 45%);
+      &:hover {
+        background-color: darken($aqua, 15%);
+        border-color: darken($aqua, 25%);
+      }
+    }
   }
   &_warning {
     background-color: lighten($yellow, 10%);
     &:hover {
       background-color: darken($yellow, 5%);
       border-color: darken($yellow, 5%);
+    }
+    &.dark {
+      background-color: darken($yellow, 25%);
+      &:hover {
+        background-color: darken($yellow, 10%);
+        border-color: darken($yellow, 5%);
+      }
     }
   }
   &_success{
@@ -69,6 +83,13 @@
       background-color: darken($green, 5%);
       border-color: darken($green, 5%);
     }
+    &.dark {
+      background-color: darken($green, 35%);
+      &:hover {
+        background-color: darken($green, 15%);
+        border-color: darken($green, 25%);
+      }
+    }
   }
   &_danger {
     background-color: lighten($red, 10%);
@@ -76,29 +97,45 @@
       background-color: darken($red, 5%);
       border-color: darken($red, 5%);
     }
-  }
-  &_facebook {
-    background-color: #3b5998;
-    color: $white !important;
-    &:hover {
-      background-color: mix($white, #3b5998, 25%);
-      border-color: mix($white, #3b5998, 25%);
+    &.dark {
+      background-color: darken($red, 35%);
+      &:hover {
+        background-color: darken($red, 15%);
+        border-color: darken($red, 25%);
+      }
     }
   }
-  &_google-plus {
-    background-color: #dc4e41;
+  &_facebook {
+    background-color: $facebook-color;
     color: $white !important;
+    &.rtl {
+      font-size: 0.95em;
+    }
     &:hover {
-      background-color: mix($white, #dc4e41, 25%);
-      border-color: mix($white, #dc4e41, 25%);
+      background-color: mix($white, $facebook-color, 25%);
+      border-color: mix($white, $facebook-color, 25%);
+    }
+  }
+  &_linkedin {
+    background-color: $linkedin-color;
+    color: $white !important;
+    &.rtl {
+      font-size: 0.95em;
+    }
+    &:hover {
+      background-color: mix($white, $linkedin-color, 25%);
+      border-color: mix($white, $linkedin-color, 25%);
     }
   }
   &_twitter {
-    background-color: #55acee;
+    background-color: $twitter-color;
     color: $white !important;
+    &.rtl {
+      font-size: 0.95em;
+    }
     &:hover {
-      background-color: mix($white, #55acee, 25%);
-      border-color: mix($white, #55acee, 25%);
+      background-color: mix($white, $twitter-color, 25%);
+      border-color: mix($white, $twitter-color, 25%);
     }
   }
 }
@@ -113,7 +150,7 @@ a.btn {
   padding: 1em;
   font-size: 0.9em !important;
   text-indent: initial; // override
-  background-color: mix(#fff, $notice-color, 90%);
+  background-color: mix(#f8f8f8, $notice-color, 90%);
   border-radius: 2px;
   box-shadow: 0 1px 1px rgba($notice-color, 0.25);
   h4 {
@@ -142,6 +179,12 @@ a.btn {
   ul {
     &:last-child {
       margin-bottom: 0; // override
+    }
+  }
+  &.dark {
+    background-color: mix(#1b1b1b, $notice-color, 90%);
+    code {
+      background-color: mix(#1b1b1b, $notice-color, 95%)
     }
   }
 }

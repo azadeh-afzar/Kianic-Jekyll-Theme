@@ -1,0 +1,22 @@
+<br>
+<footer>
+    <div class="footer-area {{ page.direction-format }}">
+        {% case page.layout %}
+            {% when "home" %}
+                {% comment %} show nothing {% endcomment %}
+            {% when "page" %}
+                {% if page.type !=  "Tag Archive" %}
+                    {% include copyright.html %}
+                {% endif %}
+            {% when "post" %}
+                {% include copyright.html %}
+            {% else %}
+                <p>
+                    JEKYLL ERROR: page layout is not supported.
+                </p>    
+        {% endcase %}
+        <br>
+        <br>
+        {{ site.data.languages[page.lang].footer-text }}
+    </div>
+</footer>
