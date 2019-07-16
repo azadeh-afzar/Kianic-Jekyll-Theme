@@ -35,9 +35,18 @@
   padding: 60px;
   max-width: 600px;
   margin: 0 auto;
+  font-family: $base-font;
+  &.ltr {
+    direction: ltr;
+    &.en {
+      font-family: $english-base-font;
+    }
+  }
   &.rtl {
-    font-family: $farsi-font;
     direction: rtl;
+    &.farsi {
+      font-family: $farsi-base-font;
+    }
   }
   .social-btn {
     font-family: $base-font;
@@ -242,10 +251,35 @@ canvas {
 
 .mode-link,
 .posts-link,
-.projects-link {
-  position: absolute;
+.projects-link,
+.languages-link,
+.support-link,
+.about-link,
+.legal-link {
   top: 73px;
+  position: absolute;
+  font-family: $base-font;
   font-size: 12px;
+  font-weight: normal;
+  &.ltr {
+    &.en {
+      font-family: $en-home-links-font-family;
+      font-size: $en-home-links-font-size;
+      font-weight: $en-home-links-font-weight;
+    }
+  }
+  &.rtl {
+    &.farsi {
+      font-family: $farsi-home-links-font-family;
+      font-size: $farsi-home-links-font-size;
+      font-weight: $farsi-home-links-font-weight;
+    }
+  }
+}
+
+.mode-link,
+.posts-link,
+.projects-link {
   color: $dark-gray;
   &.dark {
     color: $gray;
@@ -256,85 +290,136 @@ canvas {
 .support-link,
 .about-link,
 .legal-link {
-  position: absolute;
-  top: 73px;
-  font-size: 12px;
   color: $gray;
 }
 
 .languages-link {
   right: auto;
-  left: 18px;
+  &.ltr {
+    &.en {
+      left: $en-languages-link-adjust;
+    }
+  }
   &.rtl {
-    font-size: 15px;
-    left: 40px;
+    &.farsi {
+      left: $farsi-languages-link-adjust;
+    }
   }
 }
 
 
 .support-link {
-  right: 147px;
+  &.ltr {
+    &.en {
+      right: $en-support-link-adjust;
+    }
+  }
   &.rtl {
-    font-size: 15px;
-    right: 156px;
+    &.farsi {
+      right: $farsi-support-link-adjust;
+    }
   }
   &.no-adjacent-icon {
-    right: 86px;
+    &.ltr {
+      &.en {
+        right: $en-support-link-no-adjacent-icon-adjust;
+      }
+    }
     &.rtl {
-      right: 95px;
+      &.farsi {
+        right: $farsi-support-link-no-adjacent-icon-adjust;
+      }
     }
   }
   &.no-icon {
-    right: 26px;
+    &.ltr {
+      &.en {
+        right: $en-support-link-no-icon-adjust;
+      }
+    }
     &.rtl {
-      right: 35px;
+      &.farsi {
+        right: $farsi-support-link-no-icon-adjust;
+      }
     }
   }
 }
 
 .about-link {
   right: 91px;
+  &.ltr {
+    &.en {
+      right: $en-about-link-adjust;
+    }
+  }
   &.rtl {
-    font-size: 15px;
-    right: 88px;
+    &.farsi {
+      right: $farsi-about-link-adjust;
+    }
   }
   &.no-adjacent-icon {
-    right: 32px;
+    &.ltr {
+      &.en {
+        right: $en-about-link-no-adjacent-icon-adjust;
+      }
+    }
     &.rtl {
-      right: 28px;
+      &.farsi {
+        right: $farsi-about-link-no-adjacent-icon-adjust;
+      }
     }
   }
 }
 
 .legal-link {
-  right: 34px;
+  &.ltr {
+    &.en {
+      right: $en-legal-link-adjust;
+    }
+  }
   &.rtl {
-    font-size: 15px;
-    right: 37px;
+    &.farsi {
+      right: $farsi-legal-link-adjust;
+    }
   }
 }
 
 .mode-link {
-  right: 156px;
+  &.ltr {
+    &.en {
+      right: $en-mode-link-adjust;
+    }
+  }
   &.rtl {
-    font-size: 15px;
-    left: 159px;
+    &.farsi {
+      left: $farsi-mode-link-adjust;
+    }
   }
 }
 
 .posts-link {
-  right: 93px;
+  &.ltr {
+    &.en {
+      right: $en-posts-link-adjust;
+    }
+  }
   &.rtl {
-    font-size: 15px;
-    left: 85px;
+    &.farsi {
+      left: $farsi-posts-link-adjust;
+    }
   }
 }
 
 .projects-link {
-  right: 24px;
+  &.ltr {
+    &.en {
+      right: $en-projects-link-adjust;
+    }
+  }
   &.rtl {
-    font-size: 15px;
-    left: 33px;
+    &.farsi {
+      left: $farsi-projects-link-adjust;
+    }
   }
 }
 
@@ -484,6 +569,28 @@ canvas {
   width: 100%;
   padding-top: 70px;
   margin: 0 auto;
+  &.ltr {
+    &.en {
+      h1,
+      h2 {
+      font-size: $en-home-h-font-size;
+      }
+      p {
+        font-size: $en-home-p-font-size;
+      }
+    }
+  }
+  &.rtl {
+    &.farsi {
+      h1,
+      h2 {
+      font-size: $farsi-home-h-font-size;
+      }
+    }
+    p {
+      font-size: $farsi-home-p-font-size;
+    }
+  }
   h1,
   h2 {
     font-size: 30px;
@@ -576,10 +683,8 @@ canvas {
   color: $white;
   h1 {
     font-weight: bold;
-    letter-spacing: 1px;
   }
   h2 {
-    font-size: 21px;
     line-height: 30px;
     margin: 10px 0;
     padding-top: 25px;
@@ -587,28 +692,35 @@ canvas {
       display: none;
     }
   }
-  &.rtl {
-    h1,
-    h2 {
-      font-family: $farsi-font;
-      letter-spacing: normal;
+  &.ltr {
+    &.en {
+      h1,
+      h2 {
+        font-family: $en-home-left-font-family;
+        letter-spacing: $en-home-h-letter-spacing;
+      }
+      p {
+        font-family: $en-home-left-font-family;
+      }
     }
   }
-  &.dark {
-    h1 {
-      letter-spacing: 0;
-    }
-    h2 {
-      font-size: 25px;
+  &.rtl {
+    &.farsi {
+      h1,
+      h2 {
+        font-family: $farsi-home-left-font-family;
+        letter-spacing: $farsi-home-h-letter-spacing;
+      }
+      p {
+        font-family: $farsi-home-left-font-family;
+      }
     }
   }
 }
 
 .about-info {
-  text-align: left;
   h1,
   h2 {
-    font-size: 35px;
     color: lighten($black, 27.8431);
     &:after {
       position: absolute;
@@ -627,7 +739,6 @@ canvas {
   }
   p {
     color: darken($white, 75);
-    font-size: 16px;
     margin: 10px 0;
     padding-top: 0;
     line-height: 24px;
@@ -635,20 +746,44 @@ canvas {
       padding-top: 35px;
     }
   }
+  &.ltr {
+    text-align: left;
+    &.en {
+      h1,
+      h2 {
+        font-family: $en-home-right-h-font-family;
+        font-size: $en-home-right-h-font-size;
+        font-weight: $en-home-right-h-font-weight;
+      }
+      p {
+        font-family: $en-home-right-p-font-family;
+        font-size: $en-home-right-p-font-size;
+        font-weight: $en-home-right-p-font-weight;
+      }
+    }
+  }
   &.rtl {
-    max-width: 450px;;
+    max-width: 450px;
     text-align: right;
     h1,
     h2 {
-      font-family: $farsi-font;
       &:after {  
-      left: auto;
-      right: 0;
+        left: auto;
+        right: 0;
       }
     }
-    p {
-      font-family: $farsi-p-font;
-      font-size: 19px;
+    &.farsi {
+      h1,
+      h2 {
+        font-family: $farsi-home-right-h-font-family;
+        font-size: $farsi-home-right-h-font-size;
+        font-weight: $farsi-home-right-h-font-weight;
+      }
+      p {
+        font-family: $farsi-home-right-p-font-family;
+        font-size: $farsi-home-right-p-font-size;
+        font-weight: $farsi-home-right-p-font-weight;
+      }
     }
   }
   &.dark {
@@ -689,7 +824,6 @@ canvas {
 }
 
 .section-title {
-  font-size: 100px;
   position: absolute;
   bottom: 50px;
   left: 50px;
@@ -701,6 +835,20 @@ canvas {
   }
   em {
     font-style: italic;
+  }
+  &.ltr {
+    &.en {
+      font-family: $en-section-title-font-family;
+      font-size: $en-section-title-font-size;
+      font-weight: $en-section-title-font-weight;
+    }
+  }
+  &.rtl {
+    &.farsi {
+      font-family: $farsi-section-title-font-family;
+      font-size: $farsi-section-title-font-size;
+      font-weight: $farsi-section-title-font-weight;
+    }
   }
 }
 
@@ -722,16 +870,26 @@ canvas {
       color: darken($white, 40);
     }
     .date {
-      color: #20b2aa;
-      float: right;
       display: inline-block;
-      font-size: 15px;
-      padding-top: 10px;
       text-transform: uppercase;
-    }
-    .date.rtl {
-      float: left;
-      font-size: 20px;
+      color: #20b2aa;
+      padding-top: 10px;
+      &.ltr {
+        float: right;
+        &.en {
+          font-family: $en-date-font-family;
+          font-size: $en-date-font-size;
+          font-weight: $en-date-font-weight;
+        }
+      }
+      &.rtl {
+        float: left;
+        &.farsi {
+          font-family: $farsi-date-font-family;
+          font-size: $farsi-date-font-size;
+          font-weight: $farsi-date-font-weight;
+        }
+      }
     }
     .post-title {
       display: inline-block;
@@ -741,17 +899,40 @@ canvas {
       }
     }
   }
-  .tags li > a {
-    color: lighten($black, 28%);
-  }
-  &.rtl {
-    > li {
-      h2,
-      p,
-      ul {
-        font-family: $farsi-font;
+  &.ltr {
+    &.en {
+      > li {
+        h2 {
+          font-family: $en-post-list-title-font-family;
+          font-size: $en-post-list-title-font-size;
+          font-weight: $en-post-list-title-font-weight;
+        }
+        p {
+          font-family: $en-post-list-excerpt-font-family;
+          font-size: $en-post-list-excerpt-font-size;
+          font-weight: $en-post-list-excerpt-font-weight;
+        }
       }
     }
+  }
+  &.rtl {
+    &.farsi {
+      > li {
+        h2 {
+          font-family: $farsi-post-list-title-font-family;
+          font-size: $farsi-post-list-title-font-size;
+          font-weight: $farsi-post-list-title-font-weight;
+        }
+        p {
+          font-family: $farsi-post-list-excerpt-font-family;
+          font-size: $farsi-post-list-excerpt-font-size;
+          font-weight: $farsi-post-list-excerpt-font-weight;
+        }
+      }
+    }
+  }
+  .tags li > a {
+    color: lighten($black, 28%);
   }
   &.dark {
     p {
@@ -767,18 +948,30 @@ canvas {
   margin-top: 20px;
   > li {
     display: inline-block;
-    background: darken($white, 5%);
-    padding: 7px 10px;
-    color: lighten($black, 28%);
-    font-size: 11px;
     text-transform: uppercase;
+    padding: 7px 10px;
+    background: darken($white, 5%);
+    color: lighten($black, 28%);
     > a {
       color: $white;
     }
   }
+  &.ltr {
+    &.en {
+      li {
+        font-family: $en-tags-font-family;
+        font-size: $en-tags-font-size;
+        font-weight: $en-tags-font-weight;
+      }
+    }
+  }
   &.rtl {
-    li {
-      font-size: 15px;
+    &.farsi {
+      li {
+        font-family: $farsi-tags-font-family;
+        font-size: $farsi-tags-font-size;
+        font-weight: $farsi-tags-font-weight;
+      }
     }
   }
   &.dark {
@@ -799,60 +992,57 @@ canvas {
   background: #ececec;
   padding: 0 20px 0;
   color: #5B5B5B;
-  border-left: 5px solid #D8D8D8;
-  &.rtl {
-    border-left: none;
-    border-right: 5px solid #D8D8D8;
-    padding-right: 30px;
-    ul {
-      font-family: $farsi-font;
-      padding-right: 30px;
-    }
-    em {
-      font-family: $farsi-font;
+  &.ltr {
+    border-left: 5px solid #D8D8D8;
+    &.en {
+      li {
+        font-family: $en-change-language-font-family;
+        font-size: $en-change-language-font-size;
+        font-weight: $en-change-language-font-weight;
+      }
     }
     &.dark {
-      border-left: none;
+      border-left: 5px solid #525252; 
+    }
+  }
+  &.rtl {
+    border-right: 5px solid #D8D8D8;
+    padding-left: initial;
+    padding-right: 30px;
+    &.farsi {
+      li {
+        font-family: $farsi-change-language-font-family;
+        font-size: $farsi-change-language-font-size;
+        font-weight: $farsi-change-language-font-weight;
+      }
+    }
+    &.dark {
       border-right: 5px solid #525252; 
     }
   }
   &.dark {
     background: #1f1f1f;
     color: #bbbbbb;
-    border-left: 5px solid #525252; 
   }
 }
 
 .inner-post {
   h1 {
-    font-size: 70px;
     line-height: 70px;
     margin-bottom: 50px;
   }
   h2 {
-    font-size: 30px;
     line-height: 30px;
     margin-top: 20px;
     margin-bottom: 30px;
   }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-weight: bold;
-    color: rgba($overlay-color, 0.7);
-  }
   p {
-    font-size: 18px;
     line-height: 1.6;
-    color: #313131;
     margin-bottom: 1.3em;
+    color: #313131;
   }
   small {
     color: darken($white, 40);
-    font-size: 16px;
     margin-bottom: 10px;
     display: block;
   }
@@ -861,7 +1051,6 @@ canvas {
   }
   ul,
   ol {
-    padding-left: 30px;
     > li {
       position: relative;
       margin-bottom: 20px;
@@ -870,41 +1059,129 @@ canvas {
       }
     }
   }
+  &.ltr {
+    &.en {
+      h1 {
+        font-size: $en-inner-post-h1-font-size;
+      }
+      h2 {
+        font-size: $en-inner-post-h2-font-size;
+      }
+      h3 {
+        font-size: $en-inner-post-h3-font-size;
+      }
+      h4 {
+        font-size: $en-inner-post-h4-font-size;
+      }
+      h5 {
+        font-size: $en-inner-post-h5-font-size;
+      }
+      h6 {
+        font-size: $en-inner-post-h6-font-size;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: $en-inner-post-h-font-family;
+        font-weight: $en-inner-post-h-font-weight;
+        color: rgba($overlay-color, 0.7);
+      }
+      p {
+        font-family: $en-inner-post-p-font-family;
+        font-size: $en-inner-post-p-font-size;
+        font-weight: $en-inner-post-p-font-weight;
+      }
+      small {
+        font-family: $en-inner-post-small-font-family;
+        font-size: $en-inner-post-small-font-size;
+        font-weight: $en-inner-post-small-font-weight;
+      }
+      ul,
+      ol {
+        padding-left: 30px;
+        font-family: $en-inner-post-ul-font-family;
+        font-weight: $en-inner-post-ul-font-weight;
+      }
+      &.dark {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          color: lighten($white, 27.8431);
+        }
+      }
+    }
+  }
   &.rtl {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: $farsi-font;
+    &.farsi {
+      h1 {
+        font-size: $farsi-inner-post-h1-font-size;
+      }
+      h2 {
+        font-size: $farsi-inner-post-h2-font-size;
+      }
+      h3 {
+        font-size: $farsi-inner-post-h3-font-size;
+      }
+      h4 {
+        font-size: $farsi-inner-post-h4-font-size;
+      }
+      h5 {
+        font-size: $farsi-inner-post-h5-font-size;
+      }
+      h6 {
+        font-size: $farsi-inner-post-h6-font-size;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: $farsi-inner-post-h-font-family;
+        font-weight: $farsi-inner-post-h-font-weight;
         color: $overlay-color;
       }
-    p {
-      font-family: $farsi-p-font;
-      font-size: 20px;
-    }
-    ul,
-    ol {
-      font-family: $farsi-p-font;
-      padding-left: initial;
-      padding-right: 30px;
+      p {
+        font-family: $farsi-inner-post-p-font-family;
+        font-size: $farsi-inner-post-p-font-size;
+        font-weight: $farsi-inner-post-p-font-weight;
+      }
+      small {
+        font-family: $farsi-inner-post-small-font-family;
+        font-size: $farsi-inner-post-small-font-size;
+        font-weight: $farsi-inner-post-small-font-weight;
+      }
+      ul,
+      ol {
+        padding-right: 30px;
+        font-family: $farsi-inner-post-ul-font-family;
+        font-weight: $farsi-inner-post-ul-font-weight;
+      }
+      &.dark {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          color: lighten($white, 27.8431);
+        }
+      }
     }
   }
   &.dark {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      color: lighten($white, 27.8431);
-    }
     p {
       color: darken($white, 15);
     }
   }
 }
+
 
 .demo {
   margin-bottom: 50px;
@@ -926,7 +1203,6 @@ canvas {
     border: 1px solid rgba($white, 0.4);
     color: $white;
     margin-top: 5px;
-    font-size: 18px;
   }
   .section-line {
     color: $blue;
@@ -937,7 +1213,6 @@ canvas {
     display: -webkit-flex;
     display: flex;
     align-items: center;
-    font-size: 25px;
     margin-bottom: 20px;
     &:after {
       content: '';
@@ -980,18 +1255,32 @@ canvas {
       }
     }
   }
+  &.ltr {
+    &.en {
+      .tags > li {
+        font-family: $en-post-title-section-tags-font-family;
+        font-size: $en-post-title-section-tags-font-size;
+        font-weight: $en-post-title-section-tags-font-weight;
+      }
+      .section-line {
+        font-family: $en-post-title-section-line-font-family;
+        font-size: $en-post-title-section-line-font-size;
+        font-weight: $en-post-title-section-line-font-weight;
+      }
+    }
+  }
   &.rtl {
-    h1, 
-    h2, 
-    h3, 
-    h4, 
-    h5, 
-    h6, 
-    p, 
-    div, 
-    ul, 
-    ol {
-      font-family: $farsi-font;
+    &.farsi {
+      .tags > li {
+        font-family: $farsi-post-title-section-tags-font-family;
+        font-size: $farsi-post-title-section-tags-font-size;
+        font-weight: $farsi-post-title-section-tags-font-weight;
+      }
+    }
+    .section-line {
+      font-family: $farsi-post-title-section-line-font-family;
+      font-size: $farsi-post-title-section-line-font-size;
+      font-weight: $farsi-post-title-section-line-font-weight;
     }
   }
 }
@@ -1029,6 +1318,20 @@ canvas {
     background: $blue;
     margin-right: 10px;
     margin-left: 10px;
+  }
+  &.ltr {
+    &.en {
+      font-family: $en-date-highlight-font-family;
+      font-size: $en-date-highlight-font-size;
+      font-weight: $en-date-highlight-font-weight;
+    }
+  }
+  &.rtl {
+    &.farsi {
+    font-family: $farsi-date-highlight-font-family;
+    font-size: $farsi-date-highlight-font-size;
+    font-weight: $farsi-date-highlight-font-weight;
+    }
   }
 }
 
@@ -1133,63 +1436,22 @@ canvas {
 .footer-area {
   text-align: center;
   p {
-    font-size: 15px;
     margin-top: 10px;
   }
-  &.rtl {
-    p {
-      font-family: $farsi-font;
-      font-size: 15px;
+  &.ltr {
+    &.en {
+      font-family: $en-footer-area-font-family;
+      font-size: $en-footer-area-font-size;
+      font-weight: $en-footer-area-font-weight;
     }
   }
-}
-
-.heart {
-  color: $heart-color;
-}
-
-.html5 {
-  color: $html5-color;
-}
-
-.css3 {
-  color: $css3-color;
-}
-
-.font-awesome-facebook {
-  color: $facebook-color;
-}
-
-.font-awesome-instagram {
-  color: $instagram-color;
-}
-
-.font-awesome-twitter {
-  color: $twitter-color;
-}
-
-.font-awesome-linkedin {
-  color: $linkedin-color;
-}
-
-.font-awesome-telegram {
-  color: $telegram-color;
-}
-
-.font-awesome-discord {
-  color: $discord-color;
-}
-
-.font-awesome-envelope {
-  color: $protonmail-color;
-}
-
-.font-awesome-lichess {
-  color: $lichess-color;
-}
-
-.font-awesome-chess {
-  color: $chess-color;
+  &.rtl {
+    &.farsi {
+      font-family: $farsi-footer-area-font-family;
+      font-size: $farsi-footer-area-font-size;
+      font-weight: $farsi-footer-area-font-weight;
+    }
+  }
 }
 
 // entry meta used in tags and categories page
@@ -1268,8 +1530,6 @@ canvas {
     display: inline-block;
     padding: 0.75em;
     min-width: 5.5em;
-    font-size: 0.8em;
-    font-weight: 400;
     background-color: darken($white, 15%);
     color: darken($white, 55%) !important;
     text-align: center;
@@ -1281,12 +1541,6 @@ canvas {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    &:first-child {
-      border-radius: 4px 0 0 4px;
-    }
-    &:last-child {
-      border-radius: 0 4px 4px 0;
-    }
     &:hover {
       background-color: $blue;
       color: $white !important;
@@ -1299,12 +1553,30 @@ canvas {
         color:darken($white, 25%) !important;
       }
     }
+    &.ltr {
+      &:first-child {
+        border-radius: 4px 0 0 4px;
+      }
+      &:last-child {
+        border-radius: 0 4px 4px 0;
+      }
+      &.en {
+        font-family: $en-pagination-font-family;
+        font-size: $en-pagination-font-size;
+        font-weight: $en-pagination-font-weight;
+      }
+    }
     &.rtl {
       &:first-child {
         border-radius: 0 4px 4px 0;
       }
       &:last-child {
         border-radius: 4px 0 0 4px;
+      }
+      &.farsi {
+        font-family: $farsi-pagination-font-family;
+        font-size: $farsi-pagination-font-size;
+        font-weight: $farsi-pagination-font-weight;
       }
     }
     &.dark {
@@ -1324,4 +1596,52 @@ canvas {
       }
     }
   }
+}
+
+.heart {
+  color: $heart-color;
+}
+
+.html5 {
+  color: $html5-color;
+}
+
+.css3 {
+  color: $css3-color;
+}
+
+.font-awesome-facebook {
+  color: $facebook-color;
+}
+
+.font-awesome-instagram {
+  color: $instagram-color;
+}
+
+.font-awesome-twitter {
+  color: $twitter-color;
+}
+
+.font-awesome-linkedin {
+  color: $linkedin-color;
+}
+
+.font-awesome-telegram {
+  color: $telegram-color;
+}
+
+.font-awesome-discord {
+  color: $discord-color;
+}
+
+.font-awesome-envelope {
+  color: $protonmail-color;
+}
+
+.font-awesome-lichess {
+  color: $lichess-color;
+}
+
+.font-awesome-chess {
+  color: $chess-color;
 }

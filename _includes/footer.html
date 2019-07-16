@@ -1,6 +1,6 @@
 <br>
 <footer>
-    <div class="footer-area {{ page.direction-format }}">
+    <div class="footer-area {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
         {% case page.layout %}
             {% when "home" %}
                 {% comment %} show nothing {% endcomment %}

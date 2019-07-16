@@ -1,77 +1,96 @@
 @font-face {
-  font-family: 'weblysleek_uilight';
-  src: url('../fonts/weblysleekuil.eot');
-  src: url('../fonts/weblysleekuil.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/weblysleekuil.woff2') format('woff2'),
-       url('../fonts/weblysleekuil.woff') format('woff'),
-       url('../fonts/weblysleekuil.ttf') format('truetype'),
-       url('../fonts/weblysleekuil.svg#weblysleek_uilight') format('svg');
+  font-family: 'Vazir Code Hack';
+  src: url('../fonts/Vazir-Code-Hack.eot');
+  src: url('../fonts/Vazir-Code-Hack.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Vazir-Code-Hack.woff') format('woff2'),
+       url('../fonts/Vazir-Code-Hack.woff') format('woff'),
+       url('../fonts/Vazir-Code-Hack.ttf') format('truetype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Vazir';
+  src: url('../fonts/Vazir.eot');
+  src: url('../fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Vazir.woff2') format('woff2'),
+       url('../fonts/Vazir.woff') format('woff'),
+       url('../fonts/Vazir.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'LiberationMonoRegular';
-  src: url('../fonts/liberation-mono-webfont.eot');
-  src: url('../fonts/liberation-mono-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/liberation-mono-webfont.woff2') format('woff2'),
-       url('../fonts/liberation-mono-webfont.woff') format('woff'),
-       url('../fonts/liberation-mono-webfont.ttf') format('truetype'),
-       url('../fonts/liberation-mono-webfont.svg#LiberationMonoRegular') format('svg');
-  font-weight: normal;
+  font-family: 'Vazir';
+  src: url('../fonts/Vazir-Bold.eot');
+  src: url('../fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Vazir-Bold.woff2') format('woff2'),
+       url('../fonts/Vazir-Bold.woff') format('woff'),
+       url('../fonts/Vazir-Bold.ttf') format('truetype');
+  font-weight: bold;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Envy Code R';
-  src: url('../fonts/Envy Code R.woff2') format('woff2'),
-       url('../fonts/Envy Code R.woff') format('woff'),
-       url('../fonts/Envy Code R.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'Vazir';
+  src: url('../fonts/Vazir-Black.eot');
+  src: url('../fonts/Vazir-Black.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Vazir-Black.woff2') format('woff2'),
+       url('../fonts/Vazir-Black.woff') format('woff'),
+       url('../fonts/Vazir-Black.ttf') format('truetype');
+  font-weight: 900;
   font-style: normal;
 }
-
-
 @font-face {
-  font-family: 'roya';
-  src: url('../fonts/BRoya.eot');
-  src: url('../fonts/BRoya.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/BRoya.woff2') format('woff2'),
-       url('../fonts/BRoya.woff') format('woff'),
-       url('../fonts/BRoya.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'Vazir';
+  src: url('../fonts/Vazir-Medium.eot');
+  src: url('../fonts/Vazir-Medium.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Vazir-Medium.woff2') format('woff2'),
+       url('../fonts/Vazir-Medium.woff') format('woff'),
+       url('../fonts/Vazir-Medium.ttf') format('truetype');
+  font-weight: 500;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'mitra';
-  src: url('../fonts/BMitra.eot');
-  src: url('../fonts/BMitra.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/BMitra.woff2') format('woff2'),
-       url('../fonts/BMitra.woff') format('woff'),
-       url('../fonts/BMitra.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'Vazir';
+  src: url('../fonts/Vazir-Light.eot');
+  src: url('../fonts/Vazir-Light.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Vazir-Light.woff2') format('woff2'),
+       url('../fonts/Vazir-Light.woff') format('woff'),
+       url('../fonts/Vazir-Light.ttf') format('truetype');
+  font-weight: 300;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'nazanin';
-  src: url('../fonts/BNazanin.eot');
-  src: url('../fonts/BNazanin.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/BNazanin.woff2') format('woff2'),
-       url('../fonts/BNazanin.woff') format('woff'),
-       url('../fonts/BNazanin.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'Vazir';
+  src: url('../fonts/Vazir-Thin.eot');
+  src: url('../fonts/Vazir-Thin.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Vazir-Thin.woff2') format('woff2'),
+       url('../fonts/Vazir-Thin.woff') format('woff'),
+       url('../fonts/Vazir-Thin.ttf') format('truetype');
+  font-weight: 100;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'lotus';
-  src: url('../fonts/BLotus.eot');
-  src: url('../fonts/BLotus.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/BLotus.woff2') format('woff2'),
-       url('../fonts/BLotus.woff') format('woff'),
-       url('../fonts/BLotus.ttf') format('truetype');
+  font-family: 'Sahel';
+  src: url('../fonts/Sahel.eot');
+  src: url('../fonts/Sahel.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Sahel.woff2') format('woff2'),
+       url('../fonts/Sahel.woff') format('woff'),
+       url('../fonts/Sahel.ttf') format('truetype');
   font-weight: normal;
-  font-style: normal;
+}     
+@font-face {
+  font-family: 'Sahel';
+  src: url('../fonts/Sahel-Bold.eot');
+  src: url('../fonts/Sahel-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Sahel-Bold.woff2') format('woff2'),
+       url('../fonts/Sahel-Bold.woff') format('woff'),
+       url('../fonts/Sahel-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Sahel';
+  src: url('../fonts/Sahel-Black.eot');
+  src: url('../fonts/Sahel-Black.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Sahel-Black.woff2') format('woff2'),
+       url('../fonts/Sahel-Black.woff') format('woff'),
+       url('../fonts/Sahel-Black.ttf') format('truetype');
+  font-weight: 900;
 }
