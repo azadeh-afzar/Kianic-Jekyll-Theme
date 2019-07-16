@@ -1,3 +1,5 @@
+// -------------- Colors --------------
+
 $white: #ffffff;
 $black: #000000;
 $light-black: #0d1518;
@@ -16,6 +18,7 @@ $yellow: #f89406;
 $sunny: #f3dd1a;
 $light-purple: #b000ff;
 
+// ------------- Brand Colors --------
 
 $heart-color: #e25555;
 $html5-color: #e34c26;
@@ -30,14 +33,57 @@ $protonmail-color: #8a90c7;
 $lichess-color: #8d8d8d;
 $chess-color: #226619;
 
+// ------------- Font Options ---------------
 
-
-
-$base-font: "weblysleek_uilight", "roya", "nazanin", "mitra", "lotus", sans-serif;
-$farsi-font: "roya", "nazanin", "mitra", "lotus";
-$farsi-p-font: "mitra";
-$code-font: "LiberationMonoRegular",monospace;
-$special: "Envy Code R";
+$base-font: 'Ubuntu', 'Vazir', sans-serif;
+$code-font: 'Vazir Code Hack', monospace;
 
 // break point
 $small: 750px;
+
+// ---------------- English -----------------
+$english-base-font: 'Ubuntu';
+$english-home-left-font: 'Titillium Web';
+$english-home-right-h-font: 'Titillium Web';
+$english-home-right-p-font: 'Ubuntu';
+$english-home-links-font: 'Titillium Web';
+$english-section-title-font: 'Titillium Web';
+$english-date-font: 'Ubuntu';
+$english-date-highlight-font: 'Ubuntu';
+$english-post-list-title-font: 'Titillium Web';
+$english-post-list-excerpt-font: 'Ubuntu';
+$english-tags-font: 'Titillium Web';
+$english-pts-tags-font: 'Titillium Web';
+$english-section-line-font: 'Titillium Web';
+$english-change-language-font:'Ubuntu';
+$english-inner-post-h-font: 'Titillium Web';
+$english-inner-post-p-font: 'Ubuntu';
+$english-inner-post-small-font: 'Ubuntu';
+$english-inner-post-ul-font: 'Ubuntu';
+$english-footer-area-font: 'Titillium Web';
+$english-pagination-font: 'Titillium Web';
+$english-btn-font: 'Titillium Web';
+
+//---------------- Farsi --------------------
+
+$farsi-base-font: 'Vazir';
+$farsi-home-left-font: 'Vazir';
+$farsi-home-right-h-font: 'Sahel';
+$farsi-home-right-p-font: 'Vazir';
+$farsi-home-links-font: 'Vazir';
+$farsi-section-title-font: 'Sahel';
+$farsi-date-font: 'Vazir';
+$farsi-date-highlight-font: 'Vazir';
+$farsi-post-list-title-font: 'Sahel';
+$farsi-post-list-excerpt-font: 'Vazir';
+$farsi-tags-font: 'Vazir';
+$farsi-pts-tags-font: 'Sahel';
+$farsi-section-line-font: 'Sahel';
+$farsi-change-language-font: 'Vazir';
+$farsi-inner-post-h-font: 'Sahel';
+$farsi-inner-post-p-font: 'Vazir';
+$farsi-inner-post-small-font: 'Vazir';
+$farsi-inner-post-ul-font: 'Vazir';
+$farsi-footer-area-font: 'Sahel';
+$farsi-pagination-font: 'Sahel';
+$farsi-btn-font: 'Sahel';

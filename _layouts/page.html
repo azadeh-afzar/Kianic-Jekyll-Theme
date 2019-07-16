@@ -8,15 +8,15 @@ layout: compress
 <body id="posts" class="inner-post-page">
     {% include gtm-body.html %}
     <div class="block-left">
-      <div class="content {{ page.direction-format }}">
+      <div class="content {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
         {% include block-left-icons.html %}
         <a href="{{ site.url }}/{{ page.lang | replace: site.language-options.lang-default, '' }}" class="logo"><img alt="site logo" src="/{{ site.logo-images[ page.lang ].logo-main }}"></a>
-        <div class="post-title-section {{ page.direction-format }}">
+        <div class="post-title-section {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
           <div class="section-line">{{ page.subtitle }}
              <em>/</em>
           </div>
-          <h1 class="section-title">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
-          <ul class="tags">
+          <h1 class="section-title {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
+          <ul class="tags {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
             {% for tag in page.tags %}
               <li><a href="{{ site.url }}/{{ page.lang }}/tags">{{ tag }}</a></li>
               {% unless forloop.last %}
@@ -45,8 +45,8 @@ layout: compress
           <a href="#change-lang" title="{{ site.data.languages[page.lang].change-language-title-text }}" class="languages-menu-icon"><i class="fa fa-fw fa-2x fa-language" aria-hidden="true"></i></a>
       {% endif %}
       {% include block-right-icons.html %}
-      <div class="inner-post content {{ page.direction-format }}">
-        <div class="date-highlight">{% if page.date %}<i class="far fa-calendar" aria-hidden="true"></i>&nbsp;{% assign obj = page %}{% include convert-date/date-formatter.html %}{{ date-day }} {{ date-month }} {{ date-year }}{% else %}&#x2756;{% endif %}</div>
+      <div class="inner-post content {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
+        <div class="date-highlight {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">{% if page.date %}<i class="far fa-calendar" aria-hidden="true"></i>&nbsp;{% assign obj = page %}{% include convert-date/date-formatter.html %}{{ date-day }} {{ date-month }} {{ date-year }}{% else %}&#x2756;{% endif %}</div>
         {{ content }}
         {% include change-language.html %}
         {% if page.title !=  "Tag Archive" %}

@@ -6,7 +6,7 @@
 
 {% if site.share.facebook and page.share.facebook != false %}
   <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}"
-     class="btn btn_facebook {{ page.direction-format }}"
+     class="btn btn_facebook {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}"
      title="{{ site.data.languages[page.lang].facebook-text }}"
      target="_blank">
     <i class="fab fa-fw fa-facebook-f" aria-hidden="true"></i>
@@ -16,7 +16,7 @@
 
 {% if site.share.linkedin and page.share.linkedin != false %}
   <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url | url_encode }}"
-     class="btn btn_linkedin {{ page.direction-format }}"
+     class="btn btn_linkedin {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}"
      title="{{ site.data.languages[page.lang].linkedin-text }}"
      target="_blank">
     <i class="fab fa-fw fa-linkedin-in" aria-hidden="true"></i>
@@ -26,7 +26,7 @@
 
 {% if site.share.twitter and page.share.twitter != false %}
   <a href="https://twitter.com/intent/tweet?text={{ page.url | absolute_url | url_encode }}"
-     class="btn btn_twitter {{ page.direction-format }}"
+     class="btn btn_twitter {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}"
      title="{{ site.data.languages[page.lang].twitter-text }}"
      target="_blank">
     <i class="fab fa-fw fa-twitter" aria-hidden="true"></i>

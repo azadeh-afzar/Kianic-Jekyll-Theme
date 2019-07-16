@@ -74,7 +74,10 @@
   {% if page.layout != "error-page" %}
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <!-- CSS/Fonts -->
+    {% for item in site.data.theme-assets.fonts %}
+      {{ item }}
+    {% endfor %}
     <!-- Left Block Image for Posts -->
     {% if page.image %}
     {% capture image %}{{ page.image }}{% endcapture %}

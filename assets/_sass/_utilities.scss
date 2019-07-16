@@ -29,8 +29,6 @@
   display: inline-block;
   padding: 0.5em 0.75em;
   margin-bottom: 0.5em;
-  font-size: 0.8em;
-  font-weight: 400;
   background-color: darken($white, 30%);
   color: lighten($black, 20%);
   text-align: center;
@@ -108,9 +106,6 @@
   &_facebook {
     background-color: $facebook-color;
     color: $white !important;
-    &.rtl {
-      font-size: 0.95em;
-    }
     &:hover {
       background-color: mix($white, $facebook-color, 25%);
       border-color: mix($white, $facebook-color, 25%);
@@ -119,9 +114,6 @@
   &_linkedin {
     background-color: $linkedin-color;
     color: $white !important;
-    &.rtl {
-      font-size: 0.95em;
-    }
     &:hover {
       background-color: mix($white, $linkedin-color, 25%);
       border-color: mix($white, $linkedin-color, 25%);
@@ -130,12 +122,23 @@
   &_twitter {
     background-color: $twitter-color;
     color: $white !important;
-    &.rtl {
-      font-size: 0.95em;
-    }
     &:hover {
       background-color: mix($white, $twitter-color, 25%);
       border-color: mix($white, $twitter-color, 25%);
+    }
+  }
+  &.ltr {
+    &.en {
+      font-family: $en-btn-font-family;
+      font-size: $en-btn-font-size;
+      font-weight: $en-btn-font-weight;
+    }
+  }
+  &.rtl {
+    &.farsi {
+      font-family: $farsi-btn-font-family;
+      font-size: $farsi-btn-font-size;
+      font-weight: $farsi-btn-font-weight;
     }
   }
 }

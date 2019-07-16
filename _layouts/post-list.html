@@ -8,10 +8,10 @@ layout: compress
 <body id="posts">
     {% include gtm-body.html %}
     <div class="block-left">
-      <div class="content {{ page.direction-format }}">
+      <div class="content {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
         {% include block-left-icons.html %}
         <a href="{{ site.url }}/{{ page.lang | replace: site.language-options.lang-default, '' }}" class="logo"><img alt="site logo" src="/{{ site.logo-images[ page.lang ].logo-main }}"></a>
-        <h1 class="section-title">{{ page.title}}</h1>
+        <h1 class="section-title {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">{{ page.title}}</h1>
       </div>
     </div>
 
@@ -30,8 +30,8 @@ layout: compress
           {% endif %}" title="{{ site.data.languages[page.lang].change-language-title-text }}" class="languages-menu-icon"><i class="fa fa-fw  fa-2x fa-inverse fa-language" aria-hidden="true"></i></a>
         {% endif %}
       {% include block-right-icons.html %}
-      <div class="content {{ page.direction-format }}">
-        <ul class="posts-list {{ page.direction-format }}">
+      <div class="content {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
+        <ul class="posts-list {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
         {% assign posts = site.posts | where: "lang", page.lang %}
         {% for post in posts %}
           <li>
@@ -39,14 +39,14 @@ layout: compress
               <a href="{{ site.url }}{{ post.url }}" class="post-title">
                 <span>{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</span>
               </a>
-              <span class="date {{ page.direction-format }}">
+              <span class="date {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
                 <i class="far fa-1x fa-calendar" aria-hidden="true"></i>
                 {% assign obj = post %}{% include convert-date/date-formatter.html %}
                 {{ date-day }} {{ date-month }} {{ date-year }}
               </span>
             </h2>
             <p>{{ post.excerpt | strip_html | truncatewords:10 }}</p>
-            <ul class="tags {{ page.direction-format }}">
+            <ul class="tags {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
             {% for tag in post.tags %}
               <li><a href="{{ site.url }}/{{ page.lang }}/tags">{{ tag }}</a></li>
               {% unless forloop.last %}
