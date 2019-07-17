@@ -826,7 +826,6 @@ canvas {
 .section-title {
   position: absolute;
   bottom: 50px;
-  left: 50px;
   color: $white;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
@@ -837,6 +836,7 @@ canvas {
     font-style: italic;
   }
   &.ltr {
+    left: 50px;
     &.en {
       font-family: $en-section-title-font-family;
       font-size: $en-section-title-font-size;
@@ -844,6 +844,7 @@ canvas {
     }
   }
   &.rtl {
+    right: 50px;
     &.farsi {
       font-family: $farsi-section-title-font-family;
       font-size: $farsi-section-title-font-size;
@@ -1194,9 +1195,7 @@ canvas {
   right: 50px;
   .section-title {
     position: relative;
-    left: auto;
     bottom: auto;
-    font-size: 80px;
   }
   .tags > li {
     background: none;
@@ -1256,7 +1255,14 @@ canvas {
     }
   }
   &.ltr {
+    .section-title {
+      left: auto;
+    }
     &.en {
+      .section-title {
+        font-size: $en-post-title-section-title-font-size;
+        font-weight: $en-post-title-section-title-font-weight;
+      }
       .tags > li {
         font-family: $en-post-title-section-tags-font-family;
         font-size: $en-post-title-section-tags-font-size;
@@ -1270,7 +1276,14 @@ canvas {
     }
   }
   &.rtl {
+    .section-title {
+      right: auto;
+    }
     &.farsi {
+      .section-title {
+        font-size: $farsi-post-title-section-title-font-size;
+        font-weight: $farsi-post-title-section-title-font-weight;
+      }
       .tags > li {
         font-family: $farsi-post-title-section-tags-font-family;
         font-size: $farsi-post-title-section-tags-font-size;
