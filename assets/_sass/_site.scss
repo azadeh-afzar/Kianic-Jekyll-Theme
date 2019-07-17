@@ -951,6 +951,7 @@ canvas {
     display: inline-block;
     text-transform: uppercase;
     padding: 7px 10px;
+    margin-bottom: 10px;
     background: darken($white, 5%);
     color: lighten($black, 28%);
     > a {
@@ -1383,7 +1384,7 @@ canvas {
   }
 }
 
-// Media queries
+// Media queries for responsive design
 @media screen and (max-height: 605px) {
   .post-title-section .section-title {
     &.ltr.en,
@@ -1416,6 +1417,38 @@ canvas {
 }
 
 @media screen and (max-width: 640px) {
+  .main-info {
+    .logo {
+      max-height: 150px;
+      max-width: 150px;
+    }
+    &.ltr.en,
+    &.rtl.farsi {
+      h1 {
+        font-size: 25px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+  .about-info {
+    &.ltr.en,
+    &.rtl.farsi {
+      h1 {
+        font-size: 25px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
   .posts-list {
     margin-top: 80px;
     .date {
@@ -1491,6 +1524,14 @@ canvas {
       &.ltr.en,
       &.rtl.farsi {
         font-size: 30px;
+      }
+    }
+    .tags {
+      &.ltr.en,
+      &.rtl.farsi {
+        > li {
+          font-size: 13px;
+        }
       }
     }
   }
