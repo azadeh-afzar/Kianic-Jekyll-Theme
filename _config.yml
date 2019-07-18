@@ -11,7 +11,6 @@ url: https://MahdiBaghbani.github.io/Kianic
 # website logos
 # use https://iconifier.net to create all favicon icons and apple touch png
 logo-images:
-  logo-main: images/logo.png
   favicon-png: images/favicon.png
   favicon: images/favicon.ico
   apple-touch-icon: images/apple-touch-icon.png
@@ -24,9 +23,11 @@ logo-images:
   apple-touch-icon-152x152: images/apple-touch-icon-152x152.png
   apple-touch-icon-180x180: images/apple-touch-icon-180x180.png
   en:
-    logo-main: images/logo-small-en.png
+    logo-main-homepage: images/logo-en.png
+    logo-main-other-pages: images/logo-small-en.png
   fa:
-    logo-main: images/logo-small-fa.png
+    logo-main-homepage: images/logo-fa.png
+    logo-main-other-pages: images/logo-small-fa.png
 
 # Copyright info
 copyright-license-name: "Creative Commons License BY-NC-SA 4.0"
