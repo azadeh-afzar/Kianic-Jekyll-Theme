@@ -8,15 +8,15 @@ layout: compress
 <body id="posts" class="inner-post-page">
     {% include gtm-body.html %}
     <div class="block-left">
-      <div class="content {{ page.direction-format }}">
+      <div class="content {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
         {% include block-left-icons.html %}
-        <a href="{{ site.url }}/{{ page.lang | replace: site.language-options.lang-default, '' }}" class="logo"><img alt="site logo" src="{{ site.url }}/{{ site.logo-images[ page.lang ].logo-main }}"></a>
+        <a href="{{ site.url }}/{{ page.lang | replace: site.language-options.lang-default, '' }}" class="logo"><img alt="site logo" src="{{ site.url }}/{{ site.logo-images[ page.lang ].logo-main-other-pages }}"></a>
         <h1 class="section-title">{{ page.title}}</h1>
       </div>
     </div>
 
     <div class="block-right">
-      <a title="{{ site.data.languages[page.lang].mode-title-text }}" class="mode-menu-icon {% if site.language-options.lang-number < 2 %}no-adjacent-icon{% endif %}"><i id="sun-moon" class="fa fa-fw fa-2x fa-moon-o"></i></a>
+      <a title="{{ site.data.languages[ page.lang ].mode-title-text }}" class="mode-menu-icon {% if site.language-options.lang-number < 2 %}no-adjacent-icon{% endif %}"><i id="sun-moon" class="fa fa-fw fa-2x fa-moon-o"></i></a>
       {% if site.language-options.lang-number > 1 %}
           <a href="{% if site.language-options.lang-number == 2 %}
             {% for item in site.language-options.lang-id %}
@@ -27,17 +27,17 @@ layout: compress
             {{ site.url }}/{{ path }}/posts
           {% else %}
             {{ site.url }}/{{ page.lang }}/change-language
-          {% endif %}" title="{{ site.data.languages[page.lang].change-language-title-text }}" class="languages-menu-icon"><i class="fa fa-fw  fa-2x fa-inverse fa-language" aria-hidden="true"></i></a>
+          {% endif %}" title="{{ site.data.languages[ page.lang ].change-language-title-text }}" class="languages-menu-icon"><i class="fa fa-fw  fa-2x fa-inverse fa-language" aria-hidden="true"></i></a>
         {% endif %}
       {% include block-right-icons.html %}
-      <div class="content {{ page.direction-format }}">
-        <ul class="posts-list {{ page.direction-format }}">
+      <div class="content {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
+        <ul class="posts-list {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
         {% assign posts = site.posts | where: "lang", page.lang %}
         {% for lang in site.language-options.lang-id %}
           <li>
             <h2>
               <a href="{{ site.url }}/{{ lang.title | replace: site.language-options.lang-default, '' }}" class="post-title">
-                <span>{{ site.data.languages[lang.title].icon }} {{ site.data.languages[lang.title].label[page.lang] }}</span>
+                <span>{{ site.data.languages[lang.title].icon }} {{ site.data.languages[lang.title].label[ page.lang ] }}</span>
               </a>
             </h2>
           </li>

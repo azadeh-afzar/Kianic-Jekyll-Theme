@@ -10,7 +10,7 @@ layout: compress
     <div class="block-left">
       <div class="content {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
         {% include block-left-icons.html %}
-        <a href="{{ site.url }}/{{ page.lang | replace: site.language-options.lang-default, '' }}" class="logo"><img alt="site logo" src="{{ site.url }}/{{ site.logo-images[ page.lang ].logo-main }}"></a>
+        <a href="{{ site.url }}/{{ page.lang | replace: site.language-options.lang-default, '' }}" class="logo"><img alt="site logo" src="{{ site.url }}/{{ site.logo-images[ page.lang ].logo-main-other-pages }}"></a>
         <div class="post-title-section {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
           <div class="section-line">{{ page.subtitle }}
              <em>/</em>
@@ -24,7 +24,7 @@ layout: compress
             {% endfor %}
           </ul>
           <div class="section-line reverse">
-            <a href="{{ site.url }}/{{ page.lang | replace: site.language-options.lang-default, '' }}">{{ site.data.languages[page.lang].back-to-home }}</a> <em>/</em>
+            <a href="{{ site.url }}/{{ page.lang | replace: site.language-options.lang-default, '' }}">{{ site.data.languages[ page.lang ].back-to-home }}</a> <em>/</em>
           </div>
         </div>
       </div>
@@ -40,9 +40,9 @@ layout: compress
           {% endif %}
         {% endfor %}
       {% endif %}
-      <a title="{{ site.data.languages[page.lang].mode-title-text }}" class="mode-menu-icon {% if has-other-lang == false %}no-adjacent-icon{% endif %}"><i id="sun-moon" class="fa fa-fw fa-2x fa-moon" aria-hidden="true"></i></a>
+      <a title="{{ site.data.languages[ page.lang ].mode-title-text }}" class="mode-menu-icon {% if has-other-lang == false %}no-adjacent-icon{% endif %}"><i id="sun-moon" class="fa fa-fw fa-2x fa-moon" aria-hidden="true"></i></a>
       {% if has-other-lang == true %}
-          <a href="#change-lang" title="{{ site.data.languages[page.lang].change-language-title-text }}" class="languages-menu-icon"><i class="fa fa-fw fa-2x fa-language" aria-hidden="true"></i></a>
+          <a href="#change-lang" title="{{ site.data.languages[ page.lang ].change-language-title-text }}" class="languages-menu-icon"><i class="fa fa-fw fa-2x fa-language" aria-hidden="true"></i></a>
       {% endif %}
       {% include block-right-icons.html %}
       <div class="inner-post content {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
