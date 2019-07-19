@@ -7,7 +7,9 @@ en:
     # language name in all languages
     en: English
     fa: انگلیسی
-  # Emoji icon for country
+  # Image for country flag
+  image: images/img-flag-usa.png
+  # Emoji icon for country flag
   icon: 🇺🇸 
   change-language-title-text: Change Language
   change-language-span-text: LANGUAGE
@@ -49,6 +51,9 @@ fa:
   label:
     en: Farsi
     fa: پارسی
+  # Image for country flag
+  image: images/img-flag-iran.png
+  # Emoji icon for country flag
   icon: 🇮🇷
   change-language-title-text: تغییر زبان
   change-language-span-text: زبان

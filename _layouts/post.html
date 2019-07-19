@@ -30,7 +30,7 @@ layout: compress
       </div>
     </div>
 
-    <div id="block-right" class="block-right">
+    <div class="block-right">
       {% assign has-other-lang = false %}
       {% if site.language-options.lang-number > 1 and page.lang-ref != nil %}
         {% assign posts = site.posts | where: "lang-ref", page.lang-ref %}
@@ -42,7 +42,7 @@ layout: compress
       {% endif %}
       <a title="{{ site.data.languages[ page.lang ].mode-title-text }}" class="mode-menu-icon {% if has-other-lang == false %}no-adjacent-icon{% endif %}"><i id="sun-moon" class="fa fa-fw fa-2x fa-moon" aria-hidden="true"></i></a>
       {% if has-other-lang == true %}
-          <a href="#change-lang" title="{{ site.data.languages[ page.lang ].change-language-title-text }}" class="languages-menu-icon"><i class="fa fa-fw fa-2x fa-language" aria-hidden="true"></i></a>
+          <a href="#change-lang" title="{{ site.data.languages[ page.lang ].change-language-title-text }}" class="languages-menu-icon-posts"><i class="fa fa-fw fa-2x fa-language" aria-hidden="true"></i></a>
       {% endif %}
       {% include block-right-icons.html %}
       <div id="content" class="inner-post content {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">

@@ -30,7 +30,14 @@ $(function() {
 $('.projects-menu-icon').click(function() {
   $('html').toggleClass('no-scroll');
   $(this).toggleClass('active');
-  $('.overlay').toggleClass('show');
+  $('.overlay').toggleClass('show-projects');
+});
+
+// Languages Menu
+$('.languages-menu-icon').click(function() {
+  $('html').toggleClass('no-scroll');
+  $(this).toggleClass('active');
+  $('.overlay').toggleClass('show-languages');
 });
 
 // Mode Menu
@@ -63,7 +70,7 @@ function lightMode(mode) {
       var light = 'light';
   }
 
-  $('body, .languages-menu-icon, .mode-menu-icon, .posts-menu-icon, .projects-menu-icon, .mode-link, .posts-link, .projects-link, .about-info, .posts-list, .inner-post, .tags, .highlighter-rouge, .highlight, .change-language, .pagination, .pagination_pager, .entry-meta, .btn, .notice, .notice_warning, .notice_success, .notice_danger, .notice_info, dt, thead').removeClass('transit').removeClass('dark').addClass(light);
+  $('body, .languages-menu-icon, .languages-menu-icon-posts, .mode-menu-icon, .posts-menu-icon, .projects-menu-icon, .mode-link, .languages-link, .posts-link, .projects-link, .about-info, .posts-list, .inner-post, .tags, .highlighter-rouge, .highlight, .change-language, .pagination, .pagination_pager, .entry-meta, .btn, .notice, .notice_warning, .notice_success, .notice_danger, .notice_info, dt, thead').removeClass('transit').removeClass('dark').addClass(light);
 }
 
 function darkMode(mode) {
@@ -73,7 +80,7 @@ function darkMode(mode) {
     var dark = 'dark';
   }
 
-  $('body, .languages-menu-icon, .mode-menu-icon, .posts-menu-icon, .projects-menu-icon, .mode-link, .posts-link, .projects-link, .about-info, .posts-list, .inner-post, .tags, .highlighter-rouge, .highlight, .change-language, .pagination, .pagination_pager, .entry-meta, .btn, .notice, .notice_warning, .notice_success, .notice_danger, .notice_info, dt, thead').removeClass('transit').removeClass('light').addClass(dark);
+  $('body, .languages-menu-icon, .languages-menu-icon-posts, .mode-menu-icon, .posts-menu-icon, .projects-menu-icon, .mode-link, .languages-link, .posts-link, .projects-link, .about-info, .posts-list, .inner-post, .tags, .highlighter-rouge, .highlight, .change-language, .pagination, .pagination_pager, .entry-meta, .btn, .notice, .notice_warning, .notice_success, .notice_danger, .notice_info, dt, thead').removeClass('transit').removeClass('light').addClass(dark);
 }
 
 // Smooth scroll
