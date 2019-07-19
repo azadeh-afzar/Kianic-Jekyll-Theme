@@ -1,6 +1,6 @@
 <!-- JS -->
-<script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js"></script>
-<script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 <script type="application/javascript" src="{{ site.url }}/assets/js/main.min.js"></script>
+{% for item in site.data.theme-assets.scripts %}
+    {{ item }}
+{% endfor %}
 
