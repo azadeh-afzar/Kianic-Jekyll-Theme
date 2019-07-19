@@ -17,4 +17,15 @@
         </li>
     {% endfor %}
   </ul>
+  <ul class="languages-menu">
+    {% for item in site.language-options.lang-id %}
+      <li style="background:url({{ site.url }}/{{ site.data.languages[ item.title ].image }}) center center no-repeat;">
+        <a href="{{ site.url }}/{{ item.title | replace: site.language-options.lang-default, '' }}">
+          <span>
+            {{ site.data.languages[ item.title ].label[ page.lang ] }}
+          </span>
+        </a>
+        </li>
+    {% endfor %}
+  </ul>
 </div>

@@ -18,17 +18,8 @@ layout: compress
     <div class="block-right">
       <a title="{{ site.data.languages[ page.lang ].mode-title-text }}" class="mode-menu-icon {% if site.language-options.lang-number < 2 %}no-adjacent-icon{% endif %}"><i id="sun-moon" class="fa fa-fw fa-2x fa-moon"></i></a>
       {% if site.language-options.lang-number > 1 %}
-          <a href="{% if site.language-options.lang-number == 2 %}
-            {% for item in site.language-options.lang-id %}
-              {% if item.title != page.lang %}
-                {% assign title = item.title %}
-              {% endif %}
-            {% endfor %}
-            {{ site.url }}/{{ title }}/posts
-          {% else %}
-            {{ site.url }}/{{ page.lang }}/change-language
-          {% endif %}" title="{{ site.data.languages[ page.lang ].change-language-title-text }}" class="languages-menu-icon"><i class="fa fa-fw  fa-2x fa-inverse fa-language" aria-hidden="true"></i></a>
-        {% endif %}
+        <a stitle="{{ site.data.languages[ page.lang ].change-language-title-text }}" class="languages-menu-icon {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}"><i class="fa fa-fw  fa-2x fa-inverse fa-language" aria-hidden="true"></i></a>
+      {% endif %}
       {% include block-right-icons.html %}
       <div class="content {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
         <ul class="posts-list {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">

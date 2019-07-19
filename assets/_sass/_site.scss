@@ -67,7 +67,6 @@ canvas {
   top: 30px;
   right: 30px;
   cursor: pointer;
-  z-index: 3;
   .fa-cogs {
     color: $dark-gray;
     &:hover {
@@ -80,6 +79,7 @@ canvas {
   }
   &.active {
     position: fixed;
+    z-index: 3;
     .fa-cogs {
       color: $gray;
       &:hover {
@@ -121,59 +121,37 @@ canvas {
   }
 }
 
-.mode-menu-icon {
-  position: absolute;
-  top: 30px;
-  right: 210px;
-  .fa-moon {
-    color: $dark-gray;
-    &:hover {
-      color: $gray;
-    }
-  }
-  &.home {
-    right: 150px;
-    &.rtl {
-      right: auto;
-      left: 150px;
-    }
-  }
-  &.no-adjacent-icon {
-    right: 145px;
-  }
-  &.dark {
-    .fa-sun {
-      color: $gray;
-      &:hover {
-        color: $sunny;
-      }
-    }
-  }
-}
-
-.languages-menu-icon {
+.languages-menu-icon,
+.languages-menu-icon-posts {
   position: absolute;
   top: 30px;
   right: 150px;
+  cursor: pointer;
   .fa-language {
     color: $dark-gray;
     &:hover {
       color: $green;
     }
   }
-  &.home {
-    right: initial;
-    left: 30px;
+  &.active {
+    position: fixed;
+    z-index: 3;
+    right: 30px;
     .fa-language {
       color: $gray;
       &:hover {
-        color: $green;
+        color: $silver;
       }
     }
   }
-  &.rtl {
-    right: auto;
-    left: 150px;
+  &.home {
+    &.rtl {
+      right: auto;
+      left: 150px;
+      &.active {
+        left: 30px;
+      }
+    }
   }
   &.dark {
     .fa-language {
@@ -196,6 +174,38 @@ canvas {
         &:hover {
           color: #212b2e;
         }
+      }
+    }
+  }
+}
+
+.mode-menu-icon {
+  position: absolute;
+  top: 30px;
+  right: 210px;
+  .fa-moon {
+    color: $dark-gray;
+    &:hover {
+      color: $gray;
+    }
+  }
+  &.home {
+    &.rtl {
+      right: auto;
+      left: 210px;
+      &.no-adjacent-icon {
+        left: 145px;
+      }
+    }
+  }
+  &.no-adjacent-icon {
+    right: 145px;
+  }
+  &.dark {
+    .fa-sun {
+      color: $gray;
+      &:hover {
+        color: $sunny;
       }
     }
   }
@@ -278,6 +288,7 @@ canvas {
 }
 
 .mode-link,
+.languages-link,
 .posts-link,
 .projects-link {
   color: $dark-gray;
@@ -286,27 +297,11 @@ canvas {
   }
 }
 
-.languages-link,
 .support-link,
 .about-link,
 .legal-link {
   color: $gray;
 }
-
-.languages-link {
-  right: auto;
-  &.ltr {
-    &.en {
-      left: $en-languages-link-adjust;
-    }
-  }
-  &.rtl {
-    &.farsi {
-      left: $farsi-languages-link-adjust;
-    }
-  }
-}
-
 
 .support-link {
   &.ltr {
@@ -388,11 +383,30 @@ canvas {
   &.ltr {
     &.en {
       right: $en-mode-link-adjust;
+      &.no-adjacent-icon {
+        right: $en-mode-link-no-adjacent-icon-adjust;
+      }
     }
   }
   &.rtl {
     &.farsi {
       left: $farsi-mode-link-adjust;
+      &.no-adjacent-icon {
+        left: $fa-mode-link-no-adjacent-icon-adjust;
+      }
+    }
+  }
+}
+
+.languages-link {
+  &.ltr {
+    &.en {
+      right: $en-languages-link-adjust;
+    }
+  }
+  &.rtl {
+    &.farsi {
+      left: $farsi-languages-link-adjust;
     }
   }
 }
@@ -430,17 +444,28 @@ canvas {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 2;
   display: none;
   overflow-y: auto;
-  &.show {
+  z-index: 2;
+  &.show-projects {
     display: block;
+    .projects-menu {
+      display: inherit;
+    }
+  }
+  &.show-languages {
+    display: block;
+    .languages-menu {
+      display: inherit;
+    }
   }
 }
 
-.projects-menu {
+.projects-menu,
+.languages-menu {
   font-size: 0;
   height: 100%;
+  display: none;
   > li {
     display: inline-block;
     width: calc(100%/3);

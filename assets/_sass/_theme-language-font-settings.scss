@@ -16,14 +16,15 @@ $en-home-links-font-family: $english-home-links-font;
 $en-home-links-font-size: 12px;
 $en-home-links-font-weight: 300;
 
-$en-languages-link-adjust: 20px;
 $en-support-link-adjust: 146px;
 $en-about-link-adjust: 91px;
 $en-legal-link-adjust: 34px;
-$en-mode-link-adjust: 156px;
+$en-mode-link-adjust: 213px;
+$en-languages-link-adjust: 141px;
 $en-posts-link-adjust: 93px;
 $en-projects-link-adjust: 24px;
 
+$en-mode-link-no-adjacent-icon-adjust: 149px;
 $en-about-link-no-adjacent-icon-adjust: 32px;
 $en-support-link-no-adjacent-icon-adjust: 86px;
 $en-support-link-no-icon-adjust: 26px;
@@ -118,14 +119,17 @@ $farsi-home-right-p-font-weight: normal;
 $farsi-home-links-font-family: $farsi-home-links-font;
 $farsi-home-links-font-size: 12px;
 $farsi-home-links-font-weight: 300;
-$farsi-languages-link-adjust: 40px;
+
+
 $farsi-support-link-adjust: 156px;
 $farsi-about-link-adjust: 85px;
 $farsi-legal-link-adjust: 35px;
-$farsi-mode-link-adjust: 159px;
+$farsi-mode-link-adjust: 219px;
+$farsi-languages-link-adjust: 161px;
 $farsi-posts-link-adjust: 84px;
 $farsi-projects-link-adjust: 32px;
 
+$fa-mode-link-no-adjacent-icon-adjust: 155px;
 $farsi-about-link-no-adjacent-icon-adjust: 27px;
 $farsi-support-link-no-adjacent-icon-adjust: 95px;
 $farsi-support-link-no-icon-adjust: 35px;
