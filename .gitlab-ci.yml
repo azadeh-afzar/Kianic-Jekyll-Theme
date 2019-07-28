@@ -1,8 +1,8 @@
 image: ruby:2.6
 
-cache:
-  paths:
-    - vendor/
+#cache:
+#  paths:
+#    - vendor/
 
 before_script:
   - bundle install --path vendor
