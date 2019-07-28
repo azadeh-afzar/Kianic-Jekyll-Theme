@@ -11,7 +11,7 @@ layout: compress
     <div class="content {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
       <div class="main-info {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
         {% include block-left-icons.html %}
-        <a href="{{ page.url }}" class="logo"><img type="image/png" src="/{{ site.logo-images[ page.lang ].logo-main-homepage }}" alt="Site Logo"></a>
+        <a href="{{ page.url }}" class="logo"><img type="image/png" src="{{ site.url }}/{{ site.logo-images[ page.lang ].logo-main-homepage }}" alt="Site Logo"></a>
         <h1>
           {{ page.title }}
         </h1>

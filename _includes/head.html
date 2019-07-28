@@ -60,20 +60,20 @@
   <!-- Feed -->
   {% feed_meta %}
   <!-- Favicons -->
-  <link rel="shortcut icon" type="image/png" href="/{{ site.logo-images.favicon-png }}" />
-  <link rel="shortcut icon" type="image/x-icon" href="/{{ site.logo-images.favicon }}" />
-  <link rel="apple-touch-icon" href="/{{ site.logo-images.apple-touch-icon }}" />
-  <link rel="apple-touch-icon" sizes="57x57" type="image/png" href="/{{ site.logo-images.apple-touch-icon-57x57 }}" />
-  <link rel="apple-touch-icon" sizes="72x72" type="image/png" href="/{{ site.logo-images.apple-touch-icon-72x72 }}" />
-  <link rel="apple-touch-icon" sizes="76x76" type="image/png" href="/{{ site.logo-images.apple-touch-icon-76x76 }}" />
-  <link rel="apple-touch-icon" sizes="114x114" type="image/png" href="/{{ site.logo-images.apple-touch-icon-114x114 }}" />
-  <link rel="apple-touch-icon" sizes="120x120" type="image/png" href="/{{ site.logo-images.apple-touch-icon-120x120 }}" />
-  <link rel="apple-touch-icon" sizes="144x144" type="image/png" href="/{{ site.logo-images.apple-touch-icon-144x144 }}" />
-  <link rel="apple-touch-icon" sizes="152x152" type="image/png" href="/{{ site.logo-images.apple-touch-icon-152x152 }}" />
-  <link rel="apple-touch-icon" sizes="180x180" type="image/png" href="/{{ site.logo-images.apple-touch-icon-180x180 }}" />
+  <link rel="shortcut icon" type="image/png" href="{{ site.url }}/{{ site.logo-images.favicon-png }}" />
+  <link rel="shortcut icon" type="image/x-icon" href="{{ site.url }}/{{ site.logo-images.favicon }}" />
+  <link rel="apple-touch-icon" href="{{ site.url }}/{{ site.logo-images.apple-touch-icon }}" />
+  <link rel="apple-touch-icon" sizes="57x57" type="image/png" href="{{ site.url }}/{{ site.logo-images.apple-touch-icon-57x57 }}" />
+  <link rel="apple-touch-icon" sizes="72x72" type="image/png" href="{{ site.url }}/{{ site.logo-images.apple-touch-icon-72x72 }}" />
+  <link rel="apple-touch-icon" sizes="76x76" type="image/png" href="{{ site.url }}/{{ site.logo-images.apple-touch-icon-76x76 }}" />
+  <link rel="apple-touch-icon" sizes="114x114" type="image/png" href="{{ site.url }}/{{ site.logo-images.apple-touch-icon-114x114 }}" />
+  <link rel="apple-touch-icon" sizes="120x120" type="image/png" href="{{ site.url }}/{{ site.logo-images.apple-touch-icon-120x120 }}" />
+  <link rel="apple-touch-icon" sizes="144x144" type="image/png" href="{{ site.url }}/{{ site.logo-images.apple-touch-icon-144x144 }}" />
+  <link rel="apple-touch-icon" sizes="152x152" type="image/png" href="{{ site.url }}/{{ site.logo-images.apple-touch-icon-152x152 }}" />
+  <link rel="apple-touch-icon" sizes="180x180" type="image/png" href="{{ site.url }}/{{ site.logo-images.apple-touch-icon-180x180 }}" />
   {% if page.layout != "error-page" %}
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/main.css">
     <!-- CSS/Fonts -->
     {% for item in site.data.theme-assets.fonts %}
       {{ item }}
@@ -87,17 +87,17 @@
     </style>
     {% else %}
     <style type="text/css">
-      #posts.inner-post-page .block-left {background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/{{ site.background.default-post }}) no-repeat;background-size: cover;}
+      #posts.inner-post-page .block-left {background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ site.url }}/{{ site.background.default-post }}) no-repeat;background-size: cover;}
     </style>
     {% endif %}
     <!-- Left Block Images for Home and Pages -->
     <style type="text/css">
-      #posts .block-left {background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/{{ site.background.post-list }}) no-repeat;background-size: cover, cover;}
-      .block-left {background: linear-gradient(rgba(44,45,51,0.9), rgba(44,45,51,0.9)), url(/{{ site.background.homepage }}) no-repeat;background-size: cover;}
+      #posts .block-left {background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ site.url }}/{{ site.background.post-list }}) no-repeat;background-size: cover, cover;}
+      .block-left {background: linear-gradient(rgba(44,45,51,0.9), rgba(44,45,51,0.9)), url({{ site.url }}/{{ site.background.homepage }}) no-repeat;background-size: cover;}
     </style>
   {% else %}
     <!-- CSS for error pages -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/error-hacker-page.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/error-hacker-page.css">
   {% endif %}
   <!-- Web Trackers -->
   {% include trackers.html %}

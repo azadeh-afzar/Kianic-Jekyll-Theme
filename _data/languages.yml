@@ -51,7 +51,7 @@ fa:
   label:
     en: Farsi
     fa: پارسی
-  # Image for country flag
+    # Image for country flag
   image: images/img-flag-iran.png
   # Emoji icon for country flag
   icon: 🇮🇷

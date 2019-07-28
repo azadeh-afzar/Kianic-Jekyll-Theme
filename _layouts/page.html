@@ -10,7 +10,7 @@ layout: compress
     <div class="block-left">
       <div class="content {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
         {% include block-left-icons.html %}
-        <a href="{{ site.url }}/{{ page.lang | replace: site.language-options.lang-default, '' }}" class="logo"><img alt="site logo" src="/{{ site.logo-images[ page.lang ].logo-main-other-pages }}"></a>
+        <a href="{{ site.url }}/{{ page.lang | replace: site.language-options.lang-default, '' }}" class="logo"><img alt="site logo" src="{{ site.url }}/{{ site.logo-images[ page.lang ].logo-main-other-pages }}"></a>
         <div class="post-title-section {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
           <div class="section-line">{{ page.subtitle }}
              <em>/</em>
