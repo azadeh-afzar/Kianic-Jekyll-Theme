@@ -15,16 +15,16 @@ test:
   artifacts:
     paths:
       - test
-    except:
-      - master
+  except:
+    - master
 
 # job for generating site for master branch
 pages:
   stage: deploy
   script:
     - bundle exec jekyll build -d public/
-    artifacts:
-      paths:
-        - public
-    only:
-      -master
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
