@@ -19,7 +19,7 @@ test:
     - master
 
 # job for generating site for master branch
-kianic:
+pages:
   stage: deploy
   script:
     - bundle exec jekyll build -d public/
