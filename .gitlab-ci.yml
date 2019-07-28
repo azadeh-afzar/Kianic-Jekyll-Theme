@@ -1,0 +1,30 @@
+image: ruby:2.6
+
+cache:
+  paths:
+    - vendor/
+
+before_script:
+  - bundle install --path vendor
+
+# job for creating site for test branch
+test:
+  stage: test
+  script:
+    - bundle exec jekyll build -d test
+  artifacts:
+    paths:
+      - test
+    except:
+      - master
+
+# job for generating site for master branch
+pages:
+  stage: deploy
+  script:
+    - bundle exec jekyll build -d public/
+    artifacts:
+      paths:
+        - public
+    only:
+      -master
