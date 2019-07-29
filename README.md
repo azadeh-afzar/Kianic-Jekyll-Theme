@@ -37,10 +37,13 @@ See a [live version of Kianic](https://azadeh-afzar.gitlab.io/Web-Development/Ki
 This theme is free and will be free, If you've found it useful here's how to show your thanks and motivate me to do more.
 
 ### Get Social
-There are ways to help if you’d prefer a free option. You can follow me on Twitter. It’s free and does make a difference! Alternatively, share this theme with a friend, or drop me a line and let me know what you thought. I'd prefer this method, it's free and awesome for me.
+There are ways to help if you’d prefer a free option. You can follow me on Twitter. It’s free and does make a difference!
+Alternatively, share this theme with a friend, or drop me a line and let me know what you thought. I'd prefer this method, it's free and awesome for me.
 
 ### Promote Kianic
-You can help me by starring this theme repository in [**Gitlab**](https://gitlab.com/Azadeh-Afzar/Web-Development/Kianic-Jekyll-Theme "Kianic Jekyll Theme") and [**Github**](https://github.com/Azadeh-Afzar/Kianic-Jekyll-Theme "Kianic Jekyll Theme").
+You can help me by starring this theme repository in
+[**GitLab**](https://gitlab.com/Azadeh-Afzar/Web-Development/Kianic-Jekyll-Theme "Kianic Jekyll Theme") and
+[**GitHub**](https://github.com/Azadeh-Afzar/Kianic-Jekyll-Theme "Kianic Jekyll Theme").
 
 ### Gift cards
 If you want to help me with real money, you can buy me gift cards. I can use Apple gift cards and Playstation gift cards. You can email gift card codes to me.
