@@ -8,7 +8,7 @@ Kianic is a Theme for Jekyll static site generator. It's a fork of excellent
 which is not being maintained anymore.
 
 Kianic is a total overhaul of Halve, with clean and optimized javascript libraries and Sass stylesheets. 
-Kianic offers it's users ability to easily customize every corner of theme.
+Kianic offers it's users the ability to easily customize every corner of the theme.
 
 ## Features
 New features in Kianic that doesn't exist in Halve:
