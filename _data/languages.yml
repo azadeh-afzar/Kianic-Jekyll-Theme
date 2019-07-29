@@ -43,7 +43,8 @@ en:
                    <br>
                    Articles are under a Creative Commons BY-NC-SA 4.0 International License."
 
-  footer-text: "Made with Love <i class='fa fa-heart heart' aria-hidden='true'></i>"
+  footer-text: "Made with Love <i class='fa fa-heart font-awesome-heart' aria-hidden='true'></i> 
+                hosted on GitLab <i class='fab fa-gitlab font-awesome-gitlab' aria-hidden='true'></i>"
 
 fa:
   # website region
@@ -87,4 +88,5 @@ fa:
                     <br>
                     مطالب این تار‌نوشت تحت مجوز انتشار کریتیو کامنز منتشر شده‌اند."
 
-  footer-text: "ساخته شده با علاقه <i class='fa fa-heart heart' aria-hidden='true'></i>"
+  footer-text: "ساخته شده با علاقه <i class='fa fa-heart font-awesome-heart' aria-hidden='true'></i>
+                میزبانی شده در در گیتلب <i class='fab fa-gitlab font-awesome-gitlab' aria-hidden='true'></i>"

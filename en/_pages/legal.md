@@ -17,6 +17,9 @@ share:
   twitter: false
   linkedin: false
 ---
+
+This theme has been released under GNU GPL v3 License.
+
 ```markdown
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
