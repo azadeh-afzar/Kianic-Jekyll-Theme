@@ -30,7 +30,7 @@ If you have a question, find a bug, or want to suggest a new feature, please ope
 ## Preview   
 ![screenshot of Halve](/images/kianic-home-image.png)
 
-See a [live version of Kianic](https://azadeh-afzar.gitlab.io/Web-Development/Kianic) hosted on GitLab.
+See a [live version of Kianic](https://azadeh-afzar.gitlab.io/Web-Development/Kianic-Jekyll-Theme) hosted on GitLab.
 
 ## Support
 
