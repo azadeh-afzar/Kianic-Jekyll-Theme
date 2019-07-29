@@ -37,16 +37,16 @@ See a [live version of Kianic](https://azadeh-afzar.gitlab.io/Web-Development/Ki
 This theme is free and will be free, If you've found it useful here's how to show your thanks and motivate me to do more.
 
 ### Get Social
-There are ways to help if you’d prefer a free option. You can follow me on Twitter. It’s free and does make a difference! My other social media accounts are linked from the homepage. Alternatively, share an article with a friend, or drop me a line and let me know what you thought. I'd prefer this method, it's free and awesome for me.
+There are ways to help if you’d prefer a free option. You can follow me on Twitter. It’s free and does make a difference! Alternatively, share this theme with a friend, or drop me a line and let me know what you thought. I'd prefer this method, it's free and awesome for me.
 
 ### Promote Kianic
-You can help me by starring this theme repository in [**Gitlab <i class="fab fa-gitlab font-awesome-gitlab" aria-hidden="true"></i>**](https://gitlab.com/Azadeh-Afzar/Web-Development/Kianic-Jekyll-Theme "Kianic Jekyll Theme") and [**Github <i class="fab fa-github font-awesome-github" aria-hidden="true"></i>**](https://github.com/Azadeh-Afzar/Kianic-Jekyll-Theme "Kianic Jekyll Theme").
+You can help me by starring this theme repository in [**Gitlab**](https://gitlab.com/Azadeh-Afzar/Web-Development/Kianic-Jekyll-Theme "Kianic Jekyll Theme") and [**Github**](https://github.com/Azadeh-Afzar/Kianic-Jekyll-Theme "Kianic Jekyll Theme").
 
 ### Gift cards
-If you want to help me with real money, you can buy me gift cards. I can use <i class="fab fa-apple" aria-hidden="true"></i> Apple gift cards and <i class="fab fa-playstation font-awesome-playstation" aria-hidden="true"></i> Playstation gift cards. You can <a href="mailto:{{ site.email }}" target="_blank"><i class="far fa-envelope font-awesome-envelope" aria-hidden="true"></i></a> gift card codes to me.
+If you want to help me with real money, you can buy me gift cards. I can use Apple gift cards and Playstation gift cards. You can email gift card codes to me.
 
 ### Donating via Bitcoin
-Alternatively, you can gift <i class="fab fa-bitcoin font-awesome-bitcoin" aria-hidden="true"></i> Bitcoin to the me.
+Alternatively, you can donate Bitcoin to the me.
 Here is my wallet address:
 
 `1P9qnUNEvdpwFUCau8MLgvQ7hmKGrwAY7D`

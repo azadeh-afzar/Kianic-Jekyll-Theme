@@ -37,7 +37,7 @@ Playstation gift cards. You can <a href="mailto:{{ site.email }}" target="_blank
 gift card codes to me.
 
 ## Donating via Bitcoin
-Alternatively, you can gift 
+Alternatively, you can donate 
 <i class="fab fa-bitcoin font-awesome-bitcoin" aria-hidden="true"></i> 
 Bitcoin to the me.
 Here is my wallet address:
