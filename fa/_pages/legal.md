@@ -16,7 +16,10 @@ share:
   facebook: false
   twitter: false
   linkedin: false
----
+--- 
+
+این اثر تحت مجوز عمومی گنو نسخه ۳ منتشر شده است.
+
 ```markdown
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
