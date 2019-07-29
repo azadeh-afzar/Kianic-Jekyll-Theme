@@ -179,4 +179,4 @@ include: [_pages]
 
 # Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, _site, src, vendor, .gitignore
-          CNAME, LICENSE, Rakefile, .sass-cache, .DS_Store, site meta]
+                                                                  CNAME, LICENSE, Rakefile, .sass-cache, .DS_Store, .idea, CHANGELOG.md]
