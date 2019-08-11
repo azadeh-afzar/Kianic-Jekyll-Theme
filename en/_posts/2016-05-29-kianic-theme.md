@@ -11,26 +11,24 @@ tags:
 
 <a href="{{ site.url }}/images/kianic-home-image.png"><img src="{{ site.url }}/images/kianic-home-image.png" alt="Home Page of Kianic"></a>  
 
-<center><b>Kianic</b> Multi language, dual theme, stylish, two-column Jekyll theme for your blog.</center><br>
-     
- This theme is a fork of excellent [**Kianic Jekyll Theme**](https://taylantatli.github.io/Have){:target="_blank"} (by [**Taylan Tatli**](https://github.com/TaylanTatli){:target="_blank"}).
+<center><b>Kianic</b> is a multi language, dual theme, stylish, two-column Jekyll theme for your blog.</center><br>
 
-<iframe src="https://ghbtns.com/github-btn.html?user=MahdiBaghbani&repo=Kianic&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>    
+This theme is a fork of excellent [**Halve Jekyll Theme**](https://taylantatli.github.io/Halve){:target="_blank"} which is not being maintained anymore.
+  
       
 ## Installation and Quick Usage
-* Fork the [Kianic repo](https://github.com/MahdiBaghbani/Kianic/fork)
+* Fork the [Kianic repo](https://gitlab.com/Azadeh-Afzar/Web-Development/Kianic-Jekyll-Theme)
 * Edit `_config.yml` file.
 * Edit `_data/languages.yaml`.
 * Edit `_data/projects.yaml`
 * Add a logo with a small one to `images` folder. (eg. `logo.png`, `logo-small.png`)
 * Remove sample posts from `_posts` folder and add yours.
 * Remove/Change sample images from `images` folder.
-* Change repo name to `YourUserName.github.io`    
-     
-That's all.    
+
+That's all.
 
 ## Site Setup
-A quick checklist of the files you’ll want to edit to get up and running.    
+A quick checklist of the files you’ll want to edit to get up and running.
 
 ### Site Wide Configuration
 `_config.yml` is your friend. Open it up and personalize it. Most variables are self explanatory but here's an explanation of each if needed:
@@ -52,21 +50,25 @@ Used to generate absolute urls in `sitemap.xml`, `feed.xml`, and for generating 
 Examples:
 
 {% highlight yaml %}
-url: http://Github.com/MahdiBaghbani/Kianic
+url: https://azadeh-afzar.gitlab.io/Web-Development/Kianic-Jekyll-Theme
 url: http://localhost:4000
 {% endhighlight %}
 
 #### logo
 Your site's logo. It will be shown on homepage. Also used for twitter meta tags.
+You can also have different logo for different languages.
 
 #### background
 Here we will set images for left block. Example:
 
 ```
 background:
-  homepage: images/home.png
-  post-list: images/unsplash-image-10.jpg
-  default-post: images/unsplash-gallery-image-3.jpg
+  # this image will be shown on homepage's left block
+  homepage: images/img-home-background.jpg
+  # this image will be shown on post list page
+  post-list: images/img-posts-background.jpg
+  # this image will be shown when post's front matter doesn't specify any image
+  default-post: images/img-default-post-picture.png
 ```
 
 <dl>
@@ -231,6 +233,21 @@ image: http://example.com/some-image.png
 
 ---
 
+### Fonts
+
+Fonts properties can be managed in 4 files `_data/theme-assets.yml`, `assets/_sass/_fonts.scss`, `assets/_sass/_variables.scss`,  `assets/_sass/_theme-language-font-settings.scss`.
+
+<dl>
+  <dt>theme-assets.yml</dt>
+  <dd>You can add new fonts to Kianic from external sources like google fonts by editing this file.</dd>
+  <dt>assets/_sass/_fonts.scss</dt>
+  <dd>If you want to add fonts locally you can edit this file and add new font-faces. font's files must be placed at "assets/fonts".</dd>
+  <dt>assets/_sass/_variables.scss</dt>
+  <dd>You can edit this settings to change theme default fonts.</dd>
+  <dt>assets/_sass/_theme-language-font-settings.scss</dt>
+  <dd>Advanced font settings are in this file, you can change fonts, font sizes and font weights in this file for each supported language or you can try to add support for a new language by modifying this file but be aware that it need extra changes in other scss files.</dd>
+</dl>
+
 ## Questions?
 
-Found a bug or aren't quite sure how something works? By all means [file a GitHub Issue](https://github.com/MahdiBaghbani/Kianic/issues/new). And if you make something cool with this theme feel free to let me know.
+Found a bug or aren't quite sure how something works? By all means [file a GitLab Issue](https://gitlab.com/Azadeh-Afzar/Web-Development/Kianic-Jekyll-Theme/issues/new){:target="_blank"}. And if you make something cool with this theme feel free to let me know.

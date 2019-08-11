@@ -22,6 +22,9 @@ logo-images:
   apple-touch-icon-144x144: images/apple-touch-icon-144x144.png
   apple-touch-icon-152x152: images/apple-touch-icon-152x152.png
   apple-touch-icon-180x180: images/apple-touch-icon-180x180.png
+  # site main logo
+  # ordered by language
+  # recommend: use svg files as icon
   en:
     logo-main-homepage: images/logo-en.png
     logo-main-other-pages: images/logo-small-en.png
@@ -180,4 +183,4 @@ include: [_pages]
 
 # Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, _site, src, vendor, .gitignore
-                                                                  CNAME, LICENSE, Rakefile, .sass-cache, .DS_Store, .idea, CHANGELOG.md]
+          CNAME, LICENSE, Rakefile, .sass-cache, .DS_Store, .idea, CHANGELOG.md]
