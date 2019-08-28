@@ -6,7 +6,7 @@ description: "Multi language, dual theme, stylish, two-column Jekyll theme for y
 author: Mahdi Baghbani
 
 # website domain URL
-url: https://azadeh-afzar.gitlab.io/Web-Development/Kianic-Jekyll-Theme
+url: https://azadeh-afzar-kianic-jekyll-theme.surge.sh
 
 # website logos
 # use https://iconifier.net to create all favicon icons and apple touch png
@@ -182,8 +182,8 @@ plugins:
   - jekyll-gist
 
 # Include list
-include: [_pages]
+include: [CNAME, _pages]
 
 # Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, _site, src, vendor, .gitignore
-          CNAME, LICENSE, Rakefile, .sass-cache, .DS_Store, .idea, CHANGELOG.md]
+          LICENSE, Rakefile, .sass-cache, .DS_Store, .idea, CHANGELOG.md]
