@@ -1,22 +1,19 @@
-<br>
-<footer>
-    <div class="footer-area {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
-        {% case page.layout %}
-            {% when "home" %}
-                {% comment %} show nothing {% endcomment %}
-            {% when "page" %}
-                {% if page.type !=  "Tag Archive" %}
-                    {% include copyright.html %}
-                {% endif %}
-            {% when "post" %}
+<footer class="footer">
+    {% case page.layout %}
+        {% when "home" %}
+            {% comment %} show nothing {% endcomment %}
+        {% when "page" %}
+            {% if page.type !=  "Tag Archive" %}
                 {% include copyright.html %}
-            {% else %}
-                <p>
-                    JEKYLL ERROR: page layout is not supported.
-                </p>    
-        {% endcase %}
-        <br>
-        <br>
-        {{ site.data.languages[page.lang].footer-text }}
+            {% endif %}
+        {% when "post" %}
+            {% include copyright.html %}
+        {% else %}
+            <p>
+                JEKYLL ERROR: page layout is not supported.
+            </p>    
+    {% endcase %}
+    <div class="footer-text {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
+        <p>{{ site.data.languages[page.lang].footer-text }}</p>
     </div>
 </footer>
