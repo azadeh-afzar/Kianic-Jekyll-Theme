@@ -6,19 +6,9 @@ cache:
 
 before_script:
   - bundle install --path vendor
+  - npm install
 
-# job for creating site for test branch
-test:
-  stage: test
-  script:
-    - bundle exec jekyll build -d test
-  artifacts:
-    paths:
-      - test
-  except:
-    - master
-
-# job for generating site for master branch
+# job for generating site for master branch for gitlab pages
 pages:
   stage: deploy
   script:
@@ -28,3 +18,14 @@ pages:
       - public
   only:
     - master
+
+# job for creating preview site for development branch on surge.sh
+development:
+  stage: deploy
+  script:
+    - node_modules/.bin/surge .
+  artifacts:
+    paths:
+      - development
+  only:
+    - development
