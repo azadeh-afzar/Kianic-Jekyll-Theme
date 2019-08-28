@@ -1,9 +1,3 @@
-{% if site.share.facebook and page.share.facebook != false 
-   or site.share.linkedin and page.share.linkedin != false
-   or site.share.twitter and page.share.twitter != false %}
-  <br>
-{% endif %}
-
 {% if site.share.facebook and page.share.facebook != false %}
   <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}"
      class="btn btn_facebook {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}"

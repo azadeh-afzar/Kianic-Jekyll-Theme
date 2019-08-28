@@ -17,9 +17,7 @@
 {% endfor %}
 
 {% if has_other_lang == true and has-lang-ref == true %}
-<br>
     <ul id="change-lang" class="change-language {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
-        <br>
         <em>
             {{ site.data.languages[page.lang].read-in-other-language }}
         </em>
