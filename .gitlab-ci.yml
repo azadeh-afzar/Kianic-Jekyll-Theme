@@ -12,8 +12,6 @@ development:
     - apt-get install -y curl
     - curl --version
     - command -v curl
-    # install wget
-    - apt-get install -y libssl-dev build-essential wget
     # install gnupg
     - apt-get install -y gnupg
     - gpg --version
@@ -26,15 +24,11 @@ development:
     - command -v rvm
     - ruby -v
     - command -v ruby
-    # install node version manager using curl, then install latest node with nvm
-    - wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-    - source /root/.bashrc
-    - nvm --version
-    - command -v nvm
-    - nvm install node
-    - nvm use node
-    - node -v
-    - command -v node
+    # install node.js and npm
+    - apt install -y nodejs
+    - apt install -y npm
+    - nodejs -v
+    - command -v nodejs
     - npm -v
     - command -v npm
     # install ruby and node packages
