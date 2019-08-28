@@ -18,13 +18,13 @@ layout: compress
           <h1 class="section-title {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
           <ul class="tags {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
             {% for tag in page.tags %}
-              <li><a href="{{ site.url }}/{{ page.lang }}/tags">{{ tag }}</a></li>
+              <li><a class="tag-link" href="{{ site.url }}/{{ page.lang }}/tags">{{ tag }}</a></li>
               {% unless forloop.last %}
               {% endunless %}
             {% endfor %}
           </ul>
           <div class="section-line reverse">
-            <a href="{{ site.url }}/{{ page.lang | replace: site.language-options.lang-default, '' }}">{{ site.data.languages[ page.lang ].back-to-home }}</a> <em>/</em>
+            <a class="section-line-link" href="{{ site.url }}/{{ page.lang | replace: site.language-options.lang-default, '' }}">{{ site.data.languages[ page.lang ].back-to-home }}</a> <em>/</em>
           </div>
         </div>
       </div>

@@ -67,31 +67,33 @@ canvas {
   top: 30px;
   right: 30px;
   cursor: pointer;
-  .fa-cogs {
-    color: $dark-gray;
-    &:hover {
-      color: $silver;
-    }
-  }
   &.rtl {
     right: auto;
     left: 30px;
   }
-  &.active {
-    position: fixed;
-    z-index: 3;
+  &.light {
     .fa-cogs {
-      color: $gray;
+      color: $light-mode-projects-menu-icon-color;
       &:hover {
-        color: $silver;
+        color: $light-mode-projects-menu-icon-hover-color;
       }
     }
   }
   &.dark {
     .fa-cogs {
-      color: $gray;
+      color: $dark-mode-projects-menu-icon-color;
       &:hover {
-        color: $silver;
+        color: $dark-mode-projects-menu-icon-hover-color;
+      }
+    }
+  }
+  &.active {
+    position: fixed;
+    z-index: 3;
+    .fa-cogs {
+      color: $active-mode-projects-menu-icon-color;
+      &:hover {
+        color: $active-mode-projects-menu-icon-hover-color;
       }
     }
   }
@@ -101,21 +103,23 @@ canvas {
   position: absolute;
   top: 30px;
   right: 90px;
-  .fa-file-alt {
-    color: $dark-gray;
-    &:hover {
-      color: $red;
-    }
-  }
   &.rtl {
     right: auto;
     left: 90px;
   }
+  &.light {
+    .fa-file-alt {
+      color: $light-mode-posts-menu-icon-color;
+      &:hover {
+        color: $light-mode-posts-menu-icon-hover-color;
+      }
+    }
+  }
   &.dark {
     .fa-file-alt {
-      color: $gray;
+      color: $dark-mode-posts-menu-icon-color;
       &:hover {
-        color: $red;
+        color: $dark-mode-posts-menu-icon-hover-color;
       }
     }
   }
@@ -127,10 +131,20 @@ canvas {
   top: 30px;
   right: 150px;
   cursor: pointer;
-  .fa-language {
-    color: $dark-gray;
-    &:hover {
-      color: $green;
+  &.light {
+    .fa-language {
+      color: $light-mode-languages-menu-icon-color;
+      &:hover {
+        color: $light-mode-languages-menu-icon-hover-color;
+      }
+    }
+  }
+  &.dark {
+    .fa-language {
+      color: $dark-mode-languages-menu-icon-color;
+      &:hover {
+        color: $dark-mode-languages-menu-icon-hover-color;
+      }
     }
   }
   &.active {
@@ -138,9 +152,9 @@ canvas {
     z-index: 3;
     right: 30px;
     .fa-language {
-      color: $gray;
+      color: $active-mode-languages-menu-icon-color;
       &:hover {
-        color: $silver;
+        color: $active-mode-languages-menu-icon-hover-color;
       }
     }
   }
@@ -153,40 +167,26 @@ canvas {
       }
     }
   }
-  &.dark {
-    .fa-language {
-      color: $gray;
-      &:hover {
-        color: $green;
-      }
-    }
-  }
-  &.disabled {
-    .fa-language {
-      color:  #9e9595;
-      &:hover {
-        color: $gray;
-      }
-    }
-    &.dark {
-      .fa-language {
-        color: $dark-gray;
-        &:hover {
-          color: #212b2e;
-        }
-      }
-    }
-  }
 }
 
 .mode-menu-icon {
   position: absolute;
   top: 30px;
   right: 210px;
-  .fa-moon {
-    color: $dark-gray;
-    &:hover {
-      color: $gray;
+  &.light {
+    .fa-moon {
+      color: $light-mode-mode-menu-icon-color;
+      &:hover {
+        color: $light-mode-mode-menu-icon-hover-color;
+      }
+    }
+  }
+  &.dark {
+    .fa-sun {
+      color: $dark-mode-mode-menu-icon-color;
+      &:hover {
+        color: $dark-mode-mode-menu-icon-hover-color;
+      }
     }
   }
   &.home {
@@ -201,14 +201,6 @@ canvas {
   &.no-adjacent-icon {
     right: 145px;
   }
-  &.dark {
-    .fa-sun {
-      color: $gray;
-      &:hover {
-        color: $sunny;
-      }
-    }
-  }
 }
 
 .support-menu-icon {
@@ -217,9 +209,9 @@ canvas {
   top: 35px;
   right: 150px;
   .fa-handshake {
-    color: $gray;
+    color: $support-menu-icon-color;
     &:hover {
-      color: $dark-green;
+      color: $support-menu-icon-hover-color;
     }
   }
   &.no-adjacent-icon {
@@ -236,9 +228,9 @@ canvas {
   top: 35px;
   right: 90px;
   .fa-user-circle {
-    color: $gray;
+    color: $about-menu-icon-color;
     &:hover {
-      color: $light-blue;
+      color: $about-menu-icon-hover-color;
     }
   }
   &.no-adjacent-icon {
@@ -252,9 +244,9 @@ canvas {
   top: 35px;
   right: 30px;
   .fa-balance-scale {
-    color: $gray;
+    color: $legal-menu-icon-color;
     &:hover {
-      color: $yellow;
+      color: $legal-menu-icon-hover-color;
     }
   }
 }
@@ -291,16 +283,18 @@ canvas {
 .languages-link,
 .posts-link,
 .projects-link {
-  color: $dark-gray;
+  &.light {
+    color: $light-mode-homepage-icon-link-color;
+  }
   &.dark {
-    color: $gray;
+    color: $dark-mode-homepage-icon-link-color;
   }
 }
 
 .support-link,
 .about-link,
 .legal-link {
-  color: $gray;
+  color: $homepage-icon-links-color;
 }
 
 .support-link {
@@ -439,7 +433,7 @@ canvas {
 
 .overlay {
   position: fixed;
-  background: $overlay-color;
+  background: $overlay-background-color;
   top: 0;
   right: 0;
   bottom: 0;
@@ -474,7 +468,6 @@ canvas {
     border: 5px solid $overlay-color;
     position: relative;
     vertical-align: top;
-    float: left;
     background-size: cover !important;
     &:nth-child(8n+1),
     &:nth-child(8n+2) {
@@ -598,7 +591,7 @@ canvas {
     &.en {
       h1,
       h2 {
-      font-size: $en-home-h-font-size;
+        font-size: $en-home-h-font-size;
       }
       p {
         font-size: $en-home-p-font-size;
@@ -609,11 +602,11 @@ canvas {
     &.farsi {
       h1,
       h2 {
-      font-size: $farsi-home-h-font-size;
+        font-size: $farsi-home-h-font-size;
       }
-    }
-    p {
-      font-size: $farsi-home-p-font-size;
+      p {
+        font-size: $farsi-home-p-font-size;
+      }
     }
   }
   h1,
@@ -642,26 +635,27 @@ canvas {
     margin: 10px 0;
     padding-top: 25px;
   }
+  // social-link boxes at homepage (in the left side) 
   ul {
     font-size: 1em;
     margin-top: 30px;
     overflow: hidden;
     li {
+      margin: 2% 1%;
       display: inline-block;
-      background: #585b63;
-      margin-top: 10px;
       vertical-align: middle;
-      -webkit-transform: translateZ(0);
+      position: relative;
+      background: $social-link-box-background-even-color;
       transform: translateZ(0);
       box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-      -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
-      -moz-osx-font-smoothing: grayscale;
-      position: relative;
-      -webkit-transition-property: color;
       transition-property: color;
-      -webkit-transition-duration: 0.3s;
       transition-duration: 0.3s;
+      -webkit-transform: translateZ(0);
+      -webkit-backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-property: color;
+      -webkit-transition-duration: 0.3s;
       &:before {
         content: "";
         position: absolute;
@@ -670,7 +664,7 @@ canvas {
         left: 0;
         right: 0;
         bottom: 0;
-        background: $blue;
+        background: $social-link-box-background-hover-color;
         -webkit-transform: scaleY(0);
         transform: scaleY(0);
         -webkit-transform-origin: 50% 100%;
@@ -689,7 +683,7 @@ canvas {
         }
       }
       &:nth-child(odd) {
-        background: $overlay-color;
+        background: $social-link-box-background-odd-color;
       }
       &:last-child {
         margin-right: 0;
@@ -698,7 +692,7 @@ canvas {
         display: inline-block;
         font-size: 1.3em;
         padding: 0.3em 0.35em;
-        color: $white;
+        color: inherit;
       }
     }
   }
@@ -707,6 +701,7 @@ canvas {
 .main-info {
   color: $white;
   h1 {
+    margin-top: 5%;
     font-weight: bold;
   }
   h2 {
@@ -746,24 +741,19 @@ canvas {
 .about-info {
   h1,
   h2 {
-    color: lighten($black, 27.8431);
     &:after {
+      background: $about-info-title-underline-color;
+      width: 200px;
       position: absolute;
-      left: auto;
-      right: auto;
       top: auto;
       -webkit-transform: none;
       -moz-transform: none;
       -ms-transform: none;
       -o-transform: none;
       transform: none;
-      background: $blue;
-      left: 0;
-      width: 200px;
     }
   }
   p {
-    color: darken($white, 75);
     margin: 10px 0;
     padding-top: 0;
     line-height: 24px;
@@ -773,6 +763,12 @@ canvas {
   }
   &.ltr {
     text-align: left;
+    h1,
+    h2 {
+      &:after {
+        left: 0;
+      }
+    }
     &.en {
       h1,
       h2 {
@@ -792,8 +788,7 @@ canvas {
     text-align: right;
     h1,
     h2 {
-      &:after {  
-        left: auto;
+      &:after {
         right: 0;
       }
     }
@@ -811,16 +806,22 @@ canvas {
       }
     }
   }
+  &.light {
+    h1,
+    h2 {
+      color: $light-mode-about-info-h-color;
+    }
+    p {
+      color: $light-mode-about-info-p-color;
+    }
+  }
   &.dark {
     h1,
     h2 {
-      color: lighten($white, 27.8431);
+      color: $dark-mode-about-info-h-color;
     }
     p {
-      color: darken($white, 15);
-      a {
-        color: lighten($white, 30);
-      }
+      color: $dark-mode-about-info-p-color;
     }
   }
 }
@@ -851,7 +852,7 @@ canvas {
 .section-title {
   position: absolute;
   bottom: 50px;
-  color: $white;
+  color: $section-title-font-color;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
   span {
@@ -883,7 +884,6 @@ canvas {
   > li {
     margin-bottom: 23px;
     padding-bottom: 20px;
-    border-bottom: 1px solid darken($white, 20%);
     list-style: none;
     &:last-child {
       border: none;
@@ -892,13 +892,9 @@ canvas {
       font-size: 30px;
       margin-bottom: 15px;
     }
-    p {
-      color: darken($white, 40);
-    }
     .date {
       display: inline-block;
       text-transform: uppercase;
-      color: #20b2aa;
       padding-top: 10px;
       &.ltr {
         float: right;
@@ -920,9 +916,6 @@ canvas {
     .post-title {
       display: inline-block;
       max-width: 75%;
-      &:hover span {
-        border-bottom: 1px double $blue;
-      }
     }
   }
   &.ltr {
@@ -957,15 +950,46 @@ canvas {
       }
     }
   }
-  .tags li > a {
-    color: lighten($black, 28%);
+  &.light {
+    > li {
+      border-bottom: $light-mode-post-list-border-bottom-color;
+      p {
+        color: darken($white, 40);
+      }
+      .date {
+        color: $light-mode-post-list-date-color;
+      }
+      .post-title {
+        &:hover {
+          span {
+            border-bottom: 1px double $light-mode-post-title-underline-color;
+          }
+        }
+      }
+    }
+    .tags li > a {
+      color: $light-mode-post-list-tags-font-color;
+    }
   }
   &.dark {
-    p {
-      color: darken($white, 15);
-    }
     > li {
-      border-bottom: 1px solid lighten($black, 20%);
+      border-bottom: $dark-mode-post-list-border-bottom-color;
+      p {
+        color: darken($white, 15);
+      }
+      .date {
+        color: $dark-mode-post-list-date-color
+      }
+      .post-title {
+        &:hover {
+          span {
+            border-bottom: 1px double $dark-mode-post-title-underline-color;
+          }
+        }
+      }
+    }
+    .tags li > a {
+      color: $dark-mode-post-list-tags-font-color;
     }
   }
 }
@@ -977,11 +1001,6 @@ canvas {
     text-transform: uppercase;
     padding: 7px 10px;
     margin-bottom: 10px;
-    background: darken($white, 5%);
-    color: lighten($black, 28%);
-    > a {
-      color: $white;
-    }
   }
   &.ltr {
     &.en {
@@ -1001,26 +1020,34 @@ canvas {
       }
     }
   }
+  &.light {
+    > li {
+      background: $light-mode-tags-li-background-color;
+      color: $light-mode-tags-li-font-color;
+      > a {
+        color: $light-mode-tags-li-a-font-color;
+      }
+    }
+  }
   &.dark {
     > li {
-      background: lighten($black, 35%);
-      color: darken($white, 28%);
+      background: $dark-mode-tags-li-background-color;
+      color: $dark-mode-tags-li-font-color;
       > a {
-        color: $white;
+        color: $dark-mode-tags-li-a-font-color;
       }
     }
   }
 }
 
 .change-language {
-  display: table;
-  margin-top: 50px;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  padding-top: 20px;
   width: 100%;
-  background: #ececec;
-  padding: 0 20px 0;
-  color: #5B5B5B;
+  display: table;
   &.ltr {
-    border-left: 5px solid #D8D8D8;
+    padding-left: 30px !important;
     &.en {
       li {
         font-family: $en-change-language-font-family;
@@ -1028,14 +1055,15 @@ canvas {
         font-weight: $en-change-language-font-weight;
       }
     }
+    &.light {
+      border-left: 5px solid $light-mode-change-language-section-border-color;
+    }
     &.dark {
-      border-left: 5px solid #525252; 
+      border-left: 5px solid $dark-mode-change-language-section-border-color;
     }
   }
   &.rtl {
-    border-right: 5px solid #D8D8D8;
-    padding-left: initial;
-    padding-right: 30px;
+    padding-right: 30px !important;
     &.farsi {
       li {
         font-family: $farsi-change-language-font-family;
@@ -1043,13 +1071,20 @@ canvas {
         font-weight: $farsi-change-language-font-weight;
       }
     }
+    &.light {
+      border-right: 5px solid $light-mode-change-language-section-border-color;
+    }
     &.dark {
-      border-right: 5px solid #525252; 
+      border-right: 5px solid $dark-mode-change-language-section-border-color
     }
   }
+  &.light {
+    background: $light-mode-change-language-section-background-color;
+    color: $light-mode-change-language-section-font-color;
+  }
   &.dark {
-    background: #1f1f1f;
-    color: #bbbbbb;
+    background: $dark-mode-change-language-section-background-color;
+    color: $dark-mode-change-language-section-font-color;
   }
 }
 
@@ -1066,15 +1101,11 @@ canvas {
   p {
     line-height: 1.6;
     margin-bottom: 1.3em;
-    color: #313131;
   }
   small {
     color: darken($white, 40);
     margin-bottom: 10px;
     display: block;
-  }
-  a:not(.btn):not(.pagination_pager) {
-    color: #20b2aa;
   }
   ul,
   ol {
@@ -1114,7 +1145,6 @@ canvas {
       h6 {
         font-family: $en-inner-post-h-font-family;
         font-weight: $en-inner-post-h-font-weight;
-        color: rgba($overlay-color, 0.7);
       }
       p {
         font-family: $en-inner-post-p-font-family;
@@ -1131,16 +1161,6 @@ canvas {
         padding-left: 30px;
         font-family: $en-inner-post-ul-font-family;
         font-weight: $en-inner-post-ul-font-weight;
-      }
-      &.dark {
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-          color: lighten($white, 27.8431);
-        }
       }
     }
   }
@@ -1172,7 +1192,6 @@ canvas {
       h6 {
         font-family: $farsi-inner-post-h-font-family;
         font-weight: $farsi-inner-post-h-font-weight;
-        color: $overlay-color;
       }
       p {
         font-family: $farsi-inner-post-p-font-family;
@@ -1190,25 +1209,35 @@ canvas {
         font-family: $farsi-inner-post-ul-font-family;
         font-weight: $farsi-inner-post-ul-font-weight;
       }
-      &.dark {
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-          color: lighten($white, 27.8431);
-        }
-      }
+    }
+  }
+  &.light {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $light-mode-inner-post-h-color;
+    }
+    p {
+      color: $light-mode-inner-post-p-color;
     }
   }
   &.dark {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $dark-mode-inner-post-h-color;
+    }
     p {
-      color: darken($white, 15);
+      color: $dark-mode-inner-post-p-color;
     }
   }
 }
-
 
 .demo {
   margin-bottom: 50px;
@@ -1225,12 +1254,15 @@ canvas {
   }
   .tags > li {
     background: none;
-    border: 1px solid rgba($white, 0.4);
-    color: $white;
+    border: 1px solid $post-title-section-tag-li-border-color;
+    color: $post-title-section-tag-li-color;
     margin-top: 5px;
+    > a {
+      color: $post-title-section-tag-li-a-color;
+    }
   }
   .section-line {
-    color: $blue;
+    color: $post-title-section-section-line-color;
     position: relative;
     display: -webkit-box;
     display: -moz-box;
@@ -1247,13 +1279,13 @@ canvas {
       -ms-flex: 1;
       flex: 1;
       height: 3px;
-      background: rgba($white, 0.4);
+      background: $post-title-section-section-line-after-background-color;
       margin-left: 10px;
     }
     a {
-      color: $blue;
+      color: $post-title-section-section-line-a-color;
       &:hover {
-        color: $white;
+        color: $post-title-section-section-line-a-hover-color;
       }
     }
     em {
@@ -1270,7 +1302,7 @@ canvas {
         -ms-flex: 1;
         flex: 1;
         height: 3px;
-        background: rgba($white, 0.4);
+        background: $post-title-section-section-line-before-background-color;
         margin-top: 10px;
         margin-right: 10px;
         margin-left: 10px;
@@ -1327,7 +1359,6 @@ canvas {
 .date-highlight {
   text-align: center;
   margin: 50px 0;
-  color: darken($white, 40);
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -1342,7 +1373,6 @@ canvas {
     -ms-flex: 1;
     flex: 1;
     height: 2px;
-    background: $blue;
     margin-right: 10px;
     margin-left: 10px;
   }
@@ -1354,7 +1384,6 @@ canvas {
     -ms-flex: 1;
     flex: 1;
     height: 2px;
-    background: $blue;
     margin-right: 10px;
     margin-left: 10px;
   }
@@ -1372,30 +1401,184 @@ canvas {
     font-weight: $farsi-date-highlight-font-weight;
     }
   }
-}
-
-.footer-line {
-  float: right;
-  margin-bottom: 50px;
-}
-
-.footer-area {
-  text-align: center;
-  p {
-    margin-top: 10px;
-  }
-  &.ltr {
-    &.en {
-      font-family: $en-footer-area-font-family;
-      font-size: $en-footer-area-font-size;
-      font-weight: $en-footer-area-font-weight;
+  &.light {
+    color: $light-mode-date-highlight-font-color;
+    &:before {
+      background: $light-mode-date-highlight-before-background-color;
+    }
+    &:after {
+      background: $light-mode-date-highlight-after-background-color;
     }
   }
-  &.rtl {
-    &.farsi {
-      font-family: $farsi-footer-area-font-family;
-      font-size: $farsi-footer-area-font-size;
-      font-weight: $farsi-footer-area-font-weight;
+  &.dark {
+    color: $dark-mode-date-highlight-font-color;
+    &:before {
+      background: $dark-mode-date-highlight-before-background-color;
+    }
+    &:after {
+      background: $dark-mode-date-highlight-after-background-color;
+    }
+  }
+}
+
+// entry meta used in tags and categories page
+.entry-meta {
+  font-size: .75rem;
+  padding-left: 0;
+  text-transform: uppercase;
+  display: none; 
+  // hide header meta on small screens
+  @media screen and (min-width: $small) {
+    display: block;
+  }
+  li {
+    list-style-type: none;
+    display: inline;
+  }
+  .tag,
+  .category {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    border: none !important;
+    border-radius: 2px;
+    margin: 2px 5px;
+    font-size: 0.7rem;
+    span {
+      float: left;
+      padding: 2px 6px;
+    }
+    &.rtl {
+      font-size: 0.9rem;
+    }
+  }
+  &.light {
+    a {
+      color: $light-mode-entry-meta-a-color;
+    }
+    .tag,
+    .category {
+      background-color: $light-mode-entry-meta-tag-category-background-color;
+      .count {
+        background-color: $light-mode-entry-meta-count-background-color;
+      }
+      &:hover {
+        background-color: $light-mode-entry-meta-tag-category-hover-color;
+      }
+    }
+  }
+  &.dark {
+    a {
+      color: $dark-mode-entry-meta-a-color;
+    }
+    .tag,
+    .category {
+      background-color: $dark-mode-entry-meta-tag-category-background-color;
+      .count {
+        background-color: $dark-mode-entry-meta-count-background-color;
+      }
+      &:hover {
+        background-color: $dark-mode-entry-meta-tag-category-hover-color;
+      }
+    }
+  }
+}
+
+.tag-heading {
+  &.tagged {
+    &.light {
+      color: $light-mode-tag-heading-tagged-font-color;
+    }
+    &.dark {
+      color: $dark-mode-tag-heading-tagged-font-color;
+    }
+  }
+}
+
+.entry-title > a{
+  border: none !important;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1em;
+  &_pager {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    transition: all 0.2s linear;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    padding: 0.75em;
+    min-width: 5.5em;
+    &.ltr {
+      &:first-child {
+        border-radius: 4px 0 0 4px;
+      }
+      &:last-child {
+        border-radius: 0 4px 4px 0;
+      }
+      &.en {
+        font-family: $en-pagination-font-family;
+        font-size: $en-pagination-font-size;
+        font-weight: $en-pagination-font-weight;
+      }
+    }
+    &.rtl {
+      &:first-child {
+        border-radius: 0 4px 4px 0;
+      }
+      &:last-child {
+        border-radius: 4px 0 0 4px;
+      }
+      &.farsi {
+        font-family: $farsi-pagination-font-family;
+        font-size: $farsi-pagination-font-size;
+        font-weight: $farsi-pagination-font-weight;
+      }
+    }
+    &.light {
+      &.enabled {
+        background-color: $light-mode-pagination-pager-enabled-background-color;
+        color: $light-mode-pagination-pager-enabled-font-color;
+        &:hover {
+          background-color: $light-mode-pagination-pager-enabled-hover-background-color;
+          color: $light-mode-pagination-pager-enabled-hover-font-color;
+        }
+      }
+      &.disabled {
+        background-color: $light-mode-pagination-pager-disabled-background-color;
+        color: $light-mode-pagination-pager-disabled-font-color;
+        &:hover {
+          background-color: $light-mode-pagination-pager-disabled-hover-background-color;
+          color: $light-mode-pagination-pager-disabled-hover-font-color;
+        }
+      }
+    }
+    &.dark {
+      &.enabled {
+        background-color: $dark-mode-pagination-pager-enabled-background-color;
+        color: $dark-mode-pagination-pager-enabled-font-color;
+        &:hover {
+          background-color: $dark-mode-pagination-pager-enabled-hover-background-color;
+          color: $dark-mode-pagination-pager-enabled-hover-font-color;
+        }
+      }
+      &.disabled {
+        background-color: $dark-mode-pagination-pager-disabled-background-color;
+        color: $dark-mode-pagination-pager-disabled-font-color;
+        &:hover {
+          background-color: $dark-mode-pagination-pager-disabled-hover-background-color;
+          color: $dark-mode-pagination-pager-disabled-hover-font-color;
+        }
+      }
     }
   }
 }
@@ -1406,6 +1589,54 @@ canvas {
   left: 40px;
   > .btn {
     margin-bottom: 0;
+  }
+}
+
+.footer {
+  margin-top: 1em;
+}
+
+.footer-line {
+  float: right;
+  margin-bottom: 50px;
+}
+
+.license,
+.footer-text {
+  text-align: center;
+  padding-top: 1em; 
+  &.ltr {
+    &.en {
+      p,
+      a {
+        font-family: $en-footer-area-font-family;
+        font-size: $en-footer-area-font-size;
+        font-weight: $en-footer-area-font-weight;
+      } 
+    }
+  }
+  &.rtl {
+    &.farsi {
+      p,
+      a {
+        font-family: $farsi-footer-area-font-family;
+        font-size: $farsi-footer-area-font-size;
+        font-weight: $farsi-footer-area-font-weight;
+      }
+    }
+  }
+}
+
+.license {
+  p, 
+  a {
+    margin: 5px 0px;
+  }
+}
+
+.footer-text {
+  p {
+    margin-bottom: 0px;
   }
 }
 
@@ -1578,149 +1809,5 @@ canvas {
       &.rtl.farsi {
         font-size: 12px;
       }
-  }
-}
-
-// entry meta used in tags and categories page
-.entry-meta {
-  font-size: .75rem;
-  text-transform: uppercase;
-  padding-left: 0;
-  display: none; // hide header meta on small screens
-  @media screen and (min-width: $small) {
-    display: block;
-  }
-  a {
-    color: lighten($black, 45);
-  }
-  li {
-    list-style-type: none;
-    display: inline;
-  }
-  .tag,
-  .category {
-    display: inline-block;
-    background-color: lighten($silver, 40%);
-    border-radius: 2px;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    margin: 2px 5px;
-    font-size: 0.7rem;
-    border: none !important;
-    span {
-      float: left;
-      padding: 2px 6px;
-    }
-    .count {
-      background-color: lighten($silver, 30%);
-    }
-    &.rtl {
-      font-size: 0.9rem;
-    }
-    &:hover {
-      background-color: lighten($silver, 30%);
-    }
-  }
-  &.dark {
-    a {
-      color: lighten($black, 45);
-    }
-    .tag,
-    .category {
-      background-color: $overlay-color;
-      .count {
-        background-color: darken($overlay-color, 8%);
-      }
-      &:hover {
-        background-color: darken($overlay-color, 18%);
-      }
-    }
-  }
-}
-
-.tag-heading.tagged {
-  font-weight: normal;
-  color: black;
-}
-
-.entry-title > a{
-  border: none !important;
-}
-
-.pagination {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 1em;
-  &_pager {
-    display: inline-block;
-    padding: 0.75em;
-    min-width: 5.5em;
-    background-color: darken($white, 15%);
-    color: darken($white, 55%) !important;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    cursor: pointer;
-    transition: all 0.2s linear;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    &:hover {
-      background-color: $blue;
-      color: $white !important;
-    }
-    &.disabled {
-      background-color: darken($white, 10%);
-      color:darken($white, 45%) !important;
-      &:hover {
-        background-color: darken($white, 5%);
-        color:darken($white, 25%) !important;
-      }
-    }
-    &.ltr {
-      &:first-child {
-        border-radius: 4px 0 0 4px;
-      }
-      &:last-child {
-        border-radius: 0 4px 4px 0;
-      }
-      &.en {
-        font-family: $en-pagination-font-family;
-        font-size: $en-pagination-font-size;
-        font-weight: $en-pagination-font-weight;
-      }
-    }
-    &.rtl {
-      &:first-child {
-        border-radius: 0 4px 4px 0;
-      }
-      &:last-child {
-        border-radius: 4px 0 0 4px;
-      }
-      &.farsi {
-        font-family: $farsi-pagination-font-family;
-        font-size: $farsi-pagination-font-size;
-        font-weight: $farsi-pagination-font-weight;
-      }
-    }
-    &.dark {
-      background-color: lighten($black, 3%);
-      color:darken($white, 15%) !important;
-      &.disabled {
-        background-color: lighten($black, 15%);
-        color: darken($white, 35%) !important;
-        &:hover {
-          background-color: lighten($black, 25%);
-          color: darken($white, 45%) !important;
-        }
-      }
-      &:hover {
-        background-color: $blue;
-        color: $white !important;
-      }
-    }
   }
 }

@@ -25,15 +25,31 @@ body {
   line-height: 1.2;
 }
 
+a {
+  outline: none;
+  text-decoration: none;
+}
+
 body {
   font-family: $base-font;
-  color: $overlay-color;
-  background: $white;
+  &.light {
+    background: $light-mode-background-color;
+    color: $light-mode-font-color;
+    a:not(.social-btn):not(.btn):not(.pagination_pager):not(.section-line-link):not(.tag-link):not(.entry-meta) {
+      color: $light-mode-link-color;
+      &:hover {
+        color: $light-mode-link-hover-color;
+      }
+    }
+  }
   &.dark {
-    background: $light-black;
-    color: darken($white, 15);
-    a {
-      color: lighten($white, 27.8431);
+    background: $dark-mode-background-color;
+    color: $dark-mode-font-color;
+    a:not(.social-btn):not(.btn):not(.pagination_pager):not(.section-line-link):not(.tag-link):not(.entry-meta)  {
+      color: $dark-mode-link-color;
+      &:hover {
+        color: $dark-mode-link-hover-color;
+      }
     }
   }
 }
@@ -43,31 +59,9 @@ body {
   transition: all 0.5s;
 }
 
-footer {
-  font-size: 15px;
-  > a {
-    color: rgba($color: $blue, $alpha: 1.5);
-    outline: none;
-    text-decoration: none
-  }
-}
-
-a {
-  color: $overlay-color;
-  outline: none;
-  text-decoration: none
-}
-
-a:hover,
-a:active,
-a:focus,
-a:visited {
-  color: $overlay-color
-}
-
 table {
   border-collapse: collapse;
-  border-spacing: 0
+  border-spacing: 0;
 }
 
 caption,
@@ -75,12 +69,12 @@ th,
 td {
   text-align: left;
   font-weight: normal;
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 q,
 blockquote {
-  quotes: none
+  quotes: none;
 }
 
 q:before,
@@ -88,11 +82,11 @@ q:after,
 blockquote:before,
 blockquote:after {
   content: "";
-  content: none
+  content: none;
 }
 
 a img {
-  border: none
+  border: none;
 }
 
 article,
@@ -108,13 +102,13 @@ menu,
 nav,
 section,
 summary {
-  display: block
+  display: block;
 }
 
 *,
 *:after,
 *:before {
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 // h tags

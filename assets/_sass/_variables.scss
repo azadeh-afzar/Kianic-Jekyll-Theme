@@ -1,4 +1,4 @@
-// -------------- Colors --------------
+// ---------------- Colors -----------------
 
 $white: #ffffff;
 $black: #000000;
@@ -18,7 +18,7 @@ $yellow: #f89406;
 $sunny: #f3dd1a;
 $light-purple: #b000ff;
 
-// ------------- Brand Colors --------
+// --------------- Brand Colors ------------
 
 $heart-color: #e25555;
 $html5-color: #e34c26;
@@ -42,10 +42,13 @@ $playstation-color: #003791;
 
 // ------------- Font Options ---------------
 
+// this should contain a font for each language as base font
 $base-font: 'Ubuntu', 'Vazir', sans-serif;
+
+// this fonts will be used to show code blocks in your blog
 $code-font: 'Vazir Code Hack', monospace;
 
-// break point
+// break point [ don't touch this, it is hard to explain what it does ]
 $small: 750px;
 
 // ---------------- English -----------------
