@@ -1,12 +1,12 @@
 # -- Translations ---
 
-en:
+english:
   # website region
   locale: en_US
   label:
     # language name in all languages
-    en: English
-    fa: انگلیسی
+    english: English
+    farsi: انگلیسی
   # Image for country flag
   image: images/img-flag-usa.png
   # Emoji icon for country flag
@@ -46,12 +46,12 @@ en:
   footer-text: "Made with Love <i class='fa fa-heart font-awesome-heart' aria-hidden='true'></i> 
                 hosted on GitLab <i class='fab fa-gitlab font-awesome-gitlab' aria-hidden='true'></i>"
 
-fa:
+farsi:
   # website region
   locale: fa_IR
   label:
-    en: Farsi
-    fa: پارسی
+    english: Farsi
+    farsi: پارسی
     # Image for country flag
   image: images/img-flag-iran.png
   # Emoji icon for country flag

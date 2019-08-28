@@ -1,13 +1,10 @@
 <ul>
-  {% if site.facebook %}<li><a class="social-btn" href="https://facebook.com/{{ site.facebook }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-facebook-f"></i></a></li>{% endif %}
-  {% if site.instagram %}<li><a class="social-btn" href="https://instagram.com/{{ site.instagram }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-instagram"></i></a></li>{% endif %}
-  {% if site.twitter %}<li><a class="social-btn" href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-twitter"></i></a></li>{% endif %}
+  {% if site.facebook %}<li><a class="social-btn" href="https://facebook.com/{{ site.facebook }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-facebook-f font-awesome-facebook"></i></a></li>{% endif %}
+  {% if site.instagram %}<li><a class="social-btn" href="https://instagram.com/{{ site.instagram }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-instagram font-awesome-instagram"></i></a></li>{% endif %}
+  {% if site.twitter %}<li><a class="social-btn" href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-twitter font-awesome-twitter"></i></a></li>{% endif %}
   {% if site.linkedin %}<li><a class="social-btn" href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-linkedin-in"></i></a></li>{% endif %}
-    {% if site.gitlab %}
-    <li><a class="social-btn" href="https://gitlab.com/{{ site.gitlab }}" rel="noopener noreferrer" target="_blank"><i
-            class="fab fa-fw fa-gitlab"></i></a></li>
-    {% endif %}
-  {% if site.github %}<li><a class="social-btn" href="https://github.com/{{ site.github }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-github"></i></a></li>{% endif %}
+  {% if site.gitlab %}<li><a class="social-btn" href="https://gitlab.com/{{ site.gitlab }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-gitlab font-awesome-gitlab"></i></a></li>{% endif %}
+  {% if site.github %}<li><a class="social-btn" href="https://github.com/{{ site.github }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-github font-awesome-github"></i></a></li>{% endif %}
   {% if site.goodreads %}<li><a class="social-btn" href="https://goodreads.com/user/show/{{ site.goodreads }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-goodreads-g"></i></a></li>{% endif %}
   {% if site.stackoverflow %}<li><a class="social-btn" href="https://stackoverflow.com/users/{{ site.stackoverflow }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-stack-overflow"></i></a></li>{% endif %}
   {% if site.reddit %}<li><a class="social-btn" href="https://reddit.com/user/{{ site.reddit }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-reddit"></i></a></li>{% endif %}

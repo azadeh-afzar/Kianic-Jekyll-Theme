@@ -2,7 +2,7 @@
 layout: home
 title: کیانیک
 description: پوسته جکیل چندزبانه، با دو حالت شب و روز، دو‌ستونه و با امکان شخصی سازی آسان برای تارنمای شخصی شما
-permalink: /fa/index.html
+permalink: /farsi/index.html
 ---
 
 # درباره پوسته کیانیک

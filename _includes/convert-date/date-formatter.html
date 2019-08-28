@@ -8,8 +8,8 @@
 # to use based on page's language.
 #
 # Supported calendars:
-#   - Gregorian -lang == 'en'
-#   - Persian   -lang == 'fa'
+#   - Gregorian -lang == 'english'
+#   - Persian   -lang == 'farsi'
 #
 # © 2019 Mohammad Mahdi Baghbani Pourvahid
 #
@@ -44,8 +44,10 @@
 {%- endcomment -%}
 
 {% case page.lang %}
-    {% when 'en' %}
+    {% when 'english' %}
         {% include convert-date/gregorian-date.html %}
-    {% when 'fa' %}
+    {% when 'farsi' %}
         {% include convert-date/persian-date.html %}
+    {% else %}
+        {{ 'DATE-FORMATTER ERROR: Unknown date type!' }}
 {% endcase %}

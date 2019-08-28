@@ -13,7 +13,7 @@
                 JEKYLL ERROR: page layout is not supported.
             </p>    
     {% endcase %}
-    <div class="footer-text {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
+    <div class="footer-text {{ page.direction-format }} {{ page.lang }}">
         <p>{{ site.data.languages[page.lang].footer-text }}</p>
     </div>
 </footer>

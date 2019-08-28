@@ -1,11 +1,11 @@
 ---
 layout: page
 title: حمایت
-subtitle: به من انگیزه بدید
+subtitle: به من انگیزه بدهید
 excerpt: "راه‌های حمایت از من برای گسترش این تارنما و انجام دادن پروژه‌های بیشتر"
 lang-ref: support
 image: /images/img-bitcoin-support.jpg
-permalink: /fa/support.html
+permalink: /farsi/support.html
 categories:
   - حمایت
 tags:

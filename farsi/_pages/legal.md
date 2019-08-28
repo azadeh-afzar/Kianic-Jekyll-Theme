@@ -1,24 +1,24 @@
 ---
 layout: page
-title: Legal
-subtitle: Terms and conditions
-excerpt: "Legal terms and conditions for Kianic Theme"
+title: قوانین
+subtitle: شرایط استفاده از پوسته جکیل
+excerpt: "قوانین و شرایط استفاده از این پوسته جکیل"
 lang-ref: legal-terms
 image: /images/img-gnu-linux.png
-permalink: /en/legal.html
+permalink: /farsi/legal.html
 categories:
-  - License
+  - مجوز
 tags:
-  - Legal
-  - License
-  - Agreement
+  - قوانین
+  - مجوز
+  - قرارداد
 share:
   facebook: false
   twitter: false
   linkedin: false
----
+--- 
 
-This theme has been released under GNU GPL v3 License.
+این اثر تحت مجوز عمومی گنو نسخه ۳ منتشر شده است.
 
 ```markdown
                     GNU GENERAL PUBLIC LICENSE
@@ -93,7 +93,7 @@ modification follow.
 
                        TERMS AND CONDITIONS
 
-  0. Definitions.
+  1. Definitions.
 
   "This License" refers to version 3 of the GNU General Public License.
 

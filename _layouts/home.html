@@ -3,13 +3,13 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html lang="{{ page.lang }}">
+<html lang="{{ site.data.languages[ page.lang ].locale }}">
 {% include head.html %}
 <body id="homepage">
   {% include gtm-body.html %}
   <div class="block-left">
-    <div class="content {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
-      <div class="main-info {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
+    <div class="content {{ page.direction-format }} {{ page.lang }}">
+      <div class="main-info {{ page.direction-format }} {{ page.lang }}">
         {% include block-left-icons.html %}
         <a href="{{ page.url }}" class="logo"><img type="image/png" src="{{ site.url }}/{{ site.logo-images[ page.lang ].logo-main-homepage }}" alt="Site Logo"></a>
         <h1>
@@ -26,18 +26,18 @@ layout: compress
 
   
   <div class="block-right">
-    <a title="{{ site.data.languages[ page.lang ].mode-title-text }}" class="mode-menu-icon home {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}} {% if site.language-options.lang-number < 2 %}no-adjacent-icon{% endif %}"><i id="sun-moon" class="fa fa-fw fa-2x fa-moon" aria-hidden="true"></i></a>
-    <span class="mode-link {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}} {% if site.language-options.lang-number < 2 %}no-adjacent-icon{% endif %}">{{ site.data.languages[ page.lang ].mode-span-text }}</span>
+    <a title="{{ site.data.languages[ page.lang ].mode-title-text }}" class="mode-menu-icon home {{ page.direction-format }} {{ page.lang }} {% if site.language-options.lang-number < 2 %}no-adjacent-icon{% endif %}"><i id="sun-moon" class="fa fa-fw fa-2x fa-moon" aria-hidden="true"></i></a>
+    <span class="mode-link {{ page.direction-format }} {{ page.lang }} {% if site.language-options.lang-number < 2 %}no-adjacent-icon{% endif %}">{{ site.data.languages[ page.lang ].mode-span-text }}</span>
     {% if site.language-options.lang-number > 1 %}
-      <a title="{{ site.data.languages[ page.lang ].change-language-title-text }}" class="languages-menu-icon home {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}"><i class="fa fa-fw  fa-2x fa-inverse fa-language" aria-hidden="true"></i></a>
-      <span class="languages-link {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">{{ site.data.languages[ page.lang ].change-language-span-text }}</span>
+      <a title="{{ site.data.languages[ page.lang ].change-language-title-text }}" class="languages-menu-icon home {{ page.direction-format }} {{ page.lang }}"><i class="fa fa-fw  fa-2x fa-inverse fa-language" aria-hidden="true"></i></a>
+      <span class="languages-link {{ page.direction-format }} {{ page.lang }}">{{ site.data.languages[ page.lang ].change-language-span-text }}</span>
     {% endif %}
-    <a href="{{ site.url }}/{{ page.lang }}/posts" title="{{ site.data.languages[ page.lang ].posts-title-text }}" class="posts-menu-icon {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}"><i class="fa fa-fw fa-2x fa-file-alt" aria-hidden="true"></i></a>
-    <span class="posts-link {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">{{ site.data.languages[ page.lang ].posts-span-text }}</span>
-    <a title="{{ site.data.languages[ page.lang ].projects-title-text }}" class="projects-menu-icon {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}"><i class="fa fa-fw fa-2x fa-cogs" aria-hidden="true"></i></a>
-    <span class="projects-link {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">{{ site.data.languages[ page.lang ].projects-span-text }}</span>
-    <div class="content {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
-      <div class="about-info {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}">
+    <a href="{{ site.url }}/{{ page.lang }}/posts" title="{{ site.data.languages[ page.lang ].posts-title-text }}" class="posts-menu-icon {{ page.direction-format }} {{ page.lang }}"><i class="fa fa-fw fa-2x fa-file-alt" aria-hidden="true"></i></a>
+    <span class="posts-link {{ page.direction-format }} {{ page.lang }}">{{ site.data.languages[ page.lang ].posts-span-text }}</span>
+    <a title="{{ site.data.languages[ page.lang ].projects-title-text }}" class="projects-menu-icon {{ page.direction-format }} {{ page.lang }}"><i class="fa fa-fw fa-2x fa-cogs" aria-hidden="true"></i></a>
+    <span class="projects-link {{ page.direction-format }} {{ page.lang }}">{{ site.data.languages[ page.lang ].projects-span-text }}</span>
+    <div class="content {{ page.direction-format }} {{ page.lang }}">
+      <div class="about-info {{ page.direction-format }} {{ page.lang }}">
         {{ content }}
         {% include footer.html %}
       </div>

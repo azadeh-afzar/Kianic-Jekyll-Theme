@@ -5,7 +5,7 @@ subtitle: Kianic Theme Developer
 excerpt: "More information about Mahdi Baghbani's interests"
 lang-ref: about-me
 image: /images/img-about.jpg
-permalink: /en/about.html
+permalink: /english/about.html
 categories:
   - About
 tags:

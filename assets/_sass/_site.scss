@@ -38,7 +38,7 @@
   font-family: $base-font;
   &.ltr {
     direction: ltr;
-    &.en {
+    &.english {
       font-family: $english-base-font;
     }
   }
@@ -264,10 +264,10 @@ canvas {
   font-size: 12px;
   font-weight: normal;
   &.ltr {
-    &.en {
-      font-family: $en-home-links-font-family;
-      font-size: $en-home-links-font-size;
-      font-weight: $en-home-links-font-weight;
+    &.english {
+      font-family: $english-home-links-font-family;
+      font-size: $english-home-links-font-size;
+      font-weight: $english-home-links-font-weight;
     }
   }
   &.rtl {
@@ -299,8 +299,8 @@ canvas {
 
 .support-link {
   &.ltr {
-    &.en {
-      right: $en-support-link-adjust;
+    &.english {
+      right: $english-support-link-adjust;
     }
   }
   &.rtl {
@@ -310,8 +310,8 @@ canvas {
   }
   &.no-adjacent-icon {
     &.ltr {
-      &.en {
-        right: $en-support-link-no-adjacent-icon-adjust;
+      &.english {
+        right: $english-support-link-no-adjacent-icon-adjust;
       }
     }
     &.rtl {
@@ -322,8 +322,8 @@ canvas {
   }
   &.no-icon {
     &.ltr {
-      &.en {
-        right: $en-support-link-no-icon-adjust;
+      &.english {
+        right: $english-support-link-no-icon-adjust;
       }
     }
     &.rtl {
@@ -337,8 +337,8 @@ canvas {
 .about-link {
   right: 91px;
   &.ltr {
-    &.en {
-      right: $en-about-link-adjust;
+    &.english {
+      right: $english-about-link-adjust;
     }
   }
   &.rtl {
@@ -348,8 +348,8 @@ canvas {
   }
   &.no-adjacent-icon {
     &.ltr {
-      &.en {
-        right: $en-about-link-no-adjacent-icon-adjust;
+      &.english {
+        right: $english-about-link-no-adjacent-icon-adjust;
       }
     }
     &.rtl {
@@ -362,8 +362,8 @@ canvas {
 
 .legal-link {
   &.ltr {
-    &.en {
-      right: $en-legal-link-adjust;
+    &.english {
+      right: $english-legal-link-adjust;
     }
   }
   &.rtl {
@@ -375,10 +375,10 @@ canvas {
 
 .mode-link {
   &.ltr {
-    &.en {
-      right: $en-mode-link-adjust;
+    &.english {
+      right: $english-mode-link-adjust;
       &.no-adjacent-icon {
-        right: $en-mode-link-no-adjacent-icon-adjust;
+        right: $english-mode-link-no-adjacent-icon-adjust;
       }
     }
   }
@@ -394,8 +394,8 @@ canvas {
 
 .languages-link {
   &.ltr {
-    &.en {
-      right: $en-languages-link-adjust;
+    &.english {
+      right: $english-languages-link-adjust;
     }
   }
   &.rtl {
@@ -407,8 +407,8 @@ canvas {
 
 .posts-link {
   &.ltr {
-    &.en {
-      right: $en-posts-link-adjust;
+    &.english {
+      right: $english-posts-link-adjust;
     }
   }
   &.rtl {
@@ -420,8 +420,8 @@ canvas {
 
 .projects-link {
   &.ltr {
-    &.en {
-      right: $en-projects-link-adjust;
+    &.english {
+      right: $english-projects-link-adjust;
     }
   }
   &.rtl {
@@ -588,13 +588,13 @@ canvas {
   padding-top: 70px;
   margin: 0 auto;
   &.ltr {
-    &.en {
+    &.english {
       h1,
       h2 {
-        font-size: $en-home-h-font-size;
+        font-size: $english-home-h-font-size;
       }
       p {
-        font-size: $en-home-p-font-size;
+        font-size: $english-home-p-font-size;
       }
     }
   }
@@ -713,14 +713,14 @@ canvas {
     }
   }
   &.ltr {
-    &.en {
+    &.english {
       h1,
       h2 {
-        font-family: $en-home-left-font-family;
-        letter-spacing: $en-home-h-letter-spacing;
+        font-family: $english-home-left-font-family;
+        letter-spacing: $english-home-h-letter-spacing;
       }
       p {
-        font-family: $en-home-left-font-family;
+        font-family: $english-home-left-font-family;
       }
     }
   }
@@ -769,17 +769,17 @@ canvas {
         left: 0;
       }
     }
-    &.en {
+    &.english {
       h1,
       h2 {
-        font-family: $en-home-right-h-font-family;
-        font-size: $en-home-right-h-font-size;
-        font-weight: $en-home-right-h-font-weight;
+        font-family: $english-home-right-h-font-family;
+        font-size: $english-home-right-h-font-size;
+        font-weight: $english-home-right-h-font-weight;
       }
       p {
-        font-family: $en-home-right-p-font-family;
-        font-size: $en-home-right-p-font-size;
-        font-weight: $en-home-right-p-font-weight;
+        font-family: $english-home-right-p-font-family;
+        font-size: $english-home-right-p-font-size;
+        font-weight: $english-home-right-p-font-weight;
       }
     }
   }
@@ -863,10 +863,10 @@ canvas {
   }
   &.ltr {
     left: 50px;
-    &.en {
-      font-family: $en-section-title-font-family;
-      font-size: $en-section-title-font-size;
-      font-weight: $en-section-title-font-weight;
+    &.english {
+      font-family: $english-section-title-font-family;
+      font-size: $english-section-title-font-size;
+      font-weight: $english-section-title-font-weight;
     }
   }
   &.rtl {
@@ -898,10 +898,10 @@ canvas {
       padding-top: 10px;
       &.ltr {
         float: right;
-        &.en {
-          font-family: $en-date-font-family;
-          font-size: $en-date-font-size;
-          font-weight: $en-date-font-weight;
+        &.english {
+          font-family: $english-date-font-family;
+          font-size: $english-date-font-size;
+          font-weight: $english-date-font-weight;
         }
       }
       &.rtl {
@@ -919,17 +919,17 @@ canvas {
     }
   }
   &.ltr {
-    &.en {
+    &.english {
       > li {
         h2 {
-          font-family: $en-post-list-title-font-family;
-          font-size: $en-post-list-title-font-size;
-          font-weight: $en-post-list-title-font-weight;
+          font-family: $english-post-list-title-font-family;
+          font-size: $english-post-list-title-font-size;
+          font-weight: $english-post-list-title-font-weight;
         }
         p {
-          font-family: $en-post-list-excerpt-font-family;
-          font-size: $en-post-list-excerpt-font-size;
-          font-weight: $en-post-list-excerpt-font-weight;
+          font-family: $english-post-list-excerpt-font-family;
+          font-size: $english-post-list-excerpt-font-size;
+          font-weight: $english-post-list-excerpt-font-weight;
         }
       }
     }
@@ -1003,11 +1003,11 @@ canvas {
     margin-bottom: 10px;
   }
   &.ltr {
-    &.en {
+    &.english {
       li {
-        font-family: $en-tags-font-family;
-        font-size: $en-tags-font-size;
-        font-weight: $en-tags-font-weight;
+        font-family: $english-tags-font-family;
+        font-size: $english-tags-font-size;
+        font-weight: $english-tags-font-weight;
       }
     }
   }
@@ -1048,11 +1048,11 @@ canvas {
   display: table;
   &.ltr {
     padding-left: 30px !important;
-    &.en {
+    &.english {
       li {
-        font-family: $en-change-language-font-family;
-        font-size: $en-change-language-font-size;
-        font-weight: $en-change-language-font-weight;
+        font-family: $english-change-language-font-family;
+        font-size: $english-change-language-font-size;
+        font-weight: $english-change-language-font-weight;
       }
     }
     &.light {
@@ -1118,24 +1118,24 @@ canvas {
     }
   }
   &.ltr {
-    &.en {
+    &.english {
       h1 {
-        font-size: $en-inner-post-h1-font-size;
+        font-size: $english-inner-post-h1-font-size;
       }
       h2 {
-        font-size: $en-inner-post-h2-font-size;
+        font-size: $english-inner-post-h2-font-size;
       }
       h3 {
-        font-size: $en-inner-post-h3-font-size;
+        font-size: $english-inner-post-h3-font-size;
       }
       h4 {
-        font-size: $en-inner-post-h4-font-size;
+        font-size: $english-inner-post-h4-font-size;
       }
       h5 {
-        font-size: $en-inner-post-h5-font-size;
+        font-size: $english-inner-post-h5-font-size;
       }
       h6 {
-        font-size: $en-inner-post-h6-font-size;
+        font-size: $english-inner-post-h6-font-size;
       }
       h1,
       h2,
@@ -1143,24 +1143,24 @@ canvas {
       h4,
       h5,
       h6 {
-        font-family: $en-inner-post-h-font-family;
-        font-weight: $en-inner-post-h-font-weight;
+        font-family: $english-inner-post-h-font-family;
+        font-weight: $english-inner-post-h-font-weight;
       }
       p {
-        font-family: $en-inner-post-p-font-family;
-        font-size: $en-inner-post-p-font-size;
-        font-weight: $en-inner-post-p-font-weight;
+        font-family: $english-inner-post-p-font-family;
+        font-size: $english-inner-post-p-font-size;
+        font-weight: $english-inner-post-p-font-weight;
       }
       small {
-        font-family: $en-inner-post-small-font-family;
-        font-size: $en-inner-post-small-font-size;
-        font-weight: $en-inner-post-small-font-weight;
+        font-family: $english-inner-post-small-font-family;
+        font-size: $english-inner-post-small-font-size;
+        font-weight: $english-inner-post-small-font-weight;
       }
       ul,
       ol {
         padding-left: 30px;
-        font-family: $en-inner-post-ul-font-family;
-        font-weight: $en-inner-post-ul-font-weight;
+        font-family: $english-inner-post-ul-font-family;
+        font-weight: $english-inner-post-ul-font-weight;
       }
     }
   }
@@ -1316,20 +1316,20 @@ canvas {
     .section-title {
       left: auto;
     }
-    &.en {
+    &.english {
       .section-title {
-        font-size: $en-post-title-section-title-font-size;
-        font-weight: $en-post-title-section-title-font-weight;
+        font-size: $english-post-title-section-title-font-size;
+        font-weight: $english-post-title-section-title-font-weight;
       }
       .tags > li {
-        font-family: $en-post-title-section-tags-font-family;
-        font-size: $en-post-title-section-tags-font-size;
-        font-weight: $en-post-title-section-tags-font-weight;
+        font-family: $english-post-title-section-tags-font-family;
+        font-size: $english-post-title-section-tags-font-size;
+        font-weight: $english-post-title-section-tags-font-weight;
       }
       .section-line {
-        font-family: $en-post-title-section-line-font-family;
-        font-size: $en-post-title-section-line-font-size;
-        font-weight: $en-post-title-section-line-font-weight;
+        font-family: $english-post-title-section-line-font-family;
+        font-size: $english-post-title-section-line-font-size;
+        font-weight: $english-post-title-section-line-font-weight;
       }
     }
   }
@@ -1388,10 +1388,10 @@ canvas {
     margin-left: 10px;
   }
   &.ltr {
-    &.en {
-      font-family: $en-date-highlight-font-family;
-      font-size: $en-date-highlight-font-size;
-      font-weight: $en-date-highlight-font-weight;
+    &.english {
+      font-family: $english-date-highlight-font-family;
+      font-size: $english-date-highlight-font-size;
+      font-weight: $english-date-highlight-font-weight;
     }
   }
   &.rtl {
@@ -1525,10 +1525,10 @@ canvas {
       &:last-child {
         border-radius: 0 4px 4px 0;
       }
-      &.en {
-        font-family: $en-pagination-font-family;
-        font-size: $en-pagination-font-size;
-        font-weight: $en-pagination-font-weight;
+      &.english {
+        font-family: $english-pagination-font-family;
+        font-size: $english-pagination-font-size;
+        font-weight: $english-pagination-font-weight;
       }
     }
     &.rtl {
@@ -1606,12 +1606,12 @@ canvas {
   text-align: center;
   padding-top: 1em; 
   &.ltr {
-    &.en {
+    &.english {
       p,
       a {
-        font-family: $en-footer-area-font-family;
-        font-size: $en-footer-area-font-size;
-        font-weight: $en-footer-area-font-weight;
+        font-family: $english-footer-area-font-family;
+        font-size: $english-footer-area-font-size;
+        font-weight: $english-footer-area-font-weight;
       } 
     }
   }
@@ -1643,7 +1643,7 @@ canvas {
 // Media queries for responsive design
 @media screen and (max-height: 605px) {
   .post-title-section .section-title {
-    &.ltr.en,
+    &.ltr.english,
     &.rtl.farsi {
       font-size: 35px;
     }
@@ -1678,7 +1678,7 @@ canvas {
       max-height: 150px;
       max-width: 150px;
     }
-    &.ltr.en,
+    &.ltr.english,
     &.rtl.farsi {
       h1 {
         font-size: 25px;
@@ -1692,7 +1692,7 @@ canvas {
     }
   }
   .about-info {
-    &.ltr.en,
+    &.ltr.english,
     &.rtl.farsi {
       h1 {
         font-size: 25px;
@@ -1711,7 +1711,7 @@ canvas {
       width: 100%;
       padding-bottom: 10px;
     }
-    &.ltr.en,
+    &.ltr.english,
     &.rtl.farsi {
       > li {
         .post-title {
@@ -1729,7 +1729,7 @@ canvas {
     }
   }
   .inner-post {
-    &.ltr.en,
+    &.ltr.english,
     &.rtl.farsi {
       h1,
       h2,
@@ -1777,13 +1777,13 @@ canvas {
       display: none;
     }
     .section-title {
-      &.ltr.en,
+      &.ltr.english,
       &.rtl.farsi {
         font-size: 30px;
       }
     }
     .tags {
-      &.ltr.en,
+      &.ltr.english,
       &.rtl.farsi {
         > li {
           font-size: 13px;
@@ -1792,7 +1792,7 @@ canvas {
     }
   }
   .section-title {
-    &.ltr.en,
+    &.ltr.english,
     &.rtl.farsi {
       font-size: 50px;
     }
@@ -1805,7 +1805,7 @@ canvas {
     padding: 20px
   }
   .footer-area {
-    &.ltr.en,
+    &.ltr.english,
       &.rtl.farsi {
         font-size: 12px;
       }

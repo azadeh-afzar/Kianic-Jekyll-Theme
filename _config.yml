@@ -24,11 +24,14 @@ logo-images:
   apple-touch-icon-180x180: images/apple-touch-icon-180x180.png
   # site main logo
   # ordered by language
-  # recommend: use svg files as icon
-  en:
+  # recommend: use svg format
+  # png size recommendation: 
+  # - main-homepage 200x200
+  # - main-other-pages 50x50
+  english:
     logo-main-homepage: images/logo-en.png
     logo-main-other-pages: images/logo-small-en.png
-  fa:
+  farsi:
     logo-main-homepage: images/logo-fa.png
     logo-main-other-pages: images/logo-small-fa.png
 
@@ -142,30 +145,30 @@ share:
 # number of languages to be supported
 language-options:
   lang-number: 2
-  lang-default: en
+  lang-default: english
   lang-id:
-    - title: en
-    - title: fa
+    - title: english
+    - title: farsi
 
 defaults:
   -
     scope:
       # sub-folder
-      path: en
+      path: english
     values:
       # language name, sub-domain and direction (ltr, rtl)
-      lang: en
-      base-url: "/en/"
+      lang: english
+      base-url: "/english/"
       direction-format: ltr
       author: Mahdi baghbani
   -
     scope:
       # sub-folder
-      path: fa
+      path: farsi
     values:
       # language name, sub-domain and direction (ltr, rtl)
-      lang: fa
-      base-url: "/fa/"
+      lang: farsi
+      base-url: "/farsi/"
       direction-format: rtl
       author: مهدی باغبانی
 

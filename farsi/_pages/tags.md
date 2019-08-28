@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Tag Archive
-subtitle: Tags
-excerpt: "An archive of posts sorted by tag."
+title: بایگانی برچسب‌ها
+subtitle: برچسب‌ها
+excerpt: "بایگانی تارنوشت‌های مرتب شده بر اساس برچسب."
 type: "Tag Archive"
-permalink: /en/tags.html
+permalink: /farsi/tags.html
 share:
   facebook: false
   twitter: false

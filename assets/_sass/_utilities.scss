@@ -128,10 +128,10 @@
     }
   }
   &.ltr {
-    &.en {
-      font-family: $en-btn-font-family;
-      font-size: $en-btn-font-size;
-      font-weight: $en-btn-font-weight;
+    &.english {
+      font-family: $english-btn-font-family;
+      font-size: $english-btn-font-size;
+      font-weight: $english-btn-font-weight;
     }
   }
   &.rtl {

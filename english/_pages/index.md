@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Kianic
-description: Multi language, dual theme, stylish, two-column and easy customizable Jekyll theme for your blog.
+description: Multi language, dual theme, stylish and highly customizable Jekyll theme for your blog.
 permalink: /index.html
 ---
 # About Kianic
