@@ -1,20 +1,40 @@
 # job for creating preview site for development branch on surge.sh
 development:
-  stage: build
+  stage: deploy
   image: ubuntu:bionic
-  services:
-   - ruby:latest
-   - node:latest
   cache:
     paths:
       - vendor/
       - node_modules/
   before_script:
+    # install curl
+    - apt-get update
+    - apt-get install curl
+    - curl --version
+    - command -v curl
+    # install ruby version manager (rvm) using curl, then install stable ruby with rvm
+    - gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+    - \curl -sSL https://get.rvm.io | bash -s stable --ruby
+    - rvm -v
+    - command -v rvm
     - ruby -v
+    - command -v ruby
+    # install node version manager using curl, then install latest node with nvm
+    - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+    - export NVM_DIR="$HOME/.nvm"
+    - [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+    - [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+    - nvm --version
+    - command -v nvm
+    - nvm install node
+    - nvm use node
     - node -v
+    - command -v node
     - npm -v
-    - npm install surge
+    - command -v npm
+    # install ruby and node packages
     - bundle install --path vendor
+    - npm install surge
     - ls -a
   script:
     - bundle exec jekyll build -d development
