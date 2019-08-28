@@ -21,9 +21,6 @@ development:
     - command -v ruby
     # install node version manager using curl, then install latest node with nvm
     - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-    - export NVM_DIR="$HOME/.nvm"
-    - [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-    - [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
     - nvm --version
     - command -v nvm
     - nvm install node
