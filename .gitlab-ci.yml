@@ -1,4 +1,5 @@
 image: ruby:2.6
+image: node:latest
 
 # job for creating preview site for development branch on surge.sh
 development:
