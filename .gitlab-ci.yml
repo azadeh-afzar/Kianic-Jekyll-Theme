@@ -1,5 +1,4 @@
 image: ruby:2.6
-image: node:latest
 
 # job for creating preview site for development branch on surge.sh
 development:
@@ -9,8 +8,17 @@ development:
       - vendor/
       - node_modules/
   before_script:
-    - bundle install --path vendor
+    - ruby -v
+    - apt-get update -y
+    - apt-get install -y libssl-dev build-essential wget
+    - wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
+    - source /root/.bashrc
+    - nvm install 6.6.0
+    - nvm use 6.6.0
+    - node -v
+    - npm -v
     - npm install
+    - bundle install --path vendor
   script:
     - bundle exec jekyll build -d development
     - node_modules/.bin/surge development/
