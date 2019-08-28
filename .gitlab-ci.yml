@@ -1,27 +1,15 @@
 image: ruby:2.6
 
-cache:
-  paths:
-    - vendor/
-
-before_script:
-  - bundle install --path vendor
-  - npm install --path  vendor
-
-# job for generating site for master branch for gitlab pages
-pages:
-  stage: deploy
-  script:
-    - bundle exec jekyll build -d public
-  artifacts:
-    paths:
-      - public
-  only:
-    - master
-
 # job for creating preview site for development branch on surge.sh
 development:
   stage: build
+  cache:
+    paths:
+      - vendor/
+      - node_modules/
+  before_script:
+    - bundle install --path vendor
+    - npm install
   script:
     - bundle exec jekyll build -d development
     - node_modules/.bin/surge development/
