@@ -1,12 +1,12 @@
 {% if page.previous or page.next %}
 <nav class="pagination">
   {% if page.previous and page.previous.lang == page.lang %}
-    <a href="{{ site.url }}{{ page.previous.url }}" class="pagination_pager {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}" title="{{ page.previous.title | markdownify | strip_html }}">{{ site.data.languages[page.lang].previous }}</a>
+    <a href="{{ site.url }}{{ page.previous.url }}" class="pagination_pager {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}} enabled" title="{{ page.previous.title | markdownify | strip_html }}">{{ site.data.languages[page.lang].previous }}</a>
   {% else %}
     <a href="#" class="pagination_pager {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}} disabled">{{ site.data.languages[page.lang].previous }}</a>
   {% endif %}
   {% if page.next and page.next.lang == page.lang %}
-    <a href="{{ site.url }}{{ page.next.url }}" class="pagination_pager {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}}" title="{{ page.next.title | markdownify | strip_html }}">{{ site.data.languages[page.lang].next }}</a>
+    <a href="{{ site.url }}{{ page.next.url }}" class="pagination_pager {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}} enabled" title="{{ page.next.title | markdownify | strip_html }}">{{ site.data.languages[page.lang].next }}</a>
   {% else %}
     <a href="#" class="pagination_pager {{ page.direction-format }} {{ page.lang | replace: 'fa', 'farsi'}} disabled">{{ site.data.languages[page.lang].next }}</a>
   {% endif %}
