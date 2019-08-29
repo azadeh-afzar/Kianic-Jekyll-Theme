@@ -34,10 +34,12 @@ development:
     # install ruby and node packages
     - bundle install --path vendor
     - npm install surge
-    - ls -a
+    # create a CNAME record with desired address for website
+    # surge will automatically detect this file at runtime
+    - echo "https://azadeh-afzar-kianic-jekyll-theme-development.surge.sh" > CNAME
   script:
     - bundle exec jekyll build -d development
-    - node_modules/.bin/surge development/
+    - node_modules/.bin/surge development
   artifacts:
     paths:
       - development
