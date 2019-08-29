@@ -27,8 +27,8 @@ a line and let me know what you thought. I'd prefer this method, it's free and a
 
 ## Promote Kianic
 You can help me by starring this theme's repository in
-[**GitLab <i class="fab fa-gitlab font-awesome-gitlab" aria-hidden="true"></i>**](https://gitlab.com/Azadeh-Afzar/Web-Development/Kianic-Jekyll-Theme "Kianic Jekyll Theme"){:target="_blank"} and
-[**GitHub <i class="fab fa-github font-awesome-github" aria-hidden="true"></i>**](https://github.com/Azadeh-Afzar/Kianic-Jekyll-Theme "Kianic Jekyll Theme"){:target="_blank"}.
+[**<i class="fab fa-gitlab font-awesome-gitlab" aria-hidden="true"></i> GitLab**](https://gitlab.com/Azadeh-Afzar/Web-Development/Kianic-Jekyll-Theme "Kianic Jekyll Theme"){:target="_blank"} and
+[**<i class="fab fa-github font-awesome-github" aria-hidden="true"></i> GitHub**](https://github.com/Azadeh-Afzar/Kianic-Jekyll-Theme "Kianic Jekyll Theme"){:target="_blank"}.
 
 ## Gift cards
 If you want to help me with real money, you can buy me gift cards. I can use
