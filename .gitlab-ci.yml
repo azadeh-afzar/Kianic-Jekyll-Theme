@@ -1,7 +1,7 @@
 # job for creating preview site for development branch on surge.sh
 development:
   stage: deploy
-  image: ubuntu:bionic
+  image: ubuntu:latest
   cache:
     paths:
       - vendor/
