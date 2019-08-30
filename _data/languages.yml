@@ -43,8 +43,8 @@ english:
                    <br>
                    Articles are under a Creative Commons BY-NC-SA 4.0 International License."
 
-  footer-text: "Made with Love <i class='fa fa-heart font-awesome-heart' aria-hidden='true'></i> 
-                hosted on GitLab <i class='fab fa-gitlab font-awesome-gitlab' aria-hidden='true'></i>"
+  footer-text: "Made with <i class='fa fa-heart font-awesome-heart' aria-hidden='true'></i> Love,
+                hosted on  <i class='fab fa-gitlab font-awesome-gitlab' aria-hidden='true'></i> GitLab"
 
 farsi:
   # website region

@@ -59,6 +59,12 @@ $globe-color: #34be5b;
 $bitcoin-color: #f7931a;
 $playstation-color: #003791;
 
+// -------------- Flags Options -------------
+
+$flag-icon-css-path: '../flags' !default;
+$flag-icon-rect-path: '/4x3' !default;
+$flag-icon-square-path: '/1x1' !default;
+
 // ------------- Font Options ---------------
 
 // this should contain a font for each language as base font
