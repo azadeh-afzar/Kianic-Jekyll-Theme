@@ -4,7 +4,7 @@ title: حمایت
 subtitle: به من انگیزه بدهید
 excerpt: "راه‌های حمایت از من برای گسترش این تارنما و انجام دادن پروژه‌های بیشتر"
 lang-ref: support
-image: /images/img-bitcoin-support.jpg
+image: /images/Confetti-Doodles.svg
 permalink: /farsi/support.html
 categories:
   - حمایت

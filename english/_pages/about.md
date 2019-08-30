@@ -4,7 +4,7 @@ title: About Me
 subtitle: Kianic Theme Developer
 excerpt: "More information about Mahdi Baghbani's interests"
 lang-ref: about-me
-image: /images/img-about.jpg
+image: /images/Cornered-Stairs.svg
 permalink: /english/about.html
 categories:
   - About

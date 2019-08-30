@@ -4,7 +4,7 @@ title: Legal
 subtitle: Terms and conditions
 excerpt: "Legal terms and conditions for Kianic Theme"
 lang-ref: legal-terms
-image: /images/img-gnu-linux.png
+image: /images/Slanted-Gradient.svg
 permalink: /english/legal.html
 categories:
   - License

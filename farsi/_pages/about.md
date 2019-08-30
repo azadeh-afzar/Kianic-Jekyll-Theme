@@ -4,7 +4,7 @@ title: درباره من
 subtitle: "توسعه‌دهنده پوسته کیانیک"
 excerpt: "اطلاعات بیشتر درباره توسعه‌دهنده پوسته کیانیک"
 lang-ref: about-me
-image: /images/img-about.jpg
+image: /images/Cornered-Stairs.svg
 permalink: /farsi/about.html
 categories:
   - درباره

@@ -4,7 +4,7 @@ title: Support
 subtitle: Motivate me
 excerpt: "Find out how you can support new content development and contribute to the running costs of MahdiBaghbani.ir"
 lang-ref: support
-image: /images/img-bitcoin-support.jpg
+image: /images/Confetti-Doodles.svg
 permalink: /english/support.html
 categories:
   - Support
