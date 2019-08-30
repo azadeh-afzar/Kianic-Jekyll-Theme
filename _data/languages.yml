@@ -10,7 +10,7 @@ english:
   # Image for country flag, using flag-icon-css files
   image: assets/flags/4x3/us.svg
   # icon for country flag with flag-icon-css interface
-  icon: <span class="flag-icon flag-icon-us"></span>
+  icon: <i class="flag-icon flag-icon-us"></i>
   change-language-title-text: Change Language
   change-language-span-text: LANGUAGE
   support-title-text: Support Me
@@ -41,9 +41,9 @@ english:
 
   copyright-text: "This work is licensed under a GNU General Public License v3.0.
                    <br>
-                   Articles are under a Creative Commons BY-NC-SA 4.0 International License."
+                   Articles are under a <i class='simple-icons simple-icons-creativecommons'></i> Creative Commons BY-NC-SA 4.0 International License."
 
-  footer-text: "Made with <i class='fa fa-heart kianic-icon-heart' aria-hidden='true'></i> Love,
+  footer-text: "Made with <i class='fa fa-heart kianic-icon-heart' aria-hidden='true'></i> Love and <i class='simple-icons simple-icons-jekyll kianic-simple-icon-jekyll'></i> Jekyll,
                 hosted on  <i class='fab fa-gitlab kianic-icon-gitlab' aria-hidden='true'></i> GitLab"
 
 farsi:
@@ -56,7 +56,7 @@ farsi:
   # Image for country flag, using flag-icon-css files
   image: assets/flags/4x3/ir.svg
   # icon for country flag with flag-icon-css interface
-  icon: <span class="flag-icon flag-icon-ir"></span>
+  icon: <i class="flag-icon flag-icon-ir"></i>
   change-language-title-text: تغییر زبان
   change-language-span-text: زبان
   support-title-text: حمایت از من
@@ -87,7 +87,7 @@ farsi:
 
   copyright-text: " این اثر تحت مجوز عمومی گنو نسخه ۳ منتشر شده است.
                     <br>
-                    مطالب این تار‌نوشت تحت مجوز انتشار کریتیو کامنز نسخه ۴.۰ بین‌المللی منتشر شده‌اند."
+                    مطالب این تار‌نوشت تحت مجوز انتشار <i class='simple-icons simple-icons-creativecommons'></i> کریتیو کامنز نسخه ۴.۰ بین‌المللی منتشر شده‌اند."
 
-  footer-text: "ساخته شده با علاقه <i class='fa fa-heart kianic-icon-heart' aria-hidden='true'></i>
-                و میزبانی شده در در گیت‌لب <i class='fab fa-gitlab kianic-icon-gitlab' aria-hidden='true'></i>"
+  footer-text: "ساخته شده با علاقه <i class='fa fa-heart kianic-icon-heart' aria-hidden='true'></i> و جکیل <i class='simple-icons simple-icons-jekyll kianic-simple-icon-jekyll'></i>،
+                میزبانی شده در در گیت‌لب <i class='fab fa-gitlab kianic-icon-gitlab' aria-hidden='true'></i>"

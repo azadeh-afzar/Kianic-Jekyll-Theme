@@ -2,7 +2,7 @@
   margin: 5%;
 } 
 
-// icon colors
+// font awesome custom colors
 .kianic-icon-heart {
   color: $heart-color;
 }
@@ -153,4 +153,11 @@
 
 .kianic-icon-playstation {
   color: $playstation-color;
+}
+
+// simple-icons custom colors
+// used codepen.io/sosuke/pen/Pjoqqp to convert color hex cods
+// into filter codes
+.kianic-simple-icon-jekyll {
+  filter: invert(12%) sepia(67%) saturate(6684%) hue-rotate(357deg) brightness(88%) contrast(113%);
 }
