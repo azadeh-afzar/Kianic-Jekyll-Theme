@@ -47,7 +47,7 @@ from any major key-server such as `pgp.mit.edu`
 
 ## Ways to contact me
 
-<a href="https://twitter.com/{{ site.twitter }}" target="_blank"><i class="fab fa-2x fa-twitter font-awesome-twitter" aria-hidden="true"></i></a>&emsp;&emsp;&emsp;
-<a href="https://telegram.me/{{ site.telegram }}" target="_blank"><i class="fab fa-2x fa-telegram font-awesome-telegram" aria-hidden="true"></i></a>&emsp;&emsp;&emsp;
-<a href="https://keybase.io/{{ site.keybase }}" target="_blank"><i class="fab fa-2x fa-keybase font-awesome-twitter" aria-hidden="true"></i></a>&emsp;&emsp;&emsp;
-<a href="mailto:{{ site.email }}" target="_blank"><i class="far fa-2x fa-envelope font-awesome-envelope" aria-hidden="true"></i></a>
+<a class= "kianic-awesome-icons" href="https://twitter.com/{{ site.twitter }}" target="_blank"><i class="fab fa-2x fa-twitter font-awesome-twitter" aria-hidden="true"></i></a>
+<a class= "kianic-awesome-icons" href="https://telegram.me/{{ site.telegram }}" target="_blank"><i class="fab fa-2x fa-telegram font-awesome-telegram" aria-hidden="true"></i></a>
+<a class= "kianic-awesome-icons" href="https://keybase.io/{{ site.keybase }}" target="_blank"><i class="fab fa-2x fa-keybase font-awesome-twitter" aria-hidden="true"></i></a>
+<a class= "kianic-awesome-icons" href="mailto:{{ site.email }}" target="_blank"><i class="far fa-2x fa-envelope font-awesome-envelope" aria-hidden="true"></i></a>
