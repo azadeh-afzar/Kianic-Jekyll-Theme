@@ -22,10 +22,10 @@ share:
 ## تارنما
 برای مدتی طولانی من وابسته به [**وردپرس <i class="fab fa-wordpress-simple kianic-icon-wordpress" aria-hidden="true"></i>**](https://wordpress.org "وردپرس"){:target="_blank"} بودم، ولی الان با ابزار های تولید تارنمای ثابت کار می‌کنم و چندتا از اون‌ها رو امتحان کردم.
 
-در حال حاضر از [**جِکیل <i class="simple-icons simple-icons-jekyll kianic-simple-icon-jekyll"></i> **](https://jekyllrb.com "تارنمای جِکیل"){:target="_blank"} استفاده می‌کنم چون با [**گیتلب <i class="fab fa-gitlab kianic-icon-gitlab" aria-hidden="true"></i>**](https://gitlab.com/pages "گیت‌لب"){:target="_blank"} و [**گیتهاب <i class="fab fa-github kianic-icon-github" aria-hidden="true"></i>**](https://pages.github.com "گیت‌هاب"){:target="_blank"} سازگار هست.
+در حال حاضر از [**جِکیل <i class="simple-icons simple-icons-jekyll kianic-simple-icon-jekyll"></i>**](https://jekyllrb.com "تارنمای جِکیل"){:target="_blank"} استفاده می‌کنم چون با [**گیتلب <i class="fab fa-gitlab kianic-icon-gitlab" aria-hidden="true"></i>**](https://gitlab.com/pages "گیت‌لب"){:target="_blank"} و [**گیتهاب <i class="fab fa-github kianic-icon-github" aria-hidden="true"></i>**](https://pages.github.com "گیت‌هاب"){:target="_blank"} سازگار هست.
 می‌تونید تارنمای شخصی من رو دنبال کنید `MahdiBaghbani.ir` <a href="https://MahdiBaghbani.ir" target="_blank"><i class="fa fa-globe-europe kianic-icon-globe" aria-hidden="true"></i></a> ، تا بیشتر با من آشنا بشید.
 
-(اصلا چرا باید اینکار رو بکنید؟ نمیدونم فقط دارم تبلیغ می‌کنم ...)
+(اصلا چرا باید این کار رو بکنید؟ نمی‌دونم فقط دارم تبلیغ می‌کنم ...)
 
 ## تماس
 راه پیشنهادی من برای ارتباط همیشه توییتره اما اگر دوست داشتید می‌تونید از ایمیل هم استفاده کنید. من سعی می‌کنم پیام‌ها رو همیشه سریع جواب بدم، اما گاهی اوقات چند روزی طول می‌کشه تا ایمیل رو چک کنم.
