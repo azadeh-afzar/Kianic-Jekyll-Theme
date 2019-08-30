@@ -84,38 +84,36 @@ special-pages:
 # Social media accounts
 facebook:           MahdiBaghbanii
 #instagram:          username
+#tumblr:             username
+#pinterest:          username
+#flickr:             username
 twitter:            Baghbani1
-#linkedin:           username
+#weibo:              username
+#goodreads:          username
+linkedin:           MahdiBaghbani
+#xing:               username
+#youtube:            username
+#twitch              username
 gitlab:             MahdiBaghbani
 github:             MahdiBaghbani
-#goodreads:          username
+#codepen:            username
+#dribbble:           username
+#behance:            username
 #stackoverflow:      username
+#hackernews:         username
+#reddit:             username
+#quora:              username
+#foursquare:         username
+#lastfm:             username
+#soundcloud:         username
 #steam:              username
 #fide:               username
 #lichess:            username
 #chess:              username
 #keybase:            username
-#reddit:             username
-#quora:              username
-#hackernews:         username
 telegram:           MahdiBaghbanii
-email:              MahdiBaghbani@protonmail.com
-#xing:               username
-#lastfm:             username
-#tumblr:             username
-#pinterest:          username
-#foursquare:         username
-#steam:              username
-#dribbble:           username
-#youtube:            username
-#twitch              username
-#soundcloud:         username
-#weibo:              username
-#flickr:             username
-#codepen:            username
 #xmpp:               username
-#hackernews:         username
-#behance:            username
+email:              MahdiBaghbani@protonmail.com
 
 # select default share links for posts/pages
 # you can manually turn this off in each post/page setting
