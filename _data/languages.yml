@@ -1,16 +1,16 @@
 # -- Translations ---
 
 english:
-  # website region
+  # language region
   locale: en_US
   label:
-    # language name in all languages
+    # language name in all languages available in this site
     english: English
     farsi: انگلیسی
-  # Image for country flag
-  image: images/img-flag-usa.png
-  # Emoji icon for country flag
-  icon: 🇺🇸 
+  # Image for country flag, using flag-icon-css files
+  image: assets/flags/4x3/us.svg
+  # icon for country flag with flag-icon-css interface
+  icon: <span class="flag-icon flag-icon-us"></span>
   change-language-title-text: Change Language
   change-language-span-text: LANGUAGE
   support-title-text: Support Me
@@ -47,15 +47,16 @@ english:
                 hosted on  <i class='fab fa-gitlab font-awesome-gitlab' aria-hidden='true'></i> GitLab"
 
 farsi:
-  # website region
+  # language region
   locale: fa_IR
   label:
+    # language name in all languages available in this site
     english: Farsi
     farsi: پارسی
-    # Image for country flag
-  image: images/img-flag-iran.png
-  # Emoji icon for country flag
-  icon: 🇮🇷
+  # Image for country flag, using flag-icon-css files
+  image: assets/flags/4x3/ir.svg
+  # icon for country flag with flag-icon-css interface
+  icon: <span class="flag-icon flag-icon-ir"></span>
   change-language-title-text: تغییر زبان
   change-language-span-text: زبان
   support-title-text: حمایت از من
