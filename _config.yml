@@ -81,40 +81,41 @@ special-pages:
 
 # --- Social ---
 
-# Social ID's
+# Social media accounts
 facebook:           MahdiBaghbanii
-# instagram:          username
+#instagram:          username
 twitter:            Baghbani1
-# linkedin:           username
+#linkedin:           username
 gitlab:             MahdiBaghbani
 github:             MahdiBaghbani
-goodreads:          40576484
-# stackoverflow:      username
-# steam:              username
-# fide:               username
-# lichess:            username
-# chess:              username
-# keybase:            username
-# reddit:             username
-# quora:              username
-# hackernews:         username
+#goodreads:          username
+#stackoverflow:      username
+#steam:              username
+#fide:               username
+#lichess:            username
+#chess:              username
+#keybase:            username
+#reddit:             username
+#quora:              username
+#hackernews:         username
 telegram:           MahdiBaghbanii
 email:              MahdiBaghbani@protonmail.com
-#xing:              username
-#lastfm:            username
-#tumblr:            username
-#pinterest:         username
-#foursquare:        username
+#xing:               username
+#lastfm:             username
+#tumblr:             username
+#pinterest:          username
+#foursquare:         username
 #steam:              username
-#dribbble:          username
-#youtube:           username
-#soundcloud:        username
-#weibo:             username
-#flickr:            username
-#codepen:           username
-#xmpp:              username@server.com
-#hackernews:        username
-#behance:           username
+#dribbble:           username
+#youtube:            username
+#twitch              username
+#soundcloud:         username
+#weibo:              username
+#flickr:             username
+#codepen:            username
+#xmpp:               username
+#hackernews:         username
+#behance:            username
 
 # select default share links for posts/pages
 # you can manually turn this off in each post/page setting
@@ -182,8 +183,8 @@ plugins:
   - jekyll-gist
 
 # Include list
-include: [_pages]
+include: [CNAME, _pages]
 
 # Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, _site, src, vendor, .gitignore
-          CNAME, LICENSE, Rakefile, .sass-cache, .DS_Store, .idea, CHANGELOG.md]
+          LICENSE, Rakefile, .sass-cache, .DS_Store, .idea, CHANGELOG.md]
