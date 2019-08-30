@@ -43,8 +43,8 @@ english:
                    <br>
                    Articles are under a Creative Commons BY-NC-SA 4.0 International License."
 
-  footer-text: "Made with <i class='fa fa-heart font-awesome-heart' aria-hidden='true'></i> Love,
-                hosted on  <i class='fab fa-gitlab font-awesome-gitlab' aria-hidden='true'></i> GitLab"
+  footer-text: "Made with <i class='fa fa-heart kianic-icon-heart' aria-hidden='true'></i> Love,
+                hosted on  <i class='fab fa-gitlab kianic-icon-gitlab' aria-hidden='true'></i> GitLab"
 
 farsi:
   # language region
@@ -89,5 +89,5 @@ farsi:
                     <br>
                     مطالب این تار‌نوشت تحت مجوز انتشار کریتیو کامنز نسخه ۴.۰ بین‌المللی منتشر شده‌اند."
 
-  footer-text: "ساخته شده با علاقه <i class='fa fa-heart font-awesome-heart' aria-hidden='true'></i>
-                و میزبانی شده در در گیت‌لب <i class='fab fa-gitlab font-awesome-gitlab' aria-hidden='true'></i>"
+  footer-text: "ساخته شده با علاقه <i class='fa fa-heart kianic-icon-heart' aria-hidden='true'></i>
+                و میزبانی شده در در گیت‌لب <i class='fab fa-gitlab kianic-icon-gitlab' aria-hidden='true'></i>"
