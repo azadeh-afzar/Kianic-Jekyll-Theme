@@ -155,13 +155,29 @@
   color: $playstation-color;
 }
 
+.kianic-icon-sass {
+  color: $sass-color;
+}
+
+.kianic-icon-javascript {
+  color: $javascript-color;
+}
+
 // simple-icons custom colors
 // used codepen.io/sosuke/pen/Pjoqqp to convert color hex cods
 // into filter codes
+.kianic-simple-icon-javascript {
+  filter: invert(85%) sepia(75%) saturate(3082%) hue-rotate(338deg) brightness(101%) contrast(94%);
+}
+
 .kianic-simple-icon-jekyll {
   filter: invert(12%) sepia(67%) saturate(6684%) hue-rotate(357deg) brightness(88%) contrast(113%);
 }
 
 .kianic-simple-icon-protonmail {
   filter: invert(58%) sepia(62%) saturate(233%) hue-rotate(196deg) brightness(89%) contrast(88%);
+}
+
+.kianic-simple-icon-sass {
+  filter: invert(72%) sepia(39%) saturate(3973%) hue-rotate(292deg) brightness(86%) contrast(84%);
 }

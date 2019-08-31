@@ -32,7 +32,7 @@ You can help me by starring this theme's repository in
 
 ## Contribute to Kianic
 Want to do some super favor? have decent knowledge in <i class="fab fa-js kianic-icon-javascript" aria-hidden="true"></i> Javascript,
-<i class="fab fa-sass kianic-icon-scss" aria-hidden="true"></i> Sass or <i class="simple-icons simple-icons-jekyll kianic-simple-icon-jekyll"></i> Jekyll?
+<i class="fab fa-sass kianic-icon-sass" aria-hidden="true"></i> Sass or <i class="simple-icons simple-icons-jekyll kianic-simple-icon-jekyll"></i> Jekyll?
 then the best way you can possibly support me is to contribute to Kianic development.
 Check CONTRIBUTING and ROADMAP to find out how you can help Kianic.
 
