@@ -39,7 +39,7 @@ english:
   twitter: Twitter
   twitter-text: Share on Twitter
 
-  copyright-text: "This work is licensed under a GNU General Public License v3.0.
+  copyright-text: "This work is licensed under a <i class='simple-icons simple-icons-gnu kianic-simple-icon-gnu'></i> GNU General Public License v3.0.
                    <br>
                    Articles are under a <i class='simple-icons simple-icons-creativecommons'></i> Creative Commons BY-NC-SA 4.0 International License."
 
@@ -85,7 +85,7 @@ farsi:
   twitter: توییتر
   twitter-text: اشتراک گذاری در توییتر
 
-  copyright-text: " این اثر تحت مجوز عمومی گنو نسخه ۳ منتشر شده است.
+  copyright-text: " این اثر تحت مجوز عمومی گنو نسخه ۳ <i class='simple-icons simple-icons-gnu kianic-simple-icon-gnu'></i> منتشر شده است.
                     <br>
                     مطالب این تار‌نوشت تحت مجوز انتشار <i class='simple-icons simple-icons-creativecommons'></i> کریتیو کامنز نسخه ۴.۰ بین‌المللی منتشر شده‌اند."
 
