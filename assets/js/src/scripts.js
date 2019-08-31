@@ -48,9 +48,17 @@ $('.mode-menu-icon').click(function () {
 
 });
 
+// load mode as fast as the page loads
 $(document).on('DOMContentLoaded', modeKeeper);
 
+// fires onscroll function
+$('.block-right').on('scroll', readProgressBar);
+
 function modeKeeper() {
+    // gets mode from local storage and if it's not initialized yet, sets it to 'light'
+    // and the calls mode specific functions to change css styles
+    // it ues no-transition mode because it's not "changing" mode, 
+    // it's only keeping it between refreshes or going to other pages in the site
     (localStorage.getItem('mode') || 'light') === 'light' ? lightMode('no-transition') : darkMode('no-transition');
     changeModeIcon('direct');
 }
@@ -82,10 +90,41 @@ function darkMode(mode) {
         dark = 'dark';
     }
 
+    // I need help to somehow clean this ugly code
+    // all this classes should be in a list and the method iterate over them
+    // I couldn't find a way to do that so I just put everything in this ...
     $('body, .languages-menu-icon, .languages-menu-icon-posts, .mode-menu-icon, .posts-menu-icon, .projects-menu-icon, .mode-link, .languages-link, .posts-link, .projects-link, .about-info, .posts-list, .inner-post, .tags, .tag-heading, .highlighter-rouge, .highlight, .change-language, .date-highlight, .pagination, .pagination_pager, .entry-meta, .btn, .notice, .notice_warning, .notice_success, .notice_danger, .notice_info, dt, thead').removeClass('transit').removeClass('light').addClass(dark);
 }
 
-// Smooth scroll
+function readProgressBar() {
+    // calculate the percentage the user has scrolled down the page
+    // calculates the maximum height of block-right and then 
+    // gets percentage of current height divided by maximum height to fill the progress bar
+    var currentLocationHeight = $('.block-right').scrollTop();
+    // it comes to my attention that the height is way too bigger 
+    // than it should be and even I scroll to end of page, 
+    // currentLocationHeight != maximumHeight
+    // so after some tests I came with this dirty hack to
+    // subtract 780 from maximum height so it would work just fine
+    var maximumHeight = $('.block-right')[0].scrollHeight - 780;
+
+    // honestly copied this part from stackoverflow and have no idea what these if's do!
+    if(currentLocationHeight >= $('.block-right').offset().top){
+        if(currentLocationHeight <= ($('.block-right').offset().top + maximumHeight)){
+            // I understand this part
+            $('.read-progress-bar').css('width', ((currentLocationHeight - $('.block-right').offset().top) / maximumHeight) * 100 + "%"  );
+        } else {
+            // and this part
+            $('.read-progress-bar').css('width',"100%");
+        }
+    } else {
+        $('.read-progress-bar').css('width',"0px");
+    } 
+}
+
+// Smooth Scroll function
+// funny thing about this part of my code is that I've tried many ways with jquery
+// to do this and the result didn't make me happy, but ironically this pure javascript did the job
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();

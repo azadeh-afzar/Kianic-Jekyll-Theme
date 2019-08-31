@@ -31,6 +31,7 @@ layout: compress
     </div>
 
     <div class="block-right">
+      <div class="read-progress-bar {{ page.direction-format }}"></div>
       {% assign has-other-lang = false %}
       {% if site.language-options.lang-number > 1 and page.lang-ref != nil %}
         {% assign pages = site.pages | where: "lang-ref", page.lang-ref %} 

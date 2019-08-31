@@ -1592,6 +1592,21 @@ canvas {
   }
 }
 
+.read-progress-bar {
+  position: fixed;
+  background-color: $read-progress-bar-color;
+  height: 5px;
+  width: 0px;
+  z-index: 3;
+  top: 0px;
+  &.ltr {
+    left: 0;
+  }
+  &.rtl {
+    right: 0;
+  }
+}
+
 .footer {
   margin-top: 1em;
 }
