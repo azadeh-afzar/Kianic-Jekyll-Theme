@@ -3,9 +3,7 @@
         {% when "home" %}
             {% comment %} show nothing {% endcomment %}
         {% when "page" %}
-            {% if page.type !=  "Tag Archive" %}
-                {% include copyright.html %}
-            {% endif %}
+            {% include copyright.html %}
         {% when "post" %}
             {% include copyright.html %}
         {% else %}

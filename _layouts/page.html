@@ -49,11 +49,11 @@ layout: compress
       <div class="inner-post content {{ page.direction-format }} {{ page.lang }}">
         <div class="date-highlight {{ page.direction-format }} {{ page.lang }}">{% if page.date %}<i class="far fa-calendar" aria-hidden="true"></i>&nbsp;{% assign obj = page %}{% include convert-date/date-formatter.html %}{{ date-day }} {{ date-month }} {{ date-year }}{% else %}&#x2756;{% endif %}</div>
         {{ content }}
-        {% include change-language.html %}
-        {% if page.title !=  "Tag Archive" %}
-          {% include share.html %}
-          {% include page-pagination.html %}
+        {% if page.type !=  "Tag Archive" %}
+          {% include change-language.html %}
         {% endif %}
+        {% include share.html %}
+        {% include page-pagination.html %}
         {% include footer.html %}
       </div>
     </div>
