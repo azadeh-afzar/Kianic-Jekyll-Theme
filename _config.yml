@@ -123,6 +123,14 @@ share:
   twitter: true
   linkedin: true
 
+
+# --- katex plugin settings ---
+
+
+katex:
+  rendering_options:
+    throw_error: true
+    error_color: "#cc0000"
 # --- Web Trackers ---
   
 # Google Analytics
@@ -177,6 +185,7 @@ defaults:
 # Ruby Gems
 plugins:
   - jemoji
+  - jekyll-katex
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
