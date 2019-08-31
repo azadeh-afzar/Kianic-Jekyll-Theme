@@ -20,7 +20,15 @@
   <ul class="languages-menu">
     {% for item in site.language-options.lang-id %}
       <li style="background:url({{ site.url }}/{{ site.data.languages[ item.title ].image }}) center center no-repeat;">
-        <a href="{{ site.url }}/{{ item.title | replace: site.language-options.lang-default, '' }}">
+        {% assign target_url = item.title %}
+        {% if page.layout == 'home' %}
+          {% assign target_url = target_url | replace: site.language-options.lang-default, '' %}
+        {% endif %}
+        {% if target_url != '' %}
+          {% assign target_url = target_url | prepend: '/' %}
+        {% endif %}
+        {% assign page_lang_with_slash = page.lang | append: '/' %}
+        <a href="{{ site.url }}{{ target_url }}{{ page.url | replace: page_lang_with_slash, ''}}">
           <span>
             {{ site.data.languages[ item.title ].label[ page.lang ] }}
           </span>
