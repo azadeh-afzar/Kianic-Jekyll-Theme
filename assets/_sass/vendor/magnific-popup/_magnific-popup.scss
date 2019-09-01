@@ -1,17 +1,17 @@
 /* Magnific Popup CSS */
-
-@import "magnific-popup-settings";
+@import "settings";
 
 ////////////////////////
 //
 // Contents:
 //
-// 1. General styles
+// 1. Default Settings
+// 2. General styles
 //    - Transluscent overlay
 //    - Containers, wrappers
 //    - Cursors
 //    - Helper classes
-// 2. Appearance
+// 3. Appearance
 //    - Preloader & text that displays error messages
 //    - CSS reset for buttons
 //    - Close icon
@@ -25,9 +25,50 @@
 ////////////////////////
 
 
+////////////////////////
+// 1. Default Settings
+////////////////////////
+
+$mfp-overlay-color: #0b0b0b !default;
+$mfp-overlay-opacity: 0.8 !default;
+$mfp-shadow: 0 0 8px rgba(0, 0, 0, 0.6) !default; // shadow on image or iframe
+$mfp-popup-padding-left: 8px !default; // Padding from left and from right side
+$mfp-popup-padding-left-mobile: 6px !default; // Same as above, but is applied when width of window is less than 800px
+
+$mfp-z-index-base: 1040 !default; // Base z-index of popup
+$mfp-include-arrows: true !default; // include styles for nav arrows
+$mfp-controls-opacity: 0.65 !default;
+$mfp-controls-color: #FFF !default;
+$mfp-controls-border-color: #3F3F3F !default;
+$mfp-inner-close-icon-color: #333 !default;
+$mfp-controls-text-color: #CCC !default; // Color of preloader and "1 of X" indicator
+$mfp-controls-text-color-hover: #FFF !default;
+$mfp-IE7support: true !default; // Very basic IE7 support
+
+// Iframe-type options
+$mfp-include-iframe-type: true !default;
+$mfp-iframe-padding-top: 40px !default;
+$mfp-iframe-background: #000 !default;
+$mfp-iframe-max-width: 900px !default;
+$mfp-iframe-ratio: 9/16 !default;
+
+// Image-type options
+$mfp-include-image-type: true !default;
+$mfp-image-background: #444 !default;
+$mfp-image-padding-top: 40px !default;
+$mfp-image-padding-bottom: 40px !default;
+$mfp-include-mobile-layout-for-image: true !default; // Removes paddings from top and bottom
+
+// Image caption options
+$mfp-caption-title-color: #F3F3F3 !default;
+$mfp-caption-subtitle-color: #BDBDBD !default;
+
+// A11y
+$mfp-use-visuallyhidden: false !default; // Hide content from browsers, but make it available for screen readers
+
 
 ////////////////////////
-// 1. General styles
+// 2. General styles
 ////////////////////////
 
 // Transluscent overlay
@@ -42,6 +83,9 @@
 
   background: $mfp-overlay-color;
   opacity: $mfp-overlay-opacity;
+  @if $mfp-IE7support {
+    filter: unquote("alpha(opacity=#{$mfp-overlay-opacity*100})");
+  }
 }
 
 // Wrapper for popup
@@ -65,6 +109,8 @@
   left: 0;
   top: 0;
   padding: 0 $mfp-popup-padding-left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -96,6 +142,7 @@
   text-align: left;
   z-index: $mfp-z-index-base + 5;
 }
+
 .mfp-inline-holder,
 .mfp-ajax-holder {
   .mfp-content {
@@ -108,6 +155,7 @@
 .mfp-ajax-cur {
   cursor: progress;
 }
+
 .mfp-zoom-out-cur {
   &, .mfp-image-holder .mfp-close {
     cursor: -moz-zoom-out;
@@ -115,12 +163,14 @@
     cursor: zoom-out;
   }
 }
+
 .mfp-zoom {
   cursor: pointer;
   cursor: -webkit-zoom-in;
   cursor: -moz-zoom-in;
   cursor: zoom-in;
 }
+
 .mfp-auto-cursor {
   .mfp-content {
     cursor: auto;
@@ -131,7 +181,7 @@
 .mfp-arrow,
 .mfp-preloader,
 .mfp-counter {
-  -webkit-user-select:none;
+  -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
 }
@@ -164,7 +214,7 @@
 
 
 ////////////////////////
-// 2. Appearance
+// 3. Appearance
 ////////////////////////
 
 // Preloader and text that displays error messages
@@ -178,8 +228,10 @@
   left: 8px;
   right: 8px;
   z-index: $mfp-z-index-base + 4;
+
   a {
     color: $mfp-controls-text-color;
+
     &:hover {
       color: $mfp-controls-text-color-hover;
     }
@@ -213,12 +265,13 @@ button {
     outline: none;
     padding: 0;
     z-index: $mfp-z-index-base + 6;
+    -webkit-box-shadow: none;
     box-shadow: none;
-    touch-action: manipulation;
   }
+
   &::-moz-focus-inner {
-      padding: 0;
-      border: 0
+    padding: 0;
+    border: 0
   }
 }
 
@@ -235,27 +288,35 @@ button {
   text-decoration: none;
   text-align: center;
   opacity: $mfp-controls-opacity;
+  @if $mfp-IE7support {
+    filter: unquote("alpha(opacity=#{$mfp-controls-opacity*100})");
+  }
   padding: 0 0 18px 10px;
   color: $mfp-controls-color;
 
   font-style: normal;
   font-size: 28px;
-  font-family: Arial, Baskerville, monospace;
+  font-family: $base-font;
 
   &:hover,
   &:focus {
     opacity: 1;
+    @if $mfp-IE7support {
+      filter: unquote("alpha(opacity=#{1*100})");
+    }
   }
 
   &:active {
     top: 1px;
   }
 }
+
 .mfp-close-btn-in {
   .mfp-close {
     color: $mfp-inner-close-icon-color;
   }
 }
+
 .mfp-image-holder,
 .mfp-iframe-holder {
   .mfp-close {
@@ -275,7 +336,6 @@ button {
   color: $mfp-controls-text-color;
   font-size: 12px;
   line-height: 18px;
-  white-space: nowrap;
 }
 
 // Navigation arrows
@@ -283,22 +343,33 @@ button {
   .mfp-arrow {
     position: absolute;
     opacity: $mfp-controls-opacity;
+    @if $mfp-IE7support {
+      filter: unquote("alpha(opacity=#{$mfp-controls-opacity*100})");
+    }
     margin: 0;
     top: 50%;
     margin-top: -55px;
     padding: 0;
     width: 90px;
     height: 110px;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
     &:active {
       margin-top: -54px;
     }
+
     &:hover,
     &:focus {
       opacity: 1;
+      @if $mfp-IE7support {
+        filter: unquote("alpha(opacity=#{1*100})");
+      }
     }
+
     &:before,
-    &:after {
+    &:after,
+    .mfp-b,
+    .mfp-a {
       content: '';
       display: block;
       width: 0;
@@ -311,14 +382,16 @@ button {
       border: medium inset transparent;
     }
 
-    &:after {
+    &:after,
+    .mfp-a {
 
       border-top-width: 13px;
       border-bottom-width: 13px;
-      top:8px;
+      top: 8px;
     }
 
-    &:before {
+    &:before,
+    .mfp-b {
       border-top-width: 21px;
       border-bottom-width: 21px;
       opacity: 0.7;
@@ -328,11 +401,15 @@ button {
 
   .mfp-arrow-left {
     left: 0;
-    &:after {
+
+    &:after,
+    .mfp-a {
       border-right: 17px solid $mfp-controls-color;
       margin-left: 31px;
     }
-    &:before {
+
+    &:before,
+    .mfp-b {
       margin-left: 25px;
       border-right: 27px solid $mfp-controls-border-color;
     }
@@ -340,16 +417,19 @@ button {
 
   .mfp-arrow-right {
     right: 0;
-    &:after {
+
+    &:after,
+    .mfp-a {
       border-left: 17px solid $mfp-controls-color;
       margin-left: 39px
     }
-    &:before {
+
+    &:before,
+    .mfp-b {
       border-left: 27px solid $mfp-controls-border-color;
     }
   }
 }
-
 
 
 // Iframe content type
@@ -357,11 +437,13 @@ button {
   .mfp-iframe-holder {
     padding-top: $mfp-iframe-padding-top;
     padding-bottom: $mfp-iframe-padding-top;
+
     .mfp-content {
       line-height: 0;
       width: 100%;
       max-width: $mfp-iframe-max-width;
     }
+
     .mfp-close {
       top: -40px;
     }
@@ -371,6 +453,7 @@ button {
     height: 0;
     overflow: hidden;
     padding-top: $mfp-iframe-ratio * 100%;
+
     iframe {
       position: absolute;
       display: block;
@@ -385,7 +468,6 @@ button {
 }
 
 
-
 // Image content type
 @if $mfp-include-image-type {
 
@@ -397,6 +479,8 @@ button {
       height: auto;
       display: block;
       line-height: 0;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
       box-sizing: border-box;
       padding: $mfp-image-padding-top 0 $mfp-image-padding-bottom;
       margin: 0 auto;
@@ -406,6 +490,7 @@ button {
   /* The shadow behind the image */
   .mfp-figure {
     line-height: 0;
+
     &:after {
       content: '';
       position: absolute;
@@ -420,14 +505,21 @@ button {
       box-shadow: $mfp-shadow;
       background: $mfp-image-background;
     }
+
     small {
       color: $mfp-caption-subtitle-color;
       display: block;
       font-size: 12px;
       line-height: 14px;
     }
+
     figure {
       margin: 0;
+    }
+
+    figcaption {
+      margin-top: 0;
+      margin-bottom: 0; // reset for bottom spacing
     }
   }
   .mfp-bottom-bar {
@@ -462,7 +554,7 @@ button {
 
 
   @if $mfp-include-mobile-layout-for-image {
-    @media screen and (max-width: 800px) and (orientation:landscape), screen and (max-height: 300px) {
+    @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
       /**
        * Remove all paddings around the image on small screen
        */
@@ -471,38 +563,47 @@ button {
           padding-left: 0;
           padding-right: 0;
         }
+
         img {
           &.mfp-img {
             padding: 0;
           }
         }
+
         .mfp-figure {
           // The shadow behind the image
           &:after {
             top: 0;
             bottom: 0;
           }
+
           small {
             display: inline;
             margin-left: 5px;
           }
         }
+
         .mfp-bottom-bar {
-          background: rgba(0,0,0,0.6);
+          background: rgba(0, 0, 0, 0.6);
           bottom: 0;
           margin: 0;
           top: auto;
           padding: 3px 5px;
           position: fixed;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
           box-sizing: border-box;
+
           &:empty {
             padding: 0;
           }
         }
+
         .mfp-counter {
           right: 5px;
           top: 3px;
         }
+
         .mfp-close {
           top: 0;
           right: 0;
@@ -518,7 +619,6 @@ button {
     }
   }
 }
-
 
 
 // Scale navigation arrows and reduce padding from sides
@@ -538,5 +638,38 @@ button {
   .mfp-container {
     padding-left: $mfp-popup-padding-left-mobile;
     padding-right: $mfp-popup-padding-left-mobile;
+  }
+}
+
+
+// IE7 support
+// Styles that make popup look nicier in old IE
+@if $mfp-IE7support {
+  .mfp-ie7 {
+    .mfp-img {
+      padding: 0;
+    }
+
+    .mfp-bottom-bar {
+      width: 600px;
+      left: 50%;
+      margin-left: -300px;
+      margin-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    .mfp-container {
+      padding: 0;
+    }
+
+    .mfp-content {
+      padding-top: 44px;
+    }
+
+    .mfp-close {
+      top: 0;
+      right: 0;
+      padding-top: 0;
+    }
   }
 }

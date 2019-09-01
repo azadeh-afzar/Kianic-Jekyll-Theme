@@ -42,91 +42,115 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+
   &:hover {
     background-color: mix($gray, $blue, 40%);
     border: 1px solid mix($gray, $blue, 40%);
     color: darken($white, 5%);
   }
+
   &_info {
     background-color: lighten($aqua, 10%);
+
     &:hover {
       background-color: darken($aqua, 5%);
       border-color: darken($aqua, 5%);
     }
+
     &.dark {
       background-color: darken($aqua, 45%);
+
       &:hover {
         background-color: darken($aqua, 15%);
         border-color: darken($aqua, 25%);
       }
     }
   }
+
   &_warning {
     background-color: lighten($yellow, 10%);
+
     &:hover {
       background-color: darken($yellow, 5%);
       border-color: darken($yellow, 5%);
     }
+
     &.dark {
       background-color: darken($yellow, 25%);
+
       &:hover {
         background-color: darken($yellow, 10%);
         border-color: darken($yellow, 5%);
       }
     }
   }
-  &_success{
+
+  &_success {
     background-color: lighten($green, 10%);
+
     &:hover {
       background-color: darken($green, 5%);
       border-color: darken($green, 5%);
     }
+
     &.dark {
       background-color: darken($green, 35%);
+
       &:hover {
         background-color: darken($green, 15%);
         border-color: darken($green, 25%);
       }
     }
   }
+
   &_danger {
     background-color: lighten($red, 10%);
+
     &:hover {
       background-color: darken($red, 5%);
       border-color: darken($red, 5%);
     }
+
     &.dark {
       background-color: darken($red, 35%);
+
       &:hover {
         background-color: darken($red, 15%);
         border-color: darken($red, 25%);
       }
     }
   }
+
   &_facebook {
     background-color: $facebook-color;
     color: $white !important;
+
     &:hover {
       background-color: mix($white, $facebook-color, 25%);
       border-color: mix($white, $facebook-color, 25%);
     }
   }
+
   &_linkedin {
     background-color: $linkedin-color;
     color: $white !important;
+
     &:hover {
       background-color: mix($white, $linkedin-color, 25%);
       border-color: mix($white, $linkedin-color, 25%);
     }
   }
+
   &_twitter {
     background-color: $twitter-color;
     color: $white !important;
+
     &:hover {
       background-color: mix($white, $twitter-color, 25%);
       border-color: mix($white, $twitter-color, 25%);
     }
   }
+
   &.ltr {
     &.english {
       font-family: $english-btn-font-family;
@@ -134,6 +158,7 @@
       font-weight: $english-btn-font-weight;
     }
   }
+
   &.rtl {
     &.farsi {
       font-family: $farsi-btn-font-family;
@@ -142,6 +167,7 @@
     }
   }
 }
+
 a.btn {
   text-decoration: none;
   color: lighten($black, 30%);
@@ -149,7 +175,7 @@ a.btn {
 
 // notice
 @mixin notice($notice-color) {
-  margin: 2em 0 !important;  // override
+  margin: 2em 0 !important; // override
   padding: 1em;
   font-size: 0.9em !important;
   text-indent: initial; // override
@@ -172,6 +198,7 @@ a.btn {
   }
   a {
     color: $notice-color;
+
     &:hover {
       color: mix(#000, $notice-color, 40%);
     }
@@ -186,6 +213,7 @@ a.btn {
   }
   &.dark {
     background-color: mix(#1b1b1b, $notice-color, 90%);
+
     code {
       background-color: mix(#1b1b1b, $notice-color, 95%)
     }
@@ -194,15 +222,19 @@ a.btn {
 
 .notice {
   @include notice(darken($white, 30%));
+
   &_info {
     @include notice($aqua);
   }
+
   &_warning {
     @include notice($yellow);
   }
+
   &_success {
     @include notice($green);
   }
+
   &_danger {
     @include notice($red);
   }

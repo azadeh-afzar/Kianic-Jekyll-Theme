@@ -3,20 +3,22 @@
     {% for item in site.data.projects %}
       {% capture image %}{{ item.image }}{% endcapture %}
       {% unless image contains 'http://' or image contains 'https://' %}
-      {% capture image %}{{ site.url }}/{{ image }}{% endcapture %}
+        {% capture image %}{{ site.url }}/{{ image }}{% endcapture %}
       {% endunless %}
       <li style="background:url({{ image }}) center center no-repeat;">
-        <a href="{{ item.url }}" {% unless item.completed %}class="inactive"{% endunless %} target="_blank" rel="nofollow external">
-          <span>
-            {{ item.title }}
-            {% unless item.completed %}
-            <br><em>in progress</em>
-            {% endunless %}
-          </span>
+        <a href="{{ item.url }}" {% unless item.completed %}class="inactive" {% endunless %} target="_blank" rel="nofollow external">
+            <span>
+              {{ item.title }}
+              {% unless item.completed %}
+                <br>
+                <em>in progress</em>
+              {% endunless %}
+            </span>
         </a>
-        </li>
+      </li>
     {% endfor %}
   </ul>
+
   <ul class="languages-menu">
     {% for item in site.language-options.lang-id %}
       {% assign language-localized = site.data.localized-translation[item.title] %}
@@ -30,11 +32,11 @@
         {% endif %}
         {% assign page_lang_with_slash = page.lang | append: '/' %}
         <a href="{{ site.url }}{{ target_url }}{{ page.url | replace: page_lang_with_slash, ''}}">
-          <span>
-            {{  language-localized.label[ page.lang ] }}
-          </span>
+            <span>
+              {{  language-localized.label[page.lang] }}
+            </span>
         </a>
-        </li>
+      </li>
     {% endfor %}
   </ul>
 </div>

@@ -1,5 +1,5 @@
 {%- comment -%}
---- 
+---
 # source/liquid/date_formatter.html
 #
 # Azadeh Date Converter Library in Liquid
@@ -44,10 +44,10 @@
 {%- endcomment -%}
 
 {% case page.lang %}
-    {% when 'english' %}
-        {% include convert-date/gregorian-date.html %}
-    {% when 'farsi' %}
-        {% include convert-date/persian-date.html %}
-    {% else %}
-        {{ 'DATE-FORMATTER ERROR: Unknown date type!' }}
+  {% when 'english' %}
+    {% include convert-date/gregorian-date.html %}
+  {% when 'farsi' %}
+    {% include convert-date/persian-date.html %}
+  {% else %}
+    {{ 'DATE-FORMATTER ERROR: Unknown date type!' }}
 {% endcase %}

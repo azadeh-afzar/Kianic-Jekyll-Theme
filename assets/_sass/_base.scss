@@ -14,6 +14,7 @@
 html {
   line-height: 1;
   overflow: hidden;
+
   &.no-scroll {
     overflow: hidden;
   }
@@ -32,21 +33,27 @@ a {
 
 body {
   font-family: $base-font;
+
   &.light {
     background: $light-mode-background-color;
     color: $light-mode-font-color;
+
     a:not(.social-btn):not(.btn):not(.pagination_pager):not(.section-line-link):not(.tag-link):not(.entry-meta) {
       color: $light-mode-link-color;
+
       &:hover {
         color: $light-mode-link-hover-color;
       }
     }
   }
+
   &.dark {
     background: $dark-mode-background-color;
     color: $dark-mode-font-color;
-    a:not(.social-btn):not(.btn):not(.pagination_pager):not(.section-line-link):not(.tag-link):not(.entry-meta)  {
+
+    a:not(.social-btn):not(.btn):not(.pagination_pager):not(.section-line-link):not(.tag-link):not(.entry-meta) {
       color: $dark-mode-link-color;
+
       &:hover {
         color: $dark-mode-link-hover-color;
       }
@@ -154,6 +161,7 @@ figure {
   flex-wrap: wrap;
   margin: 2em 0;
   @include clearfix();
+
   figcaption {
     margin-bottom: 0.5em;
     color: lighten($black, 50%);
@@ -161,13 +169,16 @@ figure {
     width: 100%;
     text-align: center;
   }
+
   img {
     margin-bottom: 10px;
   }
+
   > a {
     display: block;
     border: none !important;
   }
+
   &.half {
     @media only screen and (min-width: $small) {
       > a, > img {
@@ -181,6 +192,7 @@ figure {
       }
     }
   }
+
   &.third {
     @media only screen and (min-width: $small) {
       > a, > img {
@@ -210,6 +222,7 @@ img {
   -ms-interpolation-mode: bicubic;
   image-rendering: optimizeQuality;
   margin: 0 auto;
+
   &.emoji {
     display: inline;
     height: 1.25em;
@@ -226,9 +239,11 @@ blockquote {
   padding-right: 1em;
   font-style: italic;
   border-left: 0.25em solid $gray;
+
   cite {
     font-style: italic;
     font-size: 0.85em;
+
     &:before {
       content: "\2014";
       padding-right: 5px;
@@ -247,6 +262,7 @@ dt {
   padding: 0.5em;
   background-color: darken($white, 5%);
   font-weight: bold;
+
   &.dark {
     background-color: lighten($black, 15%);
   }
@@ -271,6 +287,7 @@ table {
 thead {
   background-color: darken($white, 5%);
   border-bottom: 1px solid darken($white, 7%);
+
   &.dark {
     background-color: lighten($black, 15%);
   }
@@ -286,6 +303,7 @@ td {
   text-align: center;
   border-right: 1px solid darken($white, 7%);
   padding: 0.5em;
+
   a {
     text-decoration: none !important;
   }
@@ -310,10 +328,10 @@ td:last-child {
 
 // code
 pre {
-    overflow-x: auto; // add scroll bars to wide code blocks
-    padding: 1rem;
-    line-height: 1.5;
-    margin: 0;
+  overflow-x: auto; // add scroll bars to wide code blocks
+  padding: 1rem;
+  line-height: 1.5;
+  margin: 0;
 }
 
 p > code,
@@ -321,12 +339,13 @@ a > code,
 li > code,
 figcaption > code,
 td > code {
-    padding: 0.1rem 0.2rem;
-    font-size: 0.9em;
-    border-radius: 2px;
-    background-color: darken($white, 15%);
-    font-family: $base-font;
-    &.dark {
-      background-color: lighten($black, 5%);
-    }
+  padding: 0.1rem 0.2rem;
+  font-size: 0.9em;
+  border-radius: 2px;
+  background-color: darken($white, 15%);
+  font-family: $base-font;
+
+  &.dark {
+    background-color: lighten($black, 5%);
+  }
 }

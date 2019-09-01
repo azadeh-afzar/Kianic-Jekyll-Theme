@@ -17,9 +17,9 @@ sitemap: false
 @import "utilities";
 
 // Load others
-@import "kianic-plugins/kianic-icons";
-@import "kianic-plugins/flag-icon-base";
-@import "kianic-plugins/flag-icon-list";
-@import "kianic-plugins/simple-icons-base";
-@import "kianic-plugins/simple-icons-list";
-@import "kianic-plugins/magnific-popup";
+@import "vendor/kianic-icons";
+@import "vendor/flag-icon-base";
+@import "vendor/flag-icon-list";
+@import "vendor/simple-icons-base";
+@import "vendor/simple-icons-list";
+@import "vendor/magnific-popup/magnific-popup";
