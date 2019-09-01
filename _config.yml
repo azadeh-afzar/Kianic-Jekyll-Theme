@@ -143,7 +143,6 @@ share:
 
 # --- katex plugin settings ---
 
-
 katex:
   js_path: "{{ Gem::lib_path }}/assets/js"
   rendering_options:
