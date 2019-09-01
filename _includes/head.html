@@ -36,7 +36,8 @@
   <meta name="twitter:creator" content="@{{ site.twitter }}">
   {% endif %}
   <!-- Open Graph -->
-  <meta property="og:locale" content="{{ site.data.languages[page.lang].locale }}">
+  {% assign language-localized = site.data.localized-translation[page.lang] %}
+  <meta property="og:locale" content="{{ language-localized.locale }}">
   <meta property="og:type" content="article">
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   {% if page.excerpt %}
@@ -73,9 +74,13 @@
   <link rel="apple-touch-icon" sizes="180x180" type="image/png" href="{{ site.url }}/{{ site.logo-images.apple-touch-icon-180x180 }}" />
   {% if page.layout != "error-page" %}
     <!-- CSS -->
+    {% for item in site.data.assets.css %}
+      {{ item }}
+    {% endfor %}
     <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/main.css">
-    <!-- CSS/Fonts -->
-    {% for item in site.data.theme-assets.fonts %}
+    <!-- Fonts -->
+    {{ site.assets }}
+    {% for item in site.data.assets.fonts %}
       {{ item }}
     {% endfor %}
     <!-- Left Block Image for Posts -->

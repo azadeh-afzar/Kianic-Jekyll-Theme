@@ -4,7 +4,7 @@ title: قوانین
 subtitle: شرایط استفاده از پوسته جکیل
 excerpt: "قوانین و شرایط استفاده از این پوسته جکیل"
 lang-ref: legal-terms
-image: /images/img-gnu-linux.png
+image: /images/Slanted-Gradient.svg
 permalink: /farsi/legal.html
 categories:
   - مجوز

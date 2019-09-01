@@ -1043,7 +1043,7 @@ canvas {
 .change-language {
   margin-top: 3em;
   margin-bottom: 1em;
-  padding-top: 20px;
+  padding: 20px 0px;
   width: 100%;
   display: table;
   &.ltr {
@@ -1592,9 +1592,20 @@ canvas {
   }
 }
 
-.kianic-awesome-icons {
-  margin: 5%;
-} 
+.read-progress-bar {
+  position: fixed;
+  background-color: $read-progress-bar-color;
+  height: 5px;
+  width: 0px;
+  z-index: 3;
+  top: 0px;
+  &.ltr {
+    left: 0;
+  }
+  &.rtl {
+    right: 0;
+  }
+}
 
 .footer {
   margin-top: 1em;

@@ -2,23 +2,45 @@
 
 [![Open Source](https://img.shields.io/badge/Open%20Source-Forever-brightgreen.svg?style=flat-square)](https://opensource.com/resources/what-open-source)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg?style=flat-square&logo=gnu)](https://opensource.org/licenses/GPL-3.0/)
+[![Jekyll](https://img.shields.io/badge/Jekyll%3E%D%203.6-blue.svg?style=flat-square)](https://jekyllrb.com/)
 
-Kianic is a Theme for Jekyll static site generator. It's a fork of excellent 
+Kianic is a theme for Jekyll static site generator. It's a fork of excellent
 [**Halve Jekyll Theme**](https://taylantatli.github.io/Halve) (by [**Taylan Tatli**](https://github.com/TaylanTatli)) 
 which is not being maintained anymore.
 
-Kianic is a total overhaul of Halve, with clean and optimized javascript libraries and Sass stylesheets. 
-Kianic offers it's users the ability to easily customize every corner of the theme.
+Kianic is a new design of Halve, with clean codebase and new features.
+Kianic enables it's users to easily customize every corner of the theme.
+
+## Preview   
+![screenshot of Kianic](/images/kianic-home-image.png)
+
+See a [live version of Kianic](https://azadeh-afzar.gitlab.io/Web-Development/Kianic-Jekyll-Theme) hosted on GitLab.
+
+## Development Preview
+If you are curious about the look of next Kianic version, you can see an [under development version of Kianic](https://azadeh-afzar-kianic-jekyll-theme.surge.sh/) hosted on surge.sh and explore it yourself.
+
+This build is from development branch, don't use it for your actual website because its unstable.
 
 ## Features
-New features in Kianic that doesn't exist in Halve:
+
+* Responsive design
+* Archive organized by tags
 * Total control over fonts in easy way
   * changing font families, sizes and weights
   * importing new fonts
 * Support for using multiple languages.
   * added RTL and LTR support into Sass files
   * translating all parts of website in one file
+* SVG icons for popular brands integrated into kianic's css styles
+  * can easily use every icon available at simpleicons.org through css
+  * can use svg files directly anywhere
+  * built-in color codes for many brands
+  * built-in 2x, 3x, 4x, 5x, sizes for inline svg usage
+* Emoji supported via Jeomji plugin
+* Font Awesome Brands built-in color codes
+* KaTex Plugin for mathematical expressions
 * Light and Dark mode added
+* Reading progress bar
 * License and footer area added
 
 To learn how to install and use this theme check out the
@@ -27,10 +49,7 @@ To learn how to install and use this theme check out the
 If you have a question, find a bug, or want to suggest a new feature, please open an
 [**issue on GitLab**](https://gitlab.com/MahdiBaghbani/Azadeh-Afzar/Web-Development/Kianic/issues/new).
 
-## Preview   
-![screenshot of Halve](/images/kianic-home-image.png)
-
-See a [live version of Kianic](https://azadeh-afzar.gitlab.io/Web-Development/Kianic-Jekyll-Theme) hosted on GitLab.
+Also read other posts to find out how to use many features available in Kianic.
 
 ## Support
 
@@ -45,6 +64,13 @@ You can help me by starring this theme repository in
 [**GitLab**](https://gitlab.com/Azadeh-Afzar/Web-Development/Kianic-Jekyll-Theme "Kianic Jekyll Theme") and
 [**GitHub**](https://github.com/Azadeh-Afzar/Kianic-Jekyll-Theme "Kianic Jekyll Theme").
 
+### Contribute to Kianic
+Want to do some super favor? have decent knowledge in Javascript, Sass or Jekyll?
+then the best way you can possibly support me is to contribute to Kianic development.
+Check CONTRIBUTING and ROADMAP to find out how you can help Kianic.
+
+Also if you don't have technical knowledge you can still help me to improve Kianic by finding bugs and reporting them, just go to Kianic GitLab repository and open an issue to explain what is wrong.
+
 ### Gift cards
 If you want to help me with real money, you can buy me gift cards. I can use Apple gift cards and Playstation gift cards. You can email gift card codes to me.
 
@@ -55,13 +81,17 @@ Here is my wallet address:
 `1P9qnUNEvdpwFUCau8MLgvQ7hmKGrwAY7D`
 
 ## Credits
-- Original Work: [Vangelis Tzortzis](https://github.com/srekoble)  
-- Halve Theme : [Halve Jekyll Theme](https://taylantatli.github.io/Halve)
-- Sample Posts and some code examples: [Michael Rose](https://github.com/mmistakes/)
+- Original work: [Vangelis Tzortzis](https://github.com/srekoble)  
+- Halve theme : [Halve Jekyll Theme](https://taylantatli.github.io/Halve)
+- Sample posts and some code examples: [Michael Rose](https://github.com/mmistakes/)
+- Brand color codes: [BrandColors](https://brandcolors.net/)
 - Images: [Unsplash](https://unsplash.com/) and [Lorem Pixel](http://lorempixel.com)
+- Brand logos SVG: [Simple Icons](https://simpleicons.org/)
 
 ### Others
 - [Jekyll](http://jekyllrb.com/)
 - [jQuery](http://jquery.com/)
 - [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/)
 - [FitVids.JS](http://fitvidsjs.com/)
+- [Jeomji](http://github.com/jekyll/jemoji/)
+- [KaTex](http://github.com/linjer/jekyll-katex/)

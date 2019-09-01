@@ -5,10 +5,25 @@ title: Kianic Jekyll Theme
 description: "Multi language, dual theme, stylish, two-column Jekyll theme for your blog."
 author: Mahdi Baghbani
 
-# website domain URL
-url: https://azadeh-afzar.gitlab.io/Web-Development/Kianic-Jekyll-Theme
+# Website domain URL
+url: https://azadeh-afzar-kianic-jekyll-theme-development.surge.sh
 
-# website logos
+# Website theme skin
+# available skins: default (others coming soon!)
+kianic-skin: default 
+
+# --- Multi Language Options ---
+
+# number of languages to be supported
+language-options:
+  lang-number: 2
+  lang-default: english
+  lang-id:
+    - title: english
+    - title: farsi
+
+# --- Background and Logo Options ---
+
 # use https://iconifier.net to create all favicon icons and apple touch png
 logo-images:
   favicon-png: images/favicon.png
@@ -35,22 +50,24 @@ logo-images:
     logo-main-homepage: images/logo-fa.png
     logo-main-other-pages: images/logo-small-fa.png
 
-# Copyright info
+# Left Block Images
+background:
+  # this image will be shown on homepage's left block
+  homepage: images/Flat-Mountains.svg              
+  # this image will be shown on post list page
+  post-list: images/Rainbow-Vortex.svg       
+  # this image will be shown when post's front matter doesn't specify any image
+  default-post: images/Protruding-Squares.svg
+
+# --- Copyright info ---
+
+# will appear at footer of pages and post
+# can be left blank
 copyright-license-name: "Creative Commons License BY-NC-SA 4.0"
 copyright-license-logo: "images/cc-by-nc-sa.png"
 copyright-license-link: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
 
-
-# Left Block Images
-background:
-  # this image will be shown on homepage's left block
-  homepage: images/img-home-background.jpg                
-  # this image will be shown on post list page
-  post-list: images/img-posts-background.jpg              
-  # this image will be shown when post's front matter doesn't specify any image
-  default-post: images/img-default-post-picture.png
-
-# --- Jekyll settings ---
+# --- Jekyll Options ---
 
 # link generation style
 permalink:          /:categories/:title/              
@@ -81,7 +98,7 @@ special-pages:
 
 # --- Social ---
 
-# Social media accounts
+# Social media links
 facebook:           MahdiBaghbanii
 #instagram:          username
 #tumblr:             username
@@ -89,7 +106,7 @@ facebook:           MahdiBaghbanii
 #flickr:             username
 twitter:            Baghbani1
 #weibo:              username
-#goodreads:          username
+#goodreads:          userUniquID
 linkedin:           MahdiBaghbani
 #xing:               username
 #youtube:            username
@@ -113,7 +130,8 @@ github:             MahdiBaghbani
 #keybase:            username
 telegram:           MahdiBaghbanii
 #xmpp:               username
-email:              MahdiBaghbani@protonmail.com
+protonmail:         MahdiBaghbani@protonmail.com
+#email:              username
 
 # select default share links for posts/pages
 # you can manually turn this off in each post/page setting
@@ -122,7 +140,16 @@ share:
   twitter: true
   linkedin: true
 
-# --- Web Trackers ---
+
+# --- katex plugin settings ---
+
+
+katex:
+  rendering_options:
+    throw_error: true
+    error_color: "#cc0000"
+
+    # --- Web Trackers ---
   
 # Google Analytics
 # using gtag is advised!
@@ -139,15 +166,13 @@ share:
 # Heap Analytics
 # heap-analytics: xxxxxxxx
 
-# --- Multi language support ---
+# --- Localization Options ---
 
-# number of languages to be supported
-language-options:
-  lang-number: 2
-  lang-default: english
-  lang-id:
-    - title: english
-    - title: farsi
+# you can remove unused ones
+# for example if your site is only available in English and German,
+# you can remove all other from list below and only keep those two
+
+# if you don't remove, it is still ok!
 
 defaults:
   -
@@ -176,6 +201,14 @@ defaults:
 # Ruby Gems
 plugins:
   - jemoji
+  - jekyll-katex
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+
+whitelist:
+  - jemoji
+  - jekyll-katex
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
