@@ -2,18 +2,24 @@
 sitemap: false
 ---
 
+{% assign selected-skin = site.kianic-skin | default: 'default' %}
+
+@charset "utf-8";
+
+// Load selected skin
+@import "skins/{{ selected-skin }}/main";
+
+// Load site styles
 @import "variables";
-@import "theme-language-font-settings";
-@import "theme-color-settings";
 @import "reset";
 @import "base";
 @import "site";
 @import "utilities";
-@import "syntax";
-@import "fonts";
-@import "flag-icon-base";
-@import "flag-icon-list";
-@import "simple-icons-base";
-@import "simple-icons-list";
-@import "magnific-popup";
-@import "kianic-icons";
+
+// Load others
+@import "kianic-plugins/kianic-icons";
+@import "kianic-plugins/flag-icon-base";
+@import "kianic-plugins/flag-icon-list";
+@import "kianic-plugins/simple-icons-base";
+@import "kianic-plugins/simple-icons-list";
+@import "kianic-plugins/magnific-popup";

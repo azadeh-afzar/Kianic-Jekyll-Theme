@@ -5,8 +5,12 @@ title: Kianic Jekyll Theme
 description: "Multi language, dual theme, stylish, two-column Jekyll theme for your blog."
 author: Mahdi Baghbani
 
-# website domain URL
+# Website domain URL
 url: https://azadeh-afzar-kianic-jekyll-theme-development.surge.sh
+
+# Website theme skin
+# available skins: default (others coming soon!)
+kianic-skin: default 
 
 # --- Multi Language Options ---
 

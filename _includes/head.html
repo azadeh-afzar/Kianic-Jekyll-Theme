@@ -74,12 +74,13 @@
   <link rel="apple-touch-icon" sizes="180x180" type="image/png" href="{{ site.url }}/{{ site.logo-images.apple-touch-icon-180x180 }}" />
   {% if page.layout != "error-page" %}
     <!-- CSS -->
-    {% for item in site.data.theme-assets.css %}
+    {% for item in site.data.assets.css %}
       {{ item }}
     {% endfor %}
     <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/main.css">
-    <!-- CSS/Fonts -->
-    {% for item in site.data.theme-assets.fonts %}
+    <!-- Fonts -->
+    {{ site.assets }}
+    {% for item in site.data.assets.fonts %}
       {{ item }}
     {% endfor %}
     <!-- Left Block Image for Posts -->

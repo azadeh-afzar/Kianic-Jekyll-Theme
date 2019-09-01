@@ -5,7 +5,7 @@ label:
   english: English
   farsi: انگلیسی
 # Image for country flag, using flag-icon-css files
-image: assets/flags/4x3/us.svg
+image: assets/icons/country-flags/4x3/us.svg
 # icon for country flag with flag-icon-css interface
 icon: <i class="flag-icon flag-icon-us"></i>
 change-language-title-text: Change Language
