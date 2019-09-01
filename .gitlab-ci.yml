@@ -1,9 +1,30 @@
 # job for generating site for master branch for gitlab pages
 pages:
   stage: deploy
-  image: ruby:latest
+  image: ubuntu:latest
+  cache:
+    paths:
+      - vendor/
   before_script:
-    - bundle install
+    # install curl
+    - apt-get update -y
+    - apt-get install -y curl
+    - curl --version
+    - command -v curl
+    # install gnupg
+    - apt-get install -y gnupg
+    - gpg --version
+    - command -v gpg
+    # install ruby version manager (rvm) using curl, then install stable ruby with rvm
+    - gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+    - \curl -sSL https://get.rvm.io | bash -s stable --ruby
+    - source /usr/local/rvm/scripts/rvm
+    - rvm -v
+    - command -v rvm
+    - ruby -v
+    - command -v ruby
+    # install ruby gems
+    - bundle install --path vendor
   script:
     - bundle exec jekyll build -d public
   artifacts:
