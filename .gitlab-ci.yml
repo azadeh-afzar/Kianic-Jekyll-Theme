@@ -5,6 +5,7 @@ development:
   cache:
     paths:
       - node_modules/
+      - vendor/
   before_script:
     # install curl
     - apt-get update -y
@@ -31,7 +32,7 @@ development:
     - npm -v
     - command -v npm
     # install ruby and node packages
-    - bundle install
+    - bundle install --path vendor
     - bundle info jekyll-katex
     - npm install surge
     # create a CNAME record with desired address for website
