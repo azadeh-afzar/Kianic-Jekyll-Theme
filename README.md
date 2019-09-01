@@ -18,7 +18,7 @@ See a [live version of Kianic](https://azadeh-afzar.gitlab.io/Web-Development/Ki
 
 ## Development Preview
 
-If you are curious about the look of next Kianic version, you can see an [under development version of Kianic](https://azadeh-afzar-kianic-jekyll-theme.surge.sh/) hosted on surge.sh and explore it yourself.
+If you are curious about the look of next Kianic version, you can see an [under development version of Kianic](https://azadeh-afzar-kianic-jekyll-theme-development.surge.sh) hosted on surge.sh and explore it yourself.
 
 This build is from development branch, don't use it for your actual website because its unstable.
 
