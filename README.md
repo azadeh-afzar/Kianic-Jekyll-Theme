@@ -1,6 +1,6 @@
 # About Kianic Jekyll Theme
 
-[![Open Source](https://img.shields.io/badge/Open%20Source-Forever-brightgreen?style=flat-square)](https://opensource.com/resources/what-open-source)
+[![Open Source](https://img.shields.io/badge/Open%20Source-Forever-brightgreen?style=flat-square)](https://opensource.com/resources/what-open-source/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue?style=flat-square&logo=gnu)](https://opensource.org/licenses/GPL-3.0/)
 
 Kianic is a theme for Jekyll static site generator. It's a fork of excellent
