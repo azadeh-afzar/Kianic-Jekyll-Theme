@@ -2,7 +2,7 @@
 
 [![Open Source](https://img.shields.io/badge/Open%20Source-Forever-brightgreen.svg?style=flat-square)](https://opensource.com/resources/what-open-source)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg?style=flat-square&logo=gnu)](https://opensource.org/licenses/GPL-3.0/)
-[![Jekyll](https://img.shields.io/badge/Jekyll%3E%D%203.6-blue.svg?style=flat-square)](https://jekyllrb.com/)
+[![Jekyll](https://img.shields.io/badge/jekyll%3E%D%203.6-blue.svg?style=flat-square)](https://jekyllrb.com/)
 
 Kianic is a theme for Jekyll static site generator. It's a fork of excellent
 [**Halve Jekyll Theme**](https://taylantatli.github.io/Halve) (by [**Taylan Tatli**](https://github.com/TaylanTatli)) 
