@@ -31,7 +31,7 @@ builder:
     - ls
     - cd js
     - ls
-    - bundle exec jekyll build -d mamad
+    - bundle exec jekyll build --trace -d mamad
   artifacts:
     paths:
       - mamad
