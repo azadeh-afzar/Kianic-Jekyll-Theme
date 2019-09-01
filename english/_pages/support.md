@@ -36,7 +36,7 @@ Want to do some super favor? have decent knowledge in <i class="fab fa-js kianic
 then the best way you can possibly support me is to contribute to Kianic development.
 Check CONTRIBUTING and ROADMAP to find out how you can help Kianic.
 
-Also if you don't have technical knowledge you can still help me to improve Kianic by finding bugs and reporting them, just go to Kianic GitLab repository and open an issue to explain what is wrong.
+Also if you don't have technical knowledge you can still help me to improve Kianic by finding bugs, typos and reporting them, just go to Kianic GitLab repository and open an issue to explain what is wrong.
 
 ## Gift cards
 If you want to help me with real money, you can buy me gift cards. I can use
