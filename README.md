@@ -1,8 +1,7 @@
 # About Kianic Jekyll Theme
 
-[![Open Source](https://img.shields.io/badge/Open%20Source-Forever-brightgreen.svg?style=flat-square)](https://opensource.com/resources/what-open-source)
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg?style=flat-square&logo=gnu)](https://opensource.org/licenses/GPL-3.0/)
-[![Jekyll](https://img.shields.io/badge/Jekyll%3E%D%203.6-blue.svg?style=flat-square)](https://jekyllrb.com/)
+[![Open Source](https://img.shields.io/badge/Open%20Source-Forever-brightgreen?style=flat-square)](https://opensource.com/resources/what-open-source/)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue?style=flat-square&logo=gnu)](https://opensource.org/licenses/GPL-3.0/)
 
 Kianic is a theme for Jekyll static site generator. It's a fork of excellent
 [**Halve Jekyll Theme**](https://taylantatli.github.io/Halve) (by [**Taylan Tatli**](https://github.com/TaylanTatli)) 
@@ -11,13 +10,15 @@ which is not being maintained anymore.
 Kianic is a new design of Halve, with clean codebase and new features.
 Kianic enables it's users to easily customize every corner of the theme.
 
-## Preview   
+## Preview
+
 ![screenshot of Kianic](/images/kianic-home-image.png)
 
 See a [live version of Kianic](https://azadeh-afzar.gitlab.io/Web-Development/Kianic-Jekyll-Theme) hosted on GitLab.
 
 ## Development Preview
-If you are curious about the look of next Kianic version, you can see an [under development version of Kianic](https://azadeh-afzar-kianic-jekyll-theme.surge.sh/) hosted on surge.sh and explore it yourself.
+
+If you are curious about the look of next Kianic version, you can see an [under development version of Kianic](https://azadeh-afzar-kianic-jekyll-theme-development.surge.sh) hosted on surge.sh and explore it yourself.
 
 This build is from development branch, don't use it for your actual website because its unstable.
 
@@ -56,15 +57,18 @@ Also read other posts to find out how to use many features available in Kianic.
 This theme is free and will be free, If you've found it useful here's how to show your thanks and motivate me to do more.
 
 ### Get Social
+
 There are ways to help if you’d prefer a free option. You can follow me on Twitter. It’s free and does make a difference!
 Alternatively, share this theme with a friend, or drop me a line and let me know what you thought. I'd prefer this method, it's free and awesome for me.
 
 ### Promote Kianic
+
 You can help me by starring this theme repository in
 [**GitLab**](https://gitlab.com/Azadeh-Afzar/Web-Development/Kianic-Jekyll-Theme "Kianic Jekyll Theme") and
 [**GitHub**](https://github.com/Azadeh-Afzar/Kianic-Jekyll-Theme "Kianic Jekyll Theme").
 
 ### Contribute to Kianic
+
 Want to do some super favor? have decent knowledge in Javascript, Sass or Jekyll?
 then the best way you can possibly support me is to contribute to Kianic development.
 Check CONTRIBUTING and ROADMAP to find out how you can help Kianic.
@@ -72,15 +76,18 @@ Check CONTRIBUTING and ROADMAP to find out how you can help Kianic.
 Also if you don't have technical knowledge you can still help me to improve Kianic by finding bugs and reporting them, just go to Kianic GitLab repository and open an issue to explain what is wrong.
 
 ### Gift cards
+
 If you want to help me with real money, you can buy me gift cards. I can use Apple gift cards and Playstation gift cards. You can email gift card codes to me.
 
 ### Donating via Bitcoin
+
 Alternatively, you can donate Bitcoin to the me.
 Here is my wallet address:
 
 `1P9qnUNEvdpwFUCau8MLgvQ7hmKGrwAY7D`
 
 ## Credits
+
 - Original work: [Vangelis Tzortzis](https://github.com/srekoble)  
 - Halve theme : [Halve Jekyll Theme](https://taylantatli.github.io/Halve)
 - Sample posts and some code examples: [Michael Rose](https://github.com/mmistakes/)
@@ -89,6 +96,7 @@ Here is my wallet address:
 - Brand logos SVG: [Simple Icons](https://simpleicons.org/)
 
 ### Others
+
 - [Jekyll](http://jekyllrb.com/)
 - [jQuery](http://jquery.com/)
 - [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/)
