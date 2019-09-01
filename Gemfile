@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'jekyll', '~> 4.0'
+gem 'jekyll'
 gem 'jemoji'
 gem 'jekyll-katex'
 gem 'jekyll-sitemap'

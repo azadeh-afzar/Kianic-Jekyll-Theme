@@ -4,7 +4,6 @@ development:
   image: ubuntu:latest
   cache:
     paths:
-      - vendor/
       - node_modules/
   before_script:
     # install curl
@@ -32,7 +31,7 @@ development:
     - npm -v
     - command -v npm
     # install ruby and node packages
-    - bundle install --path vendor
+    - bundle install
     - npm install surge
     # create a CNAME record with desired address for website
     # surge will automatically detect this file at runtime
