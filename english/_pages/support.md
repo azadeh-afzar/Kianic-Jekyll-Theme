@@ -41,7 +41,7 @@ Also if you don't have technical knowledge you can still help me to improve Kian
 ## Gift cards
 If you want to help me with real money, you can buy me gift cards. I can use
 <i class="fab fa-apple" aria-hidden="true"></i> Apple store gift cards and <i class="fab fa-playstation kianic-icon-playstation" aria-hidden="true"></i>
-Playstation sotre gift cards (all in US region). You can
+Playstation store gift cards (all in US region). You can
 <a href="mailto:{{ site.protonmail }}" target="_blank"><i class="simple-icons simple-icons-protonmail kianic-simple-icon-protonmail"></i> E-mail</a>
  me gift card codes.
 
