@@ -143,7 +143,6 @@ share:
 # --- katex plugin settings ---
 
 katex:
-  js_path: "assets/js"
   rendering_options:
     throw_error: true
     error_color: "#cc0000"
