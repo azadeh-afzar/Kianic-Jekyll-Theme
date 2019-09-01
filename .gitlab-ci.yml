@@ -25,6 +25,8 @@ pages:
     - command -v ruby
     # install ruby gems
     - bundle install --path vendor
+    - gem update jekyll
+    - bundle update --path vendor
   script:
     - bundle exec jekyll build -d public
   artifacts:
