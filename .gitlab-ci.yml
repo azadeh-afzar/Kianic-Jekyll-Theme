@@ -1,5 +1,5 @@
 # job for generating site for master branch for gitlab pages
-pages:
+builder:
   stage: deploy
   image: ubuntu:latest
   cache:
@@ -26,9 +26,9 @@ pages:
     # install ruby gems
     - bundle install --path vendor
   script:
-    - bundle exec jekyll build -d public
+    - bundle exec jekyll build -d mamad
   artifacts:
     paths:
-      - public
+      - mamad
   only:
     - master
