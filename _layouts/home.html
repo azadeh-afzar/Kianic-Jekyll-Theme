@@ -3,7 +3,8 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html lang="{{ site.data.languages[ page.lang ].locale }}">
+{% assign language-localized = site.data.localized-translation[page.lang] %}
+<html lang="{{ language-localized.locale }}">
 {% include head.html %}
 <body id="homepage">
   {% include gtm-body.html %}
@@ -26,16 +27,16 @@ layout: compress
 
   
   <div class="block-right">
-    <a title="{{ site.data.languages[ page.lang ].mode-title-text }}" class="mode-menu-icon home {{ page.direction-format }} {{ page.lang }} {% if site.language-options.lang-number < 2 %}no-adjacent-icon{% endif %}"><i id="sun-moon" class="fa fa-fw fa-2x fa-moon" aria-hidden="true"></i></a>
-    <span class="mode-link {{ page.direction-format }} {{ page.lang }} {% if site.language-options.lang-number < 2 %}no-adjacent-icon{% endif %}">{{ site.data.languages[ page.lang ].mode-span-text }}</span>
+    <a title="{{ language-localized.mode-title-text }}" class="mode-menu-icon home {{ page.direction-format }} {{ page.lang }} {% if site.language-options.lang-number < 2 %}no-adjacent-icon{% endif %}"><i id="sun-moon" class="fa fa-fw fa-2x fa-moon" aria-hidden="true"></i></a>
+    <span class="mode-link {{ page.direction-format }} {{ page.lang }} {% if site.language-options.lang-number < 2 %}no-adjacent-icon{% endif %}">{{ language-localized.mode-span-text }}</span>
     {% if site.language-options.lang-number > 1 %}
-      <a title="{{ site.data.languages[ page.lang ].change-language-title-text }}" class="languages-menu-icon home {{ page.direction-format }} {{ page.lang }}"><i class="fa fa-fw  fa-2x fa-inverse fa-language" aria-hidden="true"></i></a>
-      <span class="languages-link {{ page.direction-format }} {{ page.lang }}">{{ site.data.languages[ page.lang ].change-language-span-text }}</span>
+      <a title="{{ language-localized.change-language-title-text }}" class="languages-menu-icon home {{ page.direction-format }} {{ page.lang }}"><i class="fa fa-fw  fa-2x fa-inverse fa-language" aria-hidden="true"></i></a>
+      <span class="languages-link {{ page.direction-format }} {{ page.lang }}">{{ language-localized.change-language-span-text }}</span>
     {% endif %}
-    <a href="{{ site.url }}/{{ page.lang }}/posts" title="{{ site.data.languages[ page.lang ].posts-title-text }}" class="posts-menu-icon {{ page.direction-format }} {{ page.lang }}"><i class="fa fa-fw fa-2x fa-file-alt" aria-hidden="true"></i></a>
-    <span class="posts-link {{ page.direction-format }} {{ page.lang }}">{{ site.data.languages[ page.lang ].posts-span-text }}</span>
-    <a title="{{ site.data.languages[ page.lang ].projects-title-text }}" class="projects-menu-icon {{ page.direction-format }} {{ page.lang }}"><i class="fa fa-fw fa-2x fa-cogs" aria-hidden="true"></i></a>
-    <span class="projects-link {{ page.direction-format }} {{ page.lang }}">{{ site.data.languages[ page.lang ].projects-span-text }}</span>
+    <a href="{{ site.url }}/{{ page.lang }}/posts" title="{{ language-localized.posts-title-text }}" class="posts-menu-icon {{ page.direction-format }} {{ page.lang }}"><i class="fa fa-fw fa-2x fa-file-alt" aria-hidden="true"></i></a>
+    <span class="posts-link {{ page.direction-format }} {{ page.lang }}">{{ language-localized.posts-span-text }}</span>
+    <a title="{{ language-localized.projects-title-text }}" class="projects-menu-icon {{ page.direction-format }} {{ page.lang }}"><i class="fa fa-fw fa-2x fa-cogs" aria-hidden="true"></i></a>
+    <span class="projects-link {{ page.direction-format }} {{ page.lang }}">{{ language-localized.projects-span-text }}</span>
     <div class="content {{ page.direction-format }} {{ page.lang }}">
       <div class="about-info {{ page.direction-format }} {{ page.lang }}">
         {{ content }}

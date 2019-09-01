@@ -1,3 +1,4 @@
+{% assign language-localized = site.data.localized-translation[page.lang] %}
 <footer class="footer">
     {% case page.layout %}
         {% when "home" %}
@@ -12,6 +13,6 @@
             </p>    
     {% endcase %}
     <div class="footer-text {{ page.direction-format }} {{ page.lang }}">
-        <p>{{ site.data.languages[page.lang].footer-text }}</p>
+        <p>{{ language-localized.footer-text }}</p>
     </div>
 </footer>

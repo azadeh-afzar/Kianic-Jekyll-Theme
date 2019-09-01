@@ -36,7 +36,8 @@
   <meta name="twitter:creator" content="@{{ site.twitter }}">
   {% endif %}
   <!-- Open Graph -->
-  <meta property="og:locale" content="{{ site.data.languages[page.lang].locale }}">
+  {% assign language-localized = site.data.localized-translation[page.lang] %}
+  <meta property="og:locale" content="{{ language-localized.locale }}">
   <meta property="og:type" content="article">
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   {% if page.excerpt %}

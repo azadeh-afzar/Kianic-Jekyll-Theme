@@ -3,7 +3,8 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html lang="{{ site.data.languages[ page.lang ].locale }}">
+{% assign language-localized = site.data.localized-translation[page.lang] %}
+<html lang="{{ language-localized.locale }}">
 {% include head.html %}
 <body id="posts">
     {% include gtm-body.html %}
@@ -16,9 +17,9 @@ layout: compress
     </div>
 
     <div class="block-right">
-      <a title="{{ site.data.languages[ page.lang ].mode-title-text }}" class="mode-menu-icon {% if site.language-options.lang-number < 2 %}no-adjacent-icon{% endif %}"><i id="sun-moon" class="fa fa-fw fa-2x fa-moon"></i></a>
+      <a title="{{ language-localized.mode-title-text }}" class="mode-menu-icon {% if site.language-options.lang-number < 2 %}no-adjacent-icon{% endif %}"><i id="sun-moon" class="fa fa-fw fa-2x fa-moon"></i></a>
       {% if site.language-options.lang-number > 1 %}
-        <a title="{{ site.data.languages[ page.lang ].change-language-title-text }}" class="languages-menu-icon {{ page.direction-format }} {{ page.lang }}"><i class="fa fa-fw  fa-2x fa-inverse fa-language" aria-hidden="true"></i></a>
+        <a title="{{ language-localized.change-language-title-text }}" class="languages-menu-icon {{ page.direction-format }} {{ page.lang }}"><i class="fa fa-fw  fa-2x fa-inverse fa-language" aria-hidden="true"></i></a>
       {% endif %}
       {% include block-right-icons.html %}
       <div class="content {{ page.direction-format }} {{ page.lang }}">

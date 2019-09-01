@@ -19,7 +19,8 @@
   </ul>
   <ul class="languages-menu">
     {% for item in site.language-options.lang-id %}
-      <li style="background:url({{ site.url }}/{{ site.data.languages[ item.title ].image }}) center center no-repeat;">
+      {% assign language-localized = site.data.localized-translation[item.title] %}
+      <li style="background:url({{ site.url }}/{{ language-localized.image }}) center center no-repeat;">
         {% assign target_url = item.title %}
         {% if page.layout == 'home' %}
           {% assign target_url = target_url | replace: site.language-options.lang-default, '' %}
@@ -30,7 +31,7 @@
         {% assign page_lang_with_slash = page.lang | append: '/' %}
         <a href="{{ site.url }}{{ target_url }}{{ page.url | replace: page_lang_with_slash, ''}}">
           <span>
-            {{ site.data.languages[ item.title ].label[ page.lang ] }}
+            {{  language-localized.label[ page.lang ] }}
           </span>
         </a>
         </li>
