@@ -2,9 +2,6 @@
 pages:
   stage: deploy
   image: ubuntu:latest
-  cache:
-    paths:
-      - vendor/
   before_script:
     # install curl
     - apt-get update -y
@@ -24,9 +21,7 @@ pages:
     - ruby -v
     - command -v ruby
     # install ruby gems
-    - bundle install --path vendor
-    - gem update jekyll
-    - bundle update --path vendor
+    - bundle install
   script:
     - bundle exec jekyll build -d public
   artifacts:
