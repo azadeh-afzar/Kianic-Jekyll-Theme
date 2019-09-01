@@ -6,11 +6,11 @@ description: "Multi language, dual theme, stylish, two-column Jekyll theme for y
 author: Mahdi Baghbani
 
 # Website domain URL
-url: https://azadeh-afzar-kianic-jekyll-theme-development.surge.sh
+url: https://azadeh-afzar.gitlab.io/Web-Development/Kianic-Jekyll-Theme
 
 # Website theme skin
 # available skins: default (others coming soon!)
-kianic-skin: default 
+kianic-skin: default
 
 # --- Multi Language Options ---
 
@@ -40,7 +40,7 @@ logo-images:
   # site main logo
   # ordered by language
   # recommend: use svg format
-  # png size recommendation: 
+  # png size recommendation:
   # - main-homepage 200x200
   # - main-other-pages 50x50
   english:
@@ -53,9 +53,9 @@ logo-images:
 # Left Block Images
 background:
   # this image will be shown on homepage's left block
-  homepage: images/Flat-Mountains.svg              
+  homepage: images/Flat-Mountains.svg
   # this image will be shown on post list page
-  post-list: images/Rainbow-Vortex.svg       
+  post-list: images/Rainbow-Vortex.svg
   # this image will be shown when post's front matter doesn't specify any image
   default-post: images/Protruding-Squares.svg
 
@@ -70,7 +70,7 @@ copyright-license-link: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
 # --- Jekyll Options ---
 
 # link generation style
-permalink:          /:categories/:title/              
+permalink:          /:categories/:title/
 
 # markdown compiler
 markdown:           kramdown
@@ -85,7 +85,7 @@ kramdown:
   enable_coderay:   false
 
 # specify css path and style
-sass:                                                  
+sass:
   sass_dir:         assets/_sass
   style:            compressed
 
@@ -140,17 +140,16 @@ share:
   twitter: true
   linkedin: true
 
-
 # --- katex plugin settings ---
 
-
 katex:
+  # js_path: "{{ Gem::lib_path }}/assets/js"
   rendering_options:
     throw_error: true
     error_color: "#cc0000"
 
-    # --- Web Trackers ---
-  
+# --- Web Trackers ---
+
 # Google Analytics
 # using gtag is advised!
 # google-analytics: UA-xxxxx-x
