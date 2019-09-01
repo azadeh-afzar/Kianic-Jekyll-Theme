@@ -2,11 +2,8 @@
 pages:
   stage: deploy
   image: ruby:latest
-  cache:
-    paths:
-      - vendor/
   before_script:
-    - bundle install --path vendor
+    - bundle install
   script:
     - bundle exec jekyll build -d public
   artifacts:
