@@ -26,6 +26,11 @@ builder:
     # install ruby gems
     - bundle install --path vendor
   script:
+    - ls
+    - cd assets
+    - ls
+    - cd js
+    - ls
     - bundle exec jekyll build -d mamad
   artifacts:
     paths:
