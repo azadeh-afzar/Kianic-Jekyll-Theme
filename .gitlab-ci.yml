@@ -22,6 +22,7 @@ pages:
     - command -v ruby
     # install ruby gems
     - bundle install
+    - bundle info jekyll-katex
   script:
     - bundle exec jekyll build -d public
   artifacts:
