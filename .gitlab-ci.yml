@@ -33,7 +33,6 @@ development:
     - command -v npm
     # install ruby and node packages
     - bundle install --path vendor
-    - bundle info jekyll-katex
     - npm install surge
     # create a CNAME record with desired address for website
     # surge will automatically detect this file at runtime
