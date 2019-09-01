@@ -23,6 +23,13 @@ builder:
     - command -v rvm
     - ruby -v
     - command -v ruby
+    # install node.js and npm
+    - apt install -y nodejs
+    - apt install -y npm
+    - nodejs -v
+    - command -v nodejs
+    - npm -v
+    - command -v npm
     # install ruby gems
     - bundle install --path vendor
   script:
@@ -31,9 +38,9 @@ builder:
     - ls
     - cd js
     - ls
-    - bundle exec jekyll build --trace -d mamad
+    - bundle exec jekyll build --trace -d public
   artifacts:
     paths:
-      - mamad
+      - public
   only:
     - master
