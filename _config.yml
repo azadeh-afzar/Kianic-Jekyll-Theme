@@ -148,9 +148,11 @@ katex:
     error_color: "#cc0000"
 
 # --- Web Trackers ---
+# you can enable as many options as you want but be advised
+# it will make your site slightly slower 
 
 # Google Analytics
-# using gtag is advised!
+# recommendation: use gtag instead.
 # google-analytics: UA-xxxxx-x
 
 # Google Global Site Tag
