@@ -218,18 +218,18 @@ whitelist:
   - jekyll-gist
 
 # Include list
-include: 
-  - CNAME 
+include:
+  - CNAME
   - _pages
 
 # Exclude list
-exclude: 
+exclude:
   - README.md
   - CHANGELOG.md
   - LICENSE
   - Gemfile
   - Gemfile.lock
-  - Rakefile 
+  - Rakefile
   - src
   - vendor
   - _site
