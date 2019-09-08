@@ -218,8 +218,22 @@ whitelist:
   - jekyll-gist
 
 # Include list
-include: [CNAME, _pages]
+include: 
+  - CNAME 
+  - _pages
 
 # Exclude list
-exclude: [README.md, Gemfile, Gemfile.lock, _site, src, vendor, .gitignore
-          LICENSE, Rakefile, .sass-cache, .DS_Store, .idea, CHANGELOG.md]
+exclude: 
+  - README.md
+  - CHANGELOG.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile 
+  - src
+  - vendor
+  - _site
+  - .gitignore
+  - .sass-cache
+  - .DS_Store
+  - .idea,
