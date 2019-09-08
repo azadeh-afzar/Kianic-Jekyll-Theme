@@ -90,7 +90,7 @@
     {% for item in site.data.assets.css %}
       {{ item }}
     {% endfor %}
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/main.css" />
     <!-- Fonts -->
     {% for item in site.data.assets.fonts %}
       {{ item }}
@@ -127,7 +127,7 @@
     </style>
   {% else %}
     <!-- CSS for error pages -->
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/error-hacker-page.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/error-hacker-page.css" />
   {% endif %}
   <!-- Web Trackers -->
   {% include trackers.html %}
