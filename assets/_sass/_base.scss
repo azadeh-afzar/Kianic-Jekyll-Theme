@@ -61,9 +61,11 @@ body {
   }
 }
 
-.dark.transit,
-.light.transit {
-  transition: all 0.5s;
+.light,
+.dark {
+  &.transit {
+    transition: all 0.5s;
+  }
 }
 
 table {
@@ -232,14 +234,12 @@ img {
   }
 }
 
-// blockquotes
+// block quotes
 blockquote {
   margin: 2em 1em 2em 0;
   padding-left: 1em;
   padding-right: 1em;
   font-style: italic;
-  border-left: 0.25em solid $gray;
-
   cite {
     font-style: italic;
     font-size: 0.85em;
@@ -248,6 +248,12 @@ blockquote {
       content: "\2014";
       padding-right: 5px;
     }
+  }
+  &.light {
+    border-left: 0.25em solid $light-mode-blockquote-border-color;
+  }
+  &.dark {
+    border-left: 0.25em solid $dark-mode-blockquote-border-color;
   }
 }
 
@@ -258,13 +264,15 @@ cite {
 
 // definition lists
 dt {
-  border: 1px solid darken($white, 7%);
   padding: 0.5em;
-  background-color: darken($white, 5%);
   font-weight: bold;
-
+  &.light {
+    border: 1px solid $light-mode-dt-border-color;
+    background-color: $light-mode-dt-background-color
+  }
   &.dark {
-    background-color: lighten($black, 15%);
+    border: 1px solid $dark-mode-dt-border-color;
+    background-color: $dark-mode-dt-background-color;
   }
 }
 
@@ -272,24 +280,37 @@ dd {
   padding: 0.5em 1em;
   margin-left: 0;
   margin-bottom: 2em;
-  border: 1px solid darken($white, 7%);
-  border-top: 0;
+  &.light {
+    border: 1px solid $light-mode-dd-border-color;
+    border-top: 0;
+  }
+  &.dark {
+    border: 1px solid $dark-mode-dd-border-color;
+    border-top: 0;
+  }
 }
 
 // table
 table {
   width: 100%;
   border-collapse: collapse;
-  border: 1px solid darken($white, 7%);
   margin-bottom: 1em;
+  &.light {
+    border: 1px solid $light-mode-table-border-color;
+  }
+  &.dark {
+    border: 1px solid $dark-mode-table-border-color;
+  }
 }
 
 thead {
-  background-color: darken($white, 5%);
-  border-bottom: 1px solid darken($white, 7%);
-
+  &.light {
+    background-color: $light-mode-thead-background-color;
+    border-bottom: 1px solid $light-mode-thead-border-color;
+  }
   &.dark {
-    background-color: lighten($black, 15%);
+    background-color: $dark-mode-thead-background-color;
+    border-bottom: 1px solid $dark-mode-thead-border-color;
   }
 }
 
@@ -300,23 +321,13 @@ td {
 
 th,
 td {
-  text-align: center;
+  text-align: center !important;
   border-right: 1px solid darken($white, 7%);
   padding: 0.5em;
 
   a {
     text-decoration: none !important;
   }
-}
-
-th:first-child,
-td:first-child {
-  text-align: left;
-}
-
-th:last-child,
-td:last-child {
-  text-align: right;
 }
 
 .gist {
@@ -326,26 +337,30 @@ td:last-child {
   }
 }
 
-// code
+// code block styles
 pre {
-  overflow-x: auto; // add scroll bars to wide code blocks
+  overflow-x: auto;
   padding: 1rem;
   line-height: 1.5;
   margin: 0;
 }
 
-p > code,
-a > code,
-li > code,
-figcaption > code,
-td > code {
-  padding: 0.1rem 0.2rem;
-  font-size: 0.9em;
-  border-radius: 2px;
-  background-color: darken($white, 15%);
-  font-family: $base-font;
-
-  &.dark {
-    background-color: lighten($black, 5%);
-  }
+p,
+a,
+li,
+figcaption,
+td {
+  > code {
+    padding: 0.1rem 0.2rem;
+    font-size: 0.9em;
+    border-radius: 2px;
+    background-color: darken($white, 15%);
+    font-family: $base-font;
+    &.light {
+      background-color: $light-mode-code-block-background-color;
+    }
+    &.dark {
+      background-color: $dark-mode-code-block-background-color;
+    }
+  } 
 }

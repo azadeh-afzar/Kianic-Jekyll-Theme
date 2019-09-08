@@ -65,6 +65,22 @@ $light-mode-pagination-pager-disabled-font-color: #8c8c8c;
 $light-mode-pagination-pager-disabled-hover-background-color: #f2f2f2;
 $light-mode-pagination-pager-disabled-hover-font-color: #bfbfbf;
 
+// code block colors
+$light-mode-code-block-background-color: darken(#ffffff, 15%);
+
+// definition lists colors
+$light-mode-dt-background-color: darken(#ffffff, 5%);
+$light-mode-dt-border-color: darken(#ffffff, 7%);
+$light-mode-dd-border-color: darken(#ffffff, 7%);
+
+// blockquotes colors
+$light-mode-blockquote-border-color: darken(#d4d4d4, 15%);
+
+// table colors
+$light-mode-table-border-color: darken(#ffffff, 7%);
+$light-mode-thead-border-color: darken(#ffffff, 7%);
+$light-mode-thead-background-color: darken(#ffffff, 5%);
+
 // ================== DARK MODE ========================
 $dark-mode-background-color: #141d26;
 $dark-mode-font-color: #d9d9d9;
@@ -133,6 +149,22 @@ $dark-mode-pagination-pager-disabled-font-color: #ffffff;
 $dark-mode-pagination-pager-disabled-hover-background-color: #93b3da;
 $dark-mode-pagination-pager-disabled-hover-font-color: #ffffff;
 
+// code block colors
+$dark-mode-code-block-background-color: lighten(#000000, 5%);
+
+// definition lists colors
+$dark-mode-dt-background-color: darken(#214c79, 15%);
+$dark-mode-dt-border-color: darken(#ffffff, 7%);
+$dark-mode-dd-border-color: darken(#ffffff, 7%);
+
+// blockquotes colors
+$dark-mode-blockquote-border-color: lighten(#214c79, 5%);
+
+// table colors
+$dark-mode-table-border-color: darken(#ffffff, 7%);
+$dark-mode-thead-border-color: darken(#ffffff, 7%);
+$dark-mode-thead-background-color: darken(#214c79, 15%);
+
 // =================== STATIC  =========================
 // icon colors
 $support-menu-icon-color: #d4d4d4;
@@ -147,6 +179,9 @@ $active-mode-projects-menu-icon-color: #d4d4d4;
 $active-mode-projects-menu-icon-hover-color: #808080;
 $active-mode-languages-menu-icon-color: #d4d4d4;
 $active-mode-languages-menu-icon-hover-color: #808080;
+
+// text selection highlight color
+$text-selection-highlight-color: #189ad3;
 
 // homepage icon link color
 $homepage-icon-links-color: #d4d4d4;

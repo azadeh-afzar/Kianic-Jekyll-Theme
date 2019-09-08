@@ -14,7 +14,7 @@ $(document).ready(function () {
     image: {
       tError: '<a href="%url%">Image #%curr%</a> could not be loaded.',
     },
-    removalDelay: 300, // Delay in milliseconds before popup is removed
+    removalDelay: 600, // Delay in milliseconds before popup is removed
     // Class that is added to body when popup is open.
     // make it unique to apply your CSS animations just to this exact popup
     mainClass: 'mfp-fade'
@@ -79,7 +79,13 @@ function lightMode(mode) {
     light = 'light';
   }
 
-  $('body, .languages-menu-icon, .languages-menu-icon-posts, .mode-menu-icon, .posts-menu-icon, .projects-menu-icon, .mode-link, .languages-link, .posts-link, .projects-link, .about-info, .posts-list, .inner-post, .tags, .tag-heading, .highlighter-rouge, .highlight, .change-language, .date-highlight, .pagination, .pagination_pager, .entry-meta, .btn, .notice, .notice_warning, .notice_success, .notice_danger, .notice_info, dt, thead').removeClass('transit').removeClass('dark').addClass(light);
+  // I need help to somehow clean this ugly code
+  // all this classes should be in a list and the method iterate over them
+  // I couldn't find a way to do that so I just put everything in this ...
+  $('body, .languages-menu-icon, .languages-menu-icon-posts, .mode-menu-icon, .posts-menu-icon, .projects-menu-icon').removeClass('transit').removeClass('dark').addClass(light);
+  $('.mode-link, .languages-link, .posts-link, .projects-link, .about-info, .posts-list, .inner-post, .tags, .tag-heading').removeClass('transit').removeClass('dark').addClass(light);
+  $('.highlighter-rouge, .highlight, .change-language, .date-highlight, .pagination, .pagination_pager, .entry-meta').removeClass('transit').removeClass('dark').addClass(light);
+  $('.btn, .notice, .notice_warning, .notice_success, .notice_danger, .notice_info, blockquote, table, thead, dt, dd').removeClass('transit').removeClass('dark').addClass(light);
 }
 
 function darkMode(mode) {
@@ -90,10 +96,10 @@ function darkMode(mode) {
     dark = 'dark';
   }
 
-  // I need help to somehow clean this ugly code
-  // all this classes should be in a list and the method iterate over them
-  // I couldn't find a way to do that so I just put everything in this ...
-  $('body, .languages-menu-icon, .languages-menu-icon-posts, .mode-menu-icon, .posts-menu-icon, .projects-menu-icon, .mode-link, .languages-link, .posts-link, .projects-link, .about-info, .posts-list, .inner-post, .tags, .tag-heading, .highlighter-rouge, .highlight, .change-language, .date-highlight, .pagination, .pagination_pager, .entry-meta, .btn, .notice, .notice_warning, .notice_success, .notice_danger, .notice_info, dt, thead').removeClass('transit').removeClass('light').addClass(dark);
+  $('body, .languages-menu-icon, .languages-menu-icon-posts, .mode-menu-icon, .posts-menu-icon, .projects-menu-icon').removeClass('transit').removeClass('light').addClass(dark);
+  $('.mode-link, .languages-link, .posts-link, .projects-link, .about-info, .posts-list, .inner-post, .tags, .tag-heading').removeClass('transit').removeClass('light').addClass(dark);
+  $('.highlighter-rouge, .highlight, .change-language, .date-highlight, .pagination, .pagination_pager, .entry-meta').removeClass('transit').removeClass('light').addClass(dark);
+  $('.btn, .notice, .notice_warning, .notice_success, .notice_danger, .notice_info, blockquote, table, thead, dt, dd').removeClass('transit').removeClass('light').addClass(dark);
 }
 
 function readProgressBar() {

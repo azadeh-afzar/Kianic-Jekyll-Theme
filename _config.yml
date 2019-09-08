@@ -140,6 +140,10 @@ share:
   twitter: true
   linkedin: true
 
+
+emoji:
+  src: "assets/icons"
+
 # --- katex plugin settings ---
 
 katex:
