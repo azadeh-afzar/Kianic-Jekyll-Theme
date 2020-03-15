@@ -5,9 +5,9 @@ label:
   english: English
   farsi: انگلیسی
 # Image for country flag, using flag-icon-css files
-image: assets/images/country-flags/4x3/us.svg
+image: assets/plugins/kiaflagcons/icons/4x3/us.svg
 # icon for country flag with flag-icon-css interface
-icon: <i class="flag-icon flag-icon-us"></i>
+icon: <i class="kiaflagcons kiaflagcons-us"></i>
 change-language-title-text: Change Language
 change-language-span-text: LANGUAGE
 support-title-text: Support Me

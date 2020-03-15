@@ -23,7 +23,7 @@ Hello. My name is Mahdi and I'm the lone developer of Kianic.
 For a long time, I was proponent of
 [**<i class="fab fa-wordpress-simple kianic-icon-wordpress" aria-hidden="true"></i> Wordpress**](https://wordpress.org "Wordpress"){:target="_blank"}
 as blogging platform, but more recently I've started to prefer static website generators.
-I'm currently using [**<i class="simple-icons simple-icons-jekyll kianic-simple-icon-jekyll"></i> Jekyll**](https://jekyllrb.com "Jekyll's website"){:target="_blank"} framework for development,
+I'm currently using [**<i class="kiasimcons kiasimcons-jekyll kiasimcons-color-jekyll"></i> Jekyll**](https://jekyllrb.com "Jekyll's website"){:target="_blank"} framework for development,
 I have decided to use Jekyll because of it's integration with both
 [**<i class="fab fa-gitlab kianic-icon-gitlab" aria-hidden="true"></i> GitLab Pages**](https://gitlab.com/pages "GitLab Pages"){:target="_blank"}
 and

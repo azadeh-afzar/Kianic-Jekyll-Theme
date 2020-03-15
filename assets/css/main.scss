@@ -15,10 +15,12 @@ sitemap: false
 @import "base";
 @import "utilities";
 @import "site";
-
-// Load others
 @import "vendor/kianic-icons";
-@import "vendor/flag-icon-base";
-@import "vendor/flag-icon-list";
-@import "vendor/simple-icons-base";
-@import "vendor/simple-icons-list";
+
+// Set plugin paths.
+$kiasimcons-path: "../plugins/kiasimcons/icons";
+$kiaflagcons-path: "../plugins/kiaflagcons/icons";
+
+// Load plugins.
+@import "kiasimcons/kiasimcons";
+@import "kiaflagcons/kiaflagcons";
