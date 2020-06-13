@@ -9,7 +9,7 @@ author: Mahdi Baghbani
 url: https://azadeh-afzar-kianic-jekyll-theme-development.surge.sh
 
 # Website theme skin
-# available skins: default (others coming soon!)
+# available skins: default
 kianic-skin: default
 
 # --- Multi Language Options ---
@@ -86,7 +86,9 @@ kramdown:
 
 # specify css path and style
 sass:
-  sass_dir:         assets/_sass
+  load_paths:
+    - assets/_sass
+    - assets/plugins
   style:            compressed
 
 # Custom pages
@@ -106,7 +108,7 @@ facebook:           MahdiBaghbanii
 #flickr:             username
 twitter:            Baghbani1
 #weibo:              username
-#goodreads:          userUniquID
+#goodreads:          userUniqueID
 linkedin:           MahdiBaghbani
 #xing:               username
 #youtube:            username
@@ -141,8 +143,10 @@ share:
   linkedin: true
 
 
-emoji:
-  src: "assets/icons"
+#emoji:
+#   src: "assets/icons"
+#   asset: "emoji"
+#   extension: "png"
 
 # --- katex plugin settings ---
 
@@ -204,14 +208,14 @@ defaults:
 
 # Ruby Gems
 plugins:
-  - jemoji
+  - jekyll-openmoji
   - jekyll-katex
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
 
 whitelist:
-  - jemoji
+  - jekyll-openmoji
   - jekyll-katex
   - jekyll-feed
   - jekyll-sitemap
