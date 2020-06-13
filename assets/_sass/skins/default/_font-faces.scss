@@ -1,105 +1,125 @@
 @font-face {
   font-family: 'Vazir Code Hack';
+  src: local('Vazir-Code-Hack'); 
   src: url('../fonts/Vazir-Code-Hack.eot');
-  src: url('../fonts/Vazir-Code-Hack.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Vazir-Code-Hack.woff') format('woff2'),
-  url('../fonts/Vazir-Code-Hack.woff') format('woff'),
-  url('../fonts/Vazir-Code-Hack.ttf') format('truetype');
+  src: 
+    url('../fonts/Vazir-Code-Hack.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Code-Hack.woff') format('woff2'),
+    url('../fonts/Vazir-Code-Hack.woff') format('woff'),
+    url('../fonts/Vazir-Code-Hack.ttf') format('truetype');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Vazir';
+  src: local('Vazir'); 
   src: url('../fonts/Vazir.eot');
-  src: url('../fonts/Vazir.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Vazir.woff2') format('woff2'),
-  url('../fonts/Vazir.woff') format('woff'),
-  url('../fonts/Vazir.ttf') format('truetype');
+  src: 
+    url('../fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir.woff2') format('woff2'),
+    url('../fonts/Vazir.woff') format('woff'),
+    url('../fonts/Vazir.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Vazir';
+  src: local('Vazir-Bold'); 
   src: url('../fonts/Vazir-Bold.eot');
-  src: url('../fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Vazir-Bold.woff2') format('woff2'),
-  url('../fonts/Vazir-Bold.woff') format('woff'),
-  url('../fonts/Vazir-Bold.ttf') format('truetype');
+  src: 
+    url('../fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Bold.woff2') format('woff2'),
+    url('../fonts/Vazir-Bold.woff') format('woff'),
+    url('../fonts/Vazir-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Vazir';
+  src: local('Vazir-Black'); 
   src: url('../fonts/Vazir-Black.eot');
-  src: url('../fonts/Vazir-Black.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Vazir-Black.woff2') format('woff2'),
-  url('../fonts/Vazir-Black.woff') format('woff'),
-  url('../fonts/Vazir-Black.ttf') format('truetype');
+  src: 
+    url('../fonts/Vazir-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Black.woff2') format('woff2'),
+    url('../fonts/Vazir-Black.woff') format('woff'),
+    url('../fonts/Vazir-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Vazir';
+  src: local('Vazir-Medium'); 
   src: url('../fonts/Vazir-Medium.eot');
-  src: url('../fonts/Vazir-Medium.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Vazir-Medium.woff2') format('woff2'),
-  url('../fonts/Vazir-Medium.woff') format('woff'),
-  url('../fonts/Vazir-Medium.ttf') format('truetype');
+  src: 
+    url('../fonts/Vazir-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Medium.woff2') format('woff2'),
+    url('../fonts/Vazir-Medium.woff') format('woff'),
+    url('../fonts/Vazir-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Vazir';
+  src: local('Vazir-Light'); 
   src: url('../fonts/Vazir-Light.eot');
-  src: url('../fonts/Vazir-Light.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Vazir-Light.woff2') format('woff2'),
-  url('../fonts/Vazir-Light.woff') format('woff'),
-  url('../fonts/Vazir-Light.ttf') format('truetype');
+  src: 
+    url('../fonts/Vazir-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Light.woff2') format('woff2'),
+    url('../fonts/Vazir-Light.woff') format('woff'),
+    url('../fonts/Vazir-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Vazir';
+  src: local('Vazir-Thin'); 
   src: url('../fonts/Vazir-Thin.eot');
-  src: url('../fonts/Vazir-Thin.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Vazir-Thin.woff2') format('woff2'),
-  url('../fonts/Vazir-Thin.woff') format('woff'),
-  url('../fonts/Vazir-Thin.ttf') format('truetype');
+  src: 
+    url('../fonts/Vazir-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Thin.woff2') format('woff2'),
+    url('../fonts/Vazir-Thin.woff') format('woff'),
+    url('../fonts/Vazir-Thin.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Sahel';
+  src: local('Sahel'); 
   src: url('../fonts/Sahel.eot');
-  src: url('../fonts/Sahel.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Sahel.woff2') format('woff2'),
-  url('../fonts/Sahel.woff') format('woff'),
-  url('../fonts/Sahel.ttf') format('truetype');
+  src:
+    url('../fonts/Sahel.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Sahel.woff2') format('woff2'),
+    url('../fonts/Sahel.woff') format('woff'),
+    url('../fonts/Sahel.ttf') format('truetype');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Sahel';
+  src: local('Sahel-Bold'); 
   src: url('../fonts/Sahel-Bold.eot');
-  src: url('../fonts/Sahel-Bold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Sahel-Bold.woff2') format('woff2'),
-  url('../fonts/Sahel-Bold.woff') format('woff'),
-  url('../fonts/Sahel-Bold.ttf') format('truetype');
+  src: 
+    url('../fonts/Sahel-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Sahel-Bold.woff2') format('woff2'),
+    url('../fonts/Sahel-Bold.woff') format('woff'),
+    url('../fonts/Sahel-Bold.ttf') format('truetype');
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'Sahel';
+  src: local('Sahel-Black'); 
   src: url('../fonts/Sahel-Black.eot');
-  src: url('../fonts/Sahel-Black.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Sahel-Black.woff2') format('woff2'),
-  url('../fonts/Sahel-Black.woff') format('woff'),
-  url('../fonts/Sahel-Black.ttf') format('truetype');
+  src: 
+    url('../fonts/Sahel-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Sahel-Black.woff2') format('woff2'),
+    url('../fonts/Sahel-Black.woff') format('woff'),
+    url('../fonts/Sahel-Black.ttf') format('truetype');
   font-weight: 900;
 }
