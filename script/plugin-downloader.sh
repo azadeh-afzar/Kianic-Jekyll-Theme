@@ -22,7 +22,7 @@ mkdir -p "$PLUGINDIR/$KFI_DIRECROTY"
 # Download and extract.
 curl -L $KIANIC_FLAG_ICONS | tar -xz --directory $TEMPDIR
 # Copy from temporary directory to plugin directory.
-mv -v $KFI_IN_TEMP/* "$PLUGINDIR/$KFI_DIRECROTY"
+mv $KFI_IN_TEMP/* "$PLUGINDIR/$KFI_DIRECROTY"
 
 
 # Second plugin: Kianic Simple Icons.
@@ -37,7 +37,7 @@ mkdir -p "$PLUGINDIR/$KSI_DIRECROTY"
 # Download and extract.
 curl -L $KIANIC_SIMPLE_ICONS | tar -xz --directory $TEMPDIR
 # Copy from temporary directory to plugin directory.
-mv -v $KSI_IN_TEMP/* "$PLUGINDIR/$KSI_DIRECROTY"
+mv $KSI_IN_TEMP/* "$PLUGINDIR/$KSI_DIRECROTY"
 
 # Delete temporary folder.
 rm -rf $TEMPDIR
