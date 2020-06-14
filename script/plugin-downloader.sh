@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 
 CURRDIR="$PWD"
-PLUGINDIR="${PWD%/*}/plugins"
+PLUGINDIR="${PWD%/*}/assets/plugins"
 TEMPDIR="temp"
-TEST="test"
 
 # Create a temporary directory.
 mkdir -p $TEMPDIR
