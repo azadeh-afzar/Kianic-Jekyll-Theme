@@ -5,9 +5,9 @@ label:
   english: Farsi
   farsi: پارسی
 # Image for country flag, using flag-icon-css files
-image: assets/icons/country-flags/4x3/ir.svg
+image: assets/plugins/kiaflagcons/icons/4x3/ir.svg
 # icon for country flag with flag-icon-css interface
-icon: <i class="flag-icon flag-icon-ir"></i>
+icon: <i class="kiaflagcons kiaflagcons-ir"></i>
 change-language-title-text: تغییر زبان
 change-language-span-text: زبان
 support-title-text: حمایت از من
@@ -40,5 +40,5 @@ copyright-text: " این اثر تحت مجوز عمومی گنو نسخه ۳ <i
                   <br>
                   مطالب این تار‌نوشت تحت مجوز انتشار <i class='simple-icons simple-icons-creativecommons'></i> کریتیو کامنز نسخه ۴.۰ بین‌المللی منتشر شده‌اند."
 
-footer-text: "ساخته شده با علاقه <i class='fa fa-heart kianic-icon-heart' aria-hidden='true'></i> و جکیل <i class='simple-icons simple-icons-jekyll kianic-simple-icon-jekyll'></i>،
+footer-text: "ساخته شده با علاقه <i class='fa fa-heart kianic-icon-heart' aria-hidden='true'></i> و جکیل<i class='kiasimcons kiasimcons-jekyll kiasimcons-color-jekyll'></i>،
               میزبانی شده در در گیت‌لب <i class='fab fa-gitlab kianic-icon-gitlab' aria-hidden='true'></i>"

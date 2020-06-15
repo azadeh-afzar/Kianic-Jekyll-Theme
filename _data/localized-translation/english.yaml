@@ -5,9 +5,9 @@ label:
   english: English
   farsi: انگلیسی
 # Image for country flag, using flag-icon-css files
-image: assets/icons/country-flags/4x3/us.svg
+image: assets/plugins/kiaflagcons/icons/4x3/us.svg
 # icon for country flag with flag-icon-css interface
-icon: <i class="flag-icon flag-icon-us"></i>
+icon: <i class="kiaflagcons kiaflagcons-us"></i>
 change-language-title-text: Change Language
 change-language-span-text: LANGUAGE
 support-title-text: Support Me
@@ -40,6 +40,6 @@ copyright-text: "This work is licensed under a <i class='simple-icons simple-ico
                  <br>
                  Articles are under a <i class='simple-icons simple-icons-creativecommons'></i> Creative Commons BY-NC-SA 4.0 International License."
 
-footer-text: "Made with <i class='fa fa-heart kianic-icon-heart' aria-hidden='true'></i> Love and <i class='simple-icons simple-icons-jekyll kianic-simple-icon-jekyll'></i> Jekyll,
+footer-text: "Made with <i class='fa fa-heart kianic-icon-heart' aria-hidden='true'></i> Love and <i class='kiasimcons kiasimcons-jekyll kiasimcons-color-jekyll'></i> Jekyll,
               hosted on  <i class='fab fa-gitlab kianic-icon-gitlab' aria-hidden='true'></i> GitLab"
               

@@ -5,14 +5,15 @@ layout: compress
 <!DOCTYPE html>
 {% assign language-localized = site.data.localized-translation[page.lang] %}
 <html lang="{{ language-localized.locale }}">
-{% include head.html %}
-<body id="homepage">
+  {% include head.html %}
+  <body id="homepage">
   {% include gtm-body.html %}
   <div class="block-left">
     <div class="content {{ page.direction-format }} {{ page.lang }}">
       <div class="main-info {{ page.direction-format }} {{ page.lang }}">
         {% include block-left-icons.html %}
-        <a href="{{ page.url }}" class="logo"><img type="image/png" src="{{ site.url }}/{{ site.logo-images[ page.lang ].logo-main-homepage }}" alt="Site Logo"></a>
+        <a class="logo" href="{{ page.url }}">
+          <img alt="Site Logo" src="{{ site.url }}/{{ site.logo-images[ page.lang ].logo-main-homepage }}" type="image/png"></a>
         <h1>
           {{ page.title }}
         </h1>
@@ -25,18 +26,29 @@ layout: compress
     <canvas></canvas>
   </div>
 
-  
   <div class="block-right">
-    <a title="{{ language-localized.mode-title-text }}" class="mode-menu-icon home {{ page.direction-format }} {{ page.lang }} {% if site.language-options.lang-number < 2 %}no-adjacent-icon{% endif %}"><i id="sun-moon" class="fa fa-fw fa-2x fa-moon" aria-hidden="true"></i></a>
-    <span class="mode-link {{ page.direction-format }} {{ page.lang }} {% if site.language-options.lang-number < 2 %}no-adjacent-icon{% endif %}">{{ language-localized.mode-span-text }}</span>
+    <a class="mode-menu-icon home {{ page.direction-format }} {{ page.lang }} {% if site.language-options.lang-number < 2 %}no-adjacent-icon{% endif %}"
+       title="{{ language-localized.mode-title-text }}">
+      <i aria-hidden="true" class="fa fa-fw fa-2x fa-moon" id="sun-moon"></i>
+    </a>
+    <span class="mode-link {{ page.direction-format }} {{ page.lang }} {% if site.language-options.lang-number < 2 %}no-adjacent-icon{% endif %}">
+      {{ language-localized.mode-span-text }}
+    </span>
     {% if site.language-options.lang-number > 1 %}
-      <a title="{{ language-localized.change-language-title-text }}" class="languages-menu-icon home {{ page.direction-format }} {{ page.lang }}"><i class="fa fa-fw  fa-2x fa-inverse fa-language" aria-hidden="true"></i></a>
+      <a class="languages-menu-icon home {{ page.direction-format }} {{ page.lang }}" title="{{ language-localized.change-language-title-text }}">
+        <i aria-hidden="true" class="fa fa-fw  fa-2x fa-inverse fa-language"></i>
+      </a>
       <span class="languages-link {{ page.direction-format }} {{ page.lang }}">{{ language-localized.change-language-span-text }}</span>
     {% endif %}
-    <a href="{{ site.url }}/{{ page.lang }}/posts" title="{{ language-localized.posts-title-text }}" class="posts-menu-icon {{ page.direction-format }} {{ page.lang }}"><i class="fa fa-fw fa-2x fa-file-alt" aria-hidden="true"></i></a>
+    <a class="posts-menu-icon {{ page.direction-format }} {{ page.lang }}" href="{{ site.url }}/{{ page.lang }}/posts"
+       title="{{ language-localized.posts-title-text }}">
+      <i aria-hidden="true" class="fa fa-fw fa-2x fa-file-alt"></i>
+    </a>
     <span class="posts-link {{ page.direction-format }} {{ page.lang }}">{{ language-localized.posts-span-text }}</span>
-    <a title="{{ language-localized.projects-title-text }}" class="projects-menu-icon {{ page.direction-format }} {{ page.lang }}"><i class="fa fa-fw fa-2x fa-cogs" aria-hidden="true"></i></a>
-    <span class="projects-link {{ page.direction-format }} {{ page.lang }}">{{ language-localized.projects-span-text }}</span>
+    <a class="projects-menu-icon {{ page.direction-format }} {{ page.lang }}" title="{{ language-localized.projects-title-text }}">
+      <i aria-hidden="true" class="fa fa-fw fa-2x fa-cogs"></i></a>
+    <span
+      class="projects-link {{ page.direction-format }} {{ page.lang }}">{{ language-localized.projects-span-text }}</span>
     <div class="content {{ page.direction-format }} {{ page.lang }}">
       <div class="about-info {{ page.direction-format }} {{ page.lang }}">
         {{ content }}
@@ -46,5 +58,5 @@ layout: compress
   </div>
   {% include overlay.html %}
   {% include scripts.html %}
-</body>
+  </body>
 </html>

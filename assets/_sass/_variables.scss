@@ -2,21 +2,13 @@
 
 $white: #ffffff;
 $black: #000000;
-$light-black: #0d1518;
 $gray: #d4d4d4;
-$dark-gray: #3d3d3d;
-$silver: #808080;
 $overlay-color: #2d2d33;
 $green: #72cc96;
-$dark-green: #36b615;
 $red: #ee5f5b;
 $blue: #19b5fe;
-$light-blue: #20b2aa;
-$dark-blue: #1475b1;
 $aqua: #7fdbff;
 $yellow: #f89406;
-$sunny: #f3dd1a;
-$light-purple: #b000ff;
 
 // --------------- Brand Colors ------------
 
@@ -41,7 +33,7 @@ $hacker-news-color: #ff4000;
 $steam-color: #00adee;
 $behance-color: #1769ff;
 $xing-color: #026466;
-$tumblr-color:#35465c;
+$tumblr-color: #35465c;
 $lastfm-color: #d51007;
 $dribbble-color: #ea4c89;
 $pinterest-color: #bd081c;
@@ -62,16 +54,6 @@ $jekyll-color: #cc0000;
 $sass-color: #cd6799;
 $javascript-color: #f7df1e;
 
-// ------- flag-icon-css variables -----------
-
-$flag-icon-css-path: '../icons/country-flags' !default;
-$flag-icon-rect-path: '/4x3' !default;
-$flag-icon-square-path: '/1x1' !default;
-
-// ------- simple-icons variables -----------
-
-$simple-icons-path: '../icons/simple-icons' !default;
-
-// ------------- Responsive Design Breakpoints ---------------
+// ----- Responsive Design Breakpoints ------
 
 $small: 750px;

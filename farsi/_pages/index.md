@@ -2,6 +2,7 @@
 layout: home
 title: کیانیک
 description: پوسته جکیل چندزبانه، با دو حالت شب و روز و با امکان شخصی سازی آسان برای تارنمای شخصی شما
+excerpt: پوسته جکیل چندزبانه، با دو حالت شب و روز و با امکان شخصی سازی آسان برای تارنمای شخصی شما
 permalink: /farsi/index.html
 ---
 
@@ -15,4 +16,4 @@ permalink: /farsi/index.html
 
 برای دیدن نحوه استفاده از این پوسته، صفحه [**راهنمای راه‌اندازی**]({{ site.url }}/en/kianic-theme) را بخوانید.
 
-اگر سوالی دارید، اشکالی پیدا کردید و یا پیشنهادی برای ویژگی‌های جدید برای کیانیک دارید، لطفا یک [**ایشو در گیت‌لب**](https://gitlab.com/Azadeh-Afzar/Web-Development/Kianic-Jekyll-Theme/issues/new){:target="_blank"} ایجاد کنید. 
+اگر سوالی دارید، اشکالی پیدا کردید و یا پیشنهادی برای ویژگی‌های جدید برای کیانیک دارید، لطفا یک [**ایشو در گیت‌لب**](https://gitlab.com/Azadeh-Afzar/Web-Development/Kianic-Jekyll-Theme/issues/new){:target="_blank"} ایجاد کنید.

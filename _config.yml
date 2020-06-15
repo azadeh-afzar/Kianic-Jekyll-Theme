@@ -9,7 +9,7 @@ author: Mahdi Baghbani
 url: https://azadeh-afzar.gitlab.io/Web-Development/Kianic-Jekyll-Theme
 
 # Website theme skin
-# available skins: default (others coming soon!)
+# available skins: default
 kianic-skin: default
 
 # --- Multi Language Options ---
@@ -86,7 +86,9 @@ kramdown:
 
 # specify css path and style
 sass:
-  sass_dir:         assets/_sass
+  load_paths:
+    - assets/_sass
+    - assets/plugins
   style:            compressed
 
 # Custom pages
@@ -106,7 +108,7 @@ facebook:           MahdiBaghbanii
 #flickr:             username
 twitter:            Baghbani1
 #weibo:              username
-#goodreads:          userUniquID
+#goodreads:          userUniqueID
 linkedin:           MahdiBaghbani
 #xing:               username
 #youtube:            username
@@ -140,6 +142,12 @@ share:
   twitter: true
   linkedin: true
 
+
+#emoji:
+#   src: "assets/icons"
+#   asset: "emoji"
+#   extension: "png"
+
 # --- katex plugin settings ---
 
 katex:
@@ -148,9 +156,11 @@ katex:
     error_color: "#cc0000"
 
 # --- Web Trackers ---
+# you can enable as many options as you want but be advised
+# it will make your site slightly slower 
 
 # Google Analytics
-# using gtag is advised!
+# recommendation: use gtag instead.
 # google-analytics: UA-xxxxx-x
 
 # Google Global Site Tag
@@ -198,22 +208,38 @@ defaults:
 
 # Ruby Gems
 plugins:
-  - jemoji
+  - jekyll-openmoji
   - jekyll-katex
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
 
 whitelist:
-  - jemoji
+  - jekyll-openmoji
   - jekyll-katex
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
 
 # Include list
-include: [CNAME, _pages]
+include:
+  - CNAME
+  - _pages
 
 # Exclude list
-exclude: [README.md, Gemfile, Gemfile.lock, _site, src, vendor, .gitignore
-          LICENSE, Rakefile, .sass-cache, .DS_Store, .idea, CHANGELOG.md]
+exclude:
+  - CHANGELOG.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - Rakefile
+  - README.md
+  - src
+  - script
+  - _site
+  - vendor
+  - _development_config.yml
+  - .DS_Store
+  - .gitignore
+  - .idea,
+  - .sass-cache
