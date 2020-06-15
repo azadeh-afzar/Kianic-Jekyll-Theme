@@ -1,45 +1,46 @@
-# job for creating preview site for development branch on surge.sh
-development:
-  stage: deploy
-  image: ubuntu:latest
+# default settings for all ci jobs.
+default:
+  image: azadehafzarhub/gitlab-ci-jekyll-build:latest
   cache:
     paths:
-      - node_modules/
       - vendor/
+
+# job for generating site for master branch for gitlab pages.
+main pages:
+  stage: deploy
   before_script:
-    # install curl
-    - apt-get update -y
-    - apt-get install -y curl
-    - curl --version
-    - command -v curl
-    # install gnupg
-    - apt-get install -y gnupg
-    - gpg --version
-    - command -v gpg
-    # install ruby version manager (rvm) using curl, then install stable ruby with rvm
-    - gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-    - \curl -sSL https://get.rvm.io | bash -s stable --ruby
-    - source /usr/local/rvm/scripts/rvm
-    - rvm -v
-    - command -v rvm
-    - ruby -v
-    - command -v ruby
-    # install node.js and npm
-    - apt install -y nodejs
-    - apt install -y npm
-    - nodejs -v
-    - command -v nodejs
-    - npm -v
-    - command -v npm
-    # install ruby and node packages
-    - bundle install --path vendor
-    - npm install surge
+    # setup rbenv.
+    - source ~/.bash_profile
+    # use ruby version 2.7.0 .
+    - rbenv global 2.7.0
+    # install dependency gems.
+    - bundle config set path 'vendor'
+    - bundle install
+  script:
+    - bundle exec jekyll build --trace -d public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
+
+# job for creating preview site for development branch on surge.sh .
+development pages:
+  stage: deploy
+  before_script:
+    # setup rbenv.
+    - source ~/.bash_profile
+    # use ruby version 2.7.0 .
+    - rbenv global 2.7.0
+    # install dependency gems.
+    - bundle config set path 'vendor'
+    - bundle install
     # create a CNAME record with desired address for website
     # surge will automatically detect this file at runtime
     - echo "https://azadeh-afzar-kianic-jekyll-theme-development.surge.sh" > CNAME
   script:
     - bundle exec jekyll build -d development
-    - node_modules/.bin/surge development
+    - surge development
   artifacts:
     paths:
       - development
