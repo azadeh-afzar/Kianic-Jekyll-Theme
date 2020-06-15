@@ -43,6 +43,6 @@ development pages:
     - surge development
   artifacts:
     paths:
-      - development
+      - public
   only:
     - development
