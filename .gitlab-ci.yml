@@ -39,7 +39,7 @@ development pages:
     # surge will automatically detect this file at runtime
     - echo "https://azadeh-afzar-kianic-jekyll-theme-development.surge.sh" > CNAME
   script:
-    - bundle exec jekyll build -d development
+    - bundle exec jekyll build --config "_config.yml","_development_config.yml" -d development
     - surge development
   artifacts:
     paths:

@@ -6,7 +6,7 @@ description: "Multi language, dual theme, stylish, two-column Jekyll theme for y
 author: Mahdi Baghbani
 
 # Website domain URL
-url: https://azadeh-afzar-kianic-jekyll-theme-development.surge.sh
+url: https://azadeh-afzar.gitlab.io/Web-Development/Kianic-Jekyll-Theme
 
 # Website theme skin
 # available skins: default
@@ -236,9 +236,10 @@ exclude:
   - README.md
   - src
   - script
+  - _site
   - vendor
+  - _development_config.yml
   - .DS_Store
   - .gitignore
   - .idea,
-  - _site
   - .sass-cache
